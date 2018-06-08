@@ -6,7 +6,17 @@ exports.files = {
       'app.js': /^app/
     }
   },
-  stylesheets: {joinTo: 'app.css'},
+  stylesheets: {
+    joinTo: 'app.css',
+      order: {
+        before: [
+          'app/bootstrap.css',
+          'app/fonts.scss',
+          'app/styles.scss',
+          'app/mq.scss'
+        ]
+      }
+  },
 
   templates: {
     sass: {

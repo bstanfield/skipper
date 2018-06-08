@@ -1,0 +1,42 @@
+extends layout
+
+block content
+  .primary-container-hero
+    .hero-card.hc-short
+      .hero-text
+        h1.hero.white Request beta access
+        h4.hero.white Skipper is in the early stages of development. Apply here to join the beta. New requests will be approved on a rolling basis.
+      .hero-image
+        img.beta-img(src='images/beta-duck.png')
+
+  .primary-container.centered
+    h1.hero Try Skipper for free.
+    h4.hero If you have any questions about the beta, get in touch with us at support@skipper.ai
+
+    //register form
+    .form-wrapper
+      form(method='POST' action='/register')
+        .container
+          .row
+            .col-md-6
+              .form-group
+                input.input-box(type='text', placeholder='First and last name' name='name')
+            .col-md-6
+              .form-group
+                input.input-box(type='text', placeholder='Email' name='email')
+
+          .row
+            .col-md-6
+              .form-group
+                input.input-box(type='text', placeholder='Company' name='company')
+            .col-md-6
+              .form-group
+                input.input-box(type='text', placeholder='What type of work do you do?' name='work')
+
+            .row
+              .col-md-12
+                .form-group
+                  input.input-box(type='text' placeholder="Why are you interested in Skipper's beta?" name='info')
+        br
+        br
+        a.button(href='signup.html') Request beta access

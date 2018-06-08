@@ -1,148 +1,171 @@
 <!DOCTYPE html>
-<html>
-  <head></head><meta charset="utf-8">
+<head></head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-  <title>Skipper</title><link rel="stylesheet" href="/app.css">
+<title>Skipper</title><link rel="stylesheet" href="/app.css">
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Source+Serif+Pro" rel="stylesheet">
-  <script src="/vendor.js"></script>
-  <script src="/app.js"></script>
-  <script require('initialize')></script>
-  <div class="navbar">
-    <div class="nav-items">
-      <div class="nav-logo"><img class="medium" src="images/skipper-logo.png"></div>
-      <div class="nav-menu"><a class="nav-link" href="google.com">Features</a><a class="nav-link" href="google.com">Research</a><a class="nav-link" href="google.com">About Us</a><a class="nav-link beta-link" href="google.com">Join Beta</a></div>
+<script src="/vendor.js"></script>
+<script src="/app.js"></script>
+<script require('initialize')></script>
+<body></body>
+<!-- loads navigation bar for each page-->
+<div class="navbar">
+  <div class="nav-items">
+    <div class="nav-burger"><span class="open" id="open" onclick="openNav()">&#9776</span></div><a class="nav-logo" href="index.html"><img class="medium" src="images/skipper-logo.png"></a>
+    <div class="nav-menu"><a class="nav-link" href="features.html">Features</a><a class="nav-link" href="research.html">Research</a><a class="nav-link" href="about.html">About Us</a><a class="nav-link beta-link" href="beta.html">Join Beta</a></div>
+  </div>
+</div>
+<!-- this is where content will be loaded for subsequent pages-->
+<div class="primary-container-hero">
+  <div class="hero-card">
+    <div class="hero-text">
+      <h1 class="hero white">Navigate and improve inclusion in your workplace.</h1>
+      <h4 class="hero white">Skipper is the easiest way to quantitatively measure unconscious bias and engagement in teams.</h4><a class="hero-button" href="beta.html">Try Skipper</a>
+    </div>
+    <div class="hero-image"><img class="flex" src="images/home-hero.png"></div>
+  </div>
+  <div class="container moat">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card centered">
+          <div class="tape"><img src="images/home-yellowtape.png"></div>
+          <h2>Features</h2>
+          <h4>Insights and recommendations are delivered with analytics.</h4>
+          <div class="card-icon"><img src="images/home-bottle.png"></div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card centered">
+          <div class="tape"><img src="images/home-yellowtape.png"></div>
+          <h2>Features</h2>
+          <h4>Insights and recommendations are delivered with analytics.</h4>
+          <div class="card-icon"><img src="images/home-anchor.png"></div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card centered">
+          <div class="tape"><img src="images/home-yellowtape.png"></div>
+          <h2>Features</h2>
+          <h4>Insights and recommendations are delivered with analytics.</h4>
+          <div class="card-icon"><img src="images/home-compass.png"></div>
+        </div>
+      </div>
     </div>
   </div>
-</html>
-<body>
+</div>
+<div class="background-blue full-width-bg centered">
   <div class="primary-container">
-    <div class="hero-card">
-      <div class="hero-text">
-        <h1 class="hero white">Navigate and improve inclusion in your workplace.</h1>
-        <h4 class="hero white">Skipper is the easiest way to quantitatively measure unconscious bias and engagement in teams.</h4><a class="hero-button" href="signup.html">Try Skipper</a>
+    <h1 class="hero white">Understand your people.</h1>
+    <h4 class="white">Using natural language understanding, community structure analysis, and linguistic inquiry methods, we examine social interactions over company messaging platforms to aggregates analyses on your team’s communication and provide recommendations accordingly through a web app. </h4><img class="large" src="images/home-demo.png">
+  </div>
+</div>
+<div class="primary-container">
+  <div class="container">
+    <div class="row moat">
+      <div class="centered child-width display-hide"><img class="medium" src="images/home-features1.png"></div>
+      <div class="col-md-6">
+        <div class="feature-text">
+          <h1>Wide platform support.</h1>
+          <h4>Whether you're on Slack, Hipchat, Mattermost, or your own company messaging platform, we should be able to help you run our specially designed algorithm on your own computers. </h4>
+        </div>
       </div>
-      <div class="hero-image"><img class="flex" src="images/home-hero.png"></div>
+      <div class="col-md-6">
+        <div class="centered child-width float-right"><img class="medium" src="images/home-features1.png"></div>
+      </div>
     </div>
-    <div class="container moat">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card centered">
-            <div class="tape"><img src="images/home-yellowtape.png"></div>
-            <h2>Features</h2>
-            <h4>Insights and recommendations are delivered with analytics.</h4>
-            <div class="card-icon"><img src="images/home-bottle.png"></div>
-          </div>
+    <div class="row moat">
+      <div class="col-md-6">
+        <div class="centered child-width float-left"><img class="medium" src="images/home-features2.png"></div>
+      </div>
+      <div class="col-md-6">
+        <div class="feature-text">
+          <h1>Sort your team.</h1>
+          <h4>See how your communication differs from one group to another  based on gender, race, and role. </h4>
         </div>
-        <div class="col-md-4">
-          <div class="card centered">
-            <div class="tape"><img src="images/home-yellowtape.png"></div>
-            <h2>Features</h2>
-            <h4>Insights and recommendations are delivered with analytics.</h4>
-            <div class="card-icon"><img src="images/home-anchor.png"></div>
-          </div>
+      </div>
+    </div>
+    <div class="row moat">
+      <div class="centered child-width display-hide"><img class="medium" src="images/home-features3.png"></div>
+      <div class="col-md-6">
+        <div class="feature-text">
+          <h1>Culture, visualized.</h1>
+          <h4>See different analyses on your team, such as sentiment and engagement.  </h4>
         </div>
-        <div class="col-md-4">
-          <div class="card centered">
-            <div class="tape"><img src="images/home-yellowtape.png"></div>
-            <h2>Features</h2>
-            <h4>Insights and recommendations are delivered with analytics.</h4>
-            <div class="card-icon"><img src="images/home-wheel.png"></div>
-          </div>
+      </div>
+      <div class="col-md-6">
+        <div class="centered child-width float-right"><img class="medium" src="images/home-features3.png"></div>
+      </div>
+    </div>
+    <div class="row moat">
+      <div class="col-md-6">
+        <div class="centered child-width float-left"><img class="medium" src="images/home-features4.png"></div>
+      </div>
+      <div class="col-md-6">
+        <div class="feature-text">
+          <h1>Make sense of the numbers.</h1>
+          <h4>Get quick explanations about how we calculate the numbers and why they matter. </h4>
         </div>
       </div>
     </div>
   </div>
-  <div class="background-blue full-width-bg centered">
-    <div class="primary-container">
-      <h1 class="hero white">Understand your people.</h1>
-      <h4 class="white">Using natural language understanding, community structure analysis, and linguistic inquiry methods, we examine social interactions over company messaging platforms to aggregates analyses on your team’s communication and provide recommendations accordingly through a web app. </h4><img class="large" src="images/home-demo.png">
+</div>
+<div class="background-dark-blue full-width-bg centered">
+  <div class="primary-container"> 
+    <h1 class="white">Results that are anchored in research.</h1>
+    <h4 class="white narrow">We’ve included some of the foundational papers informing our findings here. If you’re interested in a specific area of our tech, feel free to contact us for the research that we’ve developed it from.</h4>
+  </div><img class="full" src="images/home-research-header.png" style="margin-bottom: -10px;">
+</div>
+<div class="background-sand full-width-bg">
+  <div class="primary-container">
+    <div class="card article card-spacer">
+      <div class="jank-tape"><img src="images/home-bluetape.png"></div>
+      <div class="card-content">
+        <h4 class="publisher">Journal of Language and Social Psychology </h4>
+        <h4 class="bold title">The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods   </h4>
+        <h4 class="author" style="opacity: .4"><em>by Yla R. Tausczik and James W. Pennebaker, December 2009</em>  </h4>
+      </div>
+      <h4 class="info">This paper explains Linguistic Inquiry and Word Count, a text analysis program that counts words in psychologically meaningful categories. LIWC can detect attentional focus, emotionality, social relationships, thinking styles, and individual differences.</h4>
+    </div>
+    <div class="card article card-spacer">
+      <div class="jank-tape"><img src="images/home-bluetape.png"></div>
+      <h4 class="publisher">Journal of Language and Social Psychology </h4>
+      <h4 class="bold title">The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods   </h4>
+      <h4 class="author" style="opacity: .4"><em>by Yla R. Tausczik and James W. Pennebaker, December 2009</em>  </h4>
+      <h4 class="info">This paper explains Linguistic Inquiry and Word Count, a text analysis program that counts words in psychologically meaningful categories. LIWC can detect attentional focus, emotionality, social relationships, thinking styles, and individual differences. </h4>
+    </div>
+    <div class="card article card-spacer">
+      <div class="jank-tape"><img src="images/home-bluetape.png"></div>
+      <h4 class="publisher">Journal of Language and Social Psychology </h4>
+      <h4 class="bold title">The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods   </h4>
+      <h4 class="author" style="opacity: .4"><em>by Yla R. Tausczik and James W. Pennebaker, December 2009</em>  </h4>
+      <h4 class="info">This paper explains Linguistic Inquiry and Word Count, a text analysis program that counts words in psychologically meaningful categories. LIWC can detect attentional focus, emotionality, social relationships, thinking styles, and individual differences.</h4>
     </div>
   </div>
+</div>
+<div class="primary-container">
+  <div class="seller centered">
+    <h1 class="hero">Understand your people.</h1>
+    <h4>Skipper is in the early stages of development, and we’re happy to partner with you for our beta test. You’ll help guide the direction of this people management tool and gain helpful insights on your team. </h4><br><br><a class="button" href="signup.html">Request beta access</a>
+  </div>
+</div>
+<!-- footer-->
+<div class="footer">
   <div class="primary-container">
     <div class="container">
-      <div class="row moat">
-        <div class="col-md-6">
-          <div class="feature-text">
-            <h1>Wide platform support.</h1>
-            <h4>Whether you're on Slack, Hipchat, Mattermost, or your own company messaging platform, we should be able to help you run our specially designed algorithm on your own computers. </h4>
-          </div>
+      <div class="row">
+        <div class="col-md-3">
+          <h4>Explore</h4><a>About us</a><a>Blog</a><br>
+        </div>
+        <div class="col-md-3">
+          <h4>Resources</h4><a>Research</a><a>Privacy</a><br>
         </div>
         <div class="col-md-6">
-          <div class="background-blue centered child-width float-right"><img class="medium" src="images/home-features1.png"></div>
-        </div>
-      </div>
-      <div class="row moat">
-        <div class="col-md-6">
-          <div class="background-blue centered child-width float-left"><img class="medium" src="images/home-features2.png"></div>
-        </div>
-        <div class="col-md-6">
-          <div class="feature-text">
-            <h1>Sort your team.</h1>
-            <h4>See how your communication differs from one group to another  based on gender, race, and role. </h4>
-          </div>
-        </div>
-      </div>
-      <div class="row moat">
-        <div class="col-md-6">
-          <div class="feature-text">
-            <h1>Culture, visualized.</h1>
-            <h4>See different analyses on your team, such as sentiment and engagement.  </h4>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="background-blue centered child-width float-right"><img class="medium" src="images/home-features3.png"></div>
-        </div>
-      </div>
-      <div class="row moat">
-        <div class="col-md-6">
-          <div class="background-blue centered child-width float-left"><img class="medium" src="images/home-features4.png"></div>
-        </div>
-        <div class="col-md-6">
-          <div class="feature-text">
-            <h1>Make sense of the numbers.</h1>
-            <h4>Get quick explanations about how we calculate the numbers and why they matter. </h4>
+          <h4>Subscribe for updates</h4>
+          <div class="form-group">
+            <input class="input-box" type="text" placeholder="Email address" name="email">
           </div>
         </div>
       </div>
     </div>
+    <div class="container"><img class="tiny closer" src="images/skipper-icon.png"></div>
   </div>
-  <div class="background-dark-blue full-width-bg centered">
-    <div class="primary-container"> 
-      <h1 class="white">Results that are anchored in research.</h1>
-      <h4 class="white narrow">We’ve included some of the foundational papers informing our findings here. If you’re interested in a specific area of our tech, feel free to contact us for the research that we’ve developed it from.</h4>
-    </div><img class="full" src="images/home-research-header.png">
-  </div>
-  <div class="background-sand full-width-bg">
-    <div class="primary-container">
-      <div class="card article card-spacer">
-        <div class="jank-tape"><img src="images/home-bluetape.png"></div>
-        <div class="card-content">
-          <h4 class="publisher">Journal of Language and Social Psychology </h4>
-          <h4 class="bold title">The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods   </h4>
-          <h4 class="author" style="opacity: .4"><em>by Yla R. Tausczik and James W. Pennebaker, December 2009</em>  </h4>
-        </div>
-        <h4 class="info">This paper explains Linguistic Inquiry and Word Count, a text analysis program that counts words in psychologically meaningful categories. LIWC can detect attentional focus, emotionality, social relationships, thinking styles, and individual differences.</h4>
-      </div>
-      <div class="card article card-spacer">
-        <div class="jank-tape"><img src="images/home-bluetape.png"></div>
-        <h4 class="publisher">Journal of Language and Social Psychology </h4>
-        <h4 class="bold title">The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods   </h4>
-        <h4 class="author" style="opacity: .4"><em>by Yla R. Tausczik and James W. Pennebaker, December 2009</em>  </h4>
-        <h4 class="info">This paper explains Linguistic Inquiry and Word Count, a text analysis program that counts words in psychologically meaningful categories. LIWC can detect attentional focus, emotionality, social relationships, thinking styles, and individual differences. </h4>
-      </div>
-      <div class="card article card-spacer">
-        <div class="jank-tape"><img src="images/home-bluetape.png"></div>
-        <h4 class="publisher">Journal of Language and Social Psychology </h4>
-        <h4 class="bold title">The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods   </h4>
-        <h4 class="author" style="opacity: .4"><em>by Yla R. Tausczik and James W. Pennebaker, December 2009</em>  </h4>
-        <h4 class="info">This paper explains Linguistic Inquiry and Word Count, a text analysis program that counts words in psychologically meaningful categories. LIWC can detect attentional focus, emotionality, social relationships, thinking styles, and individual differences.</h4>
-      </div>
-    </div>
-  </div>
-  <div class="primary-container">
-    <div class="seller centered">
-      <h1 class="hero">Understand your people.</h1>
-      <h4>Skipper is in the early stages of development, and we’re happy to partner with you for our beta test. You’ll help guide the direction of this people management tool and gain helpful insights on your team. </h4><br><br><a class="button" href="signup.html">Request beta access</a>
-    </div>
-  </div>
-</body>
+</div>

@@ -1,9 +1,22 @@
+//- - function openNav()
+//-     document.getElementById('open').style.display = 'none'
+//-     document.getElementById('nav').style.width = '100%'
+
+//- .nav#nav
+//-     a(href="javascript:void(0)" class="close" onclick="closeNav()") &times;
+//-     a(href="#") Home
+//-     a(href="#") Research
+//-     a(href="#") About Us
+//-     a(href="#") Join Beta
 .navbar
     .nav-items
-        .nav-logo
+        .nav-burger
+            span.open(id="open" onclick="openNav()") &#9776
+        a.nav-logo(href='index.html')
             img.medium(src='images/skipper-logo.png')
         .nav-menu
-            a.nav-link(href='google.com') Features
-            a.nav-link(href='google.com') Research
-            a.nav-link(href='google.com') About Us
-            a.nav-link.beta-link(href='google.com') Join Beta
+            //- a.nav-link(href="index.html") Home
+            a.nav-link(href='features.html') Features
+            a.nav-link(href='research.html') Research
+            a.nav-link(href='about.html') About Us
+            a.nav-link.beta-link(href='beta.html') Join Beta

@@ -1,9 +1,10 @@
 @import 'fonts.scss';
+@import 'mq.scss';
 
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(240, 240, 240) !important;
 }
 
 .navbar {
@@ -42,11 +43,45 @@ body {
   display: inline-block;
 }
 
+.nav-burger {
+  display: none;
+}
+
+.open {
+  cursor: pointer;
+}
+
+// .nav {
+//   position: fixed;
+//   overflow-x: hidden;
+//   width: 0;
+//   height: 100vh;
+//   z-index: 1;
+//   background-color: rgba(0, 0, 0, 0.4);
+//   transition: 0.5s;
+//   display: block;
+// }
+
+// .nav a {
+//   color: white !important;
+//   text-decoration: none !important;
+//   display: block;
+//   padding: 1em 0;
+//   text-align: center;
+
+// }
+
 .primary-container {
   width: 80%;
   margin: auto;
   max-width: 1000px;
 }
+
+  .primary-container-hero {
+    width: 80%;
+    margin: auto;
+    max-width: 1000px;
+  }
 
 // RECYCLED
 .hero-card {
@@ -55,17 +90,26 @@ body {
   height: 500px;
   border-radius: 5px;
   background-color: #507cf0;
-  background-image: url('../assets/cb-hero.png');
   margin-top: 20px;
   margin-bottom: 80px;
 }
 
+  .hc-short {
+    height: 300px;
+  }
+
 .hero-text {
-  position: absolute;
+  width: 100%;
+  position: relative;
   left: 100px;
   top: 80px;
-  width: 500px;
+  max-width: 500px;
 }
+
+  .about-txt {
+    top: 55px;
+    max-width: 250px;
+  }
 
 h1.hero {
   font-size: 35px;
@@ -78,13 +122,10 @@ h4.hero {
 
 .hero-image img {
   position: absolute;
-  width: 550px;
+  width: 500px;
   height: auto;
   right: 0px;
   bottom: 0px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .button {
@@ -181,6 +222,22 @@ h4.hero {
   margin: auto;
 }
 
+.tiny {
+  width: 50px;
+}
+
+.hero-image .beta-img {
+  width: 200px;
+  margin-right: 80px;
+  margin-bottom: 40px;
+}
+
+.about-img {
+  display: block;
+  height: 100% !important;
+  margin-right: 50px;
+}
+
 // COLOR SELECTION
 .background-blue {
   background-color: $skipper-blue;
@@ -224,6 +281,54 @@ h4.hero {
   padding-top: 60px;
 }
 
+// BETA SIGN-UP PAGE
+  .form-wrapper {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 100px;
+  }
+
+  .form-group {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .input-box {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    border-bottom: 2px solid #333333;
+    outline: none;
+  }
+
+  .input-box:focus {
+    background-color: rgba(80, 124, 240, 0.1);
+  }
+
+// FOOTER
+
+
+.footer {
+  margin-top: 150px;
+  width: 100%;
+  background-color: white;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+  .footer a {
+    padding-top: 5px;
+    opacity: .4;
+    line-height: 30px;
+    display: block;
+  }
+
+.closer {
+  margin-top: 80px;
+}
+
 
 
 // OVERWRITTEN BOOTSTRAP
@@ -243,5 +348,14 @@ h4.hero {
 
 .float-left {
   float: left;
+}
+
+.display-hide {
+  display: none;
+}
+
+.col-md-12 {
+  padding-left: 30px;
+  padding-right: 30px
 }
 

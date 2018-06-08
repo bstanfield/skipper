@@ -148,8 +148,67 @@ var __makeRelativeRequire = function(require, mappings, pref) {
     return require(name);
   }
 };
-require.register("includes/head.pug", function(exports, require, module) {
-function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;var pug_debug_filename, pug_debug_line;try {var pug_debug_sources = {"app\u002Fincludes\u002Fhead.pug":"head\n\u003Cmeta charset=\"utf-8\"\u003E\n  \u003Cmeta name=\"viewport\" content=\"width=device-width\"\u003E\n  title Skipper\n  \u003Clink rel=\"stylesheet\" href=\"\u002Fapp.css\"\u003E\n  \u003Clink href=\"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Source+Sans+Pro|Source+Serif+Pro\" rel=\"stylesheet\"\u003E\n  \n  script(src=\"\u002Fvendor.js\")\n  script(src=\"\u002Fapp.js\")\n\n  script(require('initialize'))"};
+require.register("includes/footer.pug", function(exports, require, module) {
+function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;var pug_debug_filename, pug_debug_line;try {var pug_debug_sources = {"app\u002Fincludes\u002Ffooter.pug":".footer\n  .primary-container\n    .container\n      .row\n        .col-md-3\n          h4 Explore\n          a About us\n          a Blog\n          br\n        .col-md-3\n          h4 Resources\n          a Research\n          a Privacy\n          br\n        .col-md-6\n          h4 Subscribe for updates\n          .form-group\n                  input.input-box(type='text', placeholder='Email address' name='email')\n\n    .container\n      img.tiny.closer(src=\"images\u002Fskipper-icon.png\")"};
+;pug_debug_line = 1;pug_debug_filename = "app\u002Fincludes\u002Ffooter.pug";
+pug_html = pug_html + "\u003Cdiv class=\"footer\"\u003E";
+;pug_debug_line = 2;pug_debug_filename = "app\u002Fincludes\u002Ffooter.pug";
+pug_html = pug_html + "\u003Cdiv class=\"primary-container\"\u003E";
+;pug_debug_line = 3;pug_debug_filename = "app\u002Fincludes\u002Ffooter.pug";
+pug_html = pug_html + "\u003Cdiv class=\"container\"\u003E";
+;pug_debug_line = 4;pug_debug_filename = "app\u002Fincludes\u002Ffooter.pug";
+pug_html = pug_html + "\u003Cdiv class=\"row\"\u003E";
+;pug_debug_line = 5;pug_debug_filename = "app\u002Fincludes\u002Ffooter.pug";
+pug_html = pug_html + "\u003Cdiv class=\"col-md-3\"\u003E";
+;pug_debug_line = 6;pug_debug_filename = "app\u002Fincludes\u002Ffooter.pug";
+pug_html = pug_html + "\u003Ch4\u003E";
+;pug_debug_line = 6;pug_debug_filename = "app\u002Fincludes\u002Ffooter.pug";
+pug_html = pug_html + "Explore\u003C\u002Fh4\u003E";
+;pug_debug_line = 7;pug_debug_filename = "app\u002Fincludes\u002Ffooter.pug";
+pug_html = pug_html + "\u003Ca\u003E";
+;pug_debug_line = 7;pug_debug_filename = "app\u002Fincludes\u002Ffooter.pug";
+pug_html = pug_html + "About us\u003C\u002Fa\u003E";
+;pug_debug_line = 8;pug_debug_filename = "app\u002Fincludes\u002Ffooter.pug";
+pug_html = pug_html + "\u003Ca\u003E";
+;pug_debug_line = 8;pug_debug_filename = "app\u002Fincludes\u002Ffooter.pug";
+pug_html = pug_html + "Blog\u003C\u002Fa\u003E";
+;pug_debug_line = 9;pug_debug_filename = "app\u002Fincludes\u002Ffooter.pug";
+pug_html = pug_html + "\u003Cbr\u003E\u003C\u002Fdiv\u003E";
+;pug_debug_line = 10;pug_debug_filename = "app\u002Fincludes\u002Ffooter.pug";
+pug_html = pug_html + "\u003Cdiv class=\"col-md-3\"\u003E";
+;pug_debug_line = 11;pug_debug_filename = "app\u002Fincludes\u002Ffooter.pug";
+pug_html = pug_html + "\u003Ch4\u003E";
+;pug_debug_line = 11;pug_debug_filename = "app\u002Fincludes\u002Ffooter.pug";
+pug_html = pug_html + "Resources\u003C\u002Fh4\u003E";
+;pug_debug_line = 12;pug_debug_filename = "app\u002Fincludes\u002Ffooter.pug";
+pug_html = pug_html + "\u003Ca\u003E";
+;pug_debug_line = 12;pug_debug_filename = "app\u002Fincludes\u002Ffooter.pug";
+pug_html = pug_html + "Research\u003C\u002Fa\u003E";
+;pug_debug_line = 13;pug_debug_filename = "app\u002Fincludes\u002Ffooter.pug";
+pug_html = pug_html + "\u003Ca\u003E";
+;pug_debug_line = 13;pug_debug_filename = "app\u002Fincludes\u002Ffooter.pug";
+pug_html = pug_html + "Privacy\u003C\u002Fa\u003E";
+;pug_debug_line = 14;pug_debug_filename = "app\u002Fincludes\u002Ffooter.pug";
+pug_html = pug_html + "\u003Cbr\u003E\u003C\u002Fdiv\u003E";
+;pug_debug_line = 15;pug_debug_filename = "app\u002Fincludes\u002Ffooter.pug";
+pug_html = pug_html + "\u003Cdiv class=\"col-md-6\"\u003E";
+;pug_debug_line = 16;pug_debug_filename = "app\u002Fincludes\u002Ffooter.pug";
+pug_html = pug_html + "\u003Ch4\u003E";
+;pug_debug_line = 16;pug_debug_filename = "app\u002Fincludes\u002Ffooter.pug";
+pug_html = pug_html + "Subscribe for updates\u003C\u002Fh4\u003E";
+;pug_debug_line = 17;pug_debug_filename = "app\u002Fincludes\u002Ffooter.pug";
+pug_html = pug_html + "\u003Cdiv class=\"form-group\"\u003E";
+;pug_debug_line = 18;pug_debug_filename = "app\u002Fincludes\u002Ffooter.pug";
+pug_html = pug_html + "\u003Cinput class=\"input-box\" type=\"text\" placeholder=\"Email address\" name=\"email\"\u003E\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";
+;pug_debug_line = 20;pug_debug_filename = "app\u002Fincludes\u002Ffooter.pug";
+pug_html = pug_html + "\u003Cdiv class=\"container\"\u003E";
+;pug_debug_line = 21;pug_debug_filename = "app\u002Fincludes\u002Ffooter.pug";
+pug_html = pug_html + "\u003Cimg class=\"tiny closer\" src=\"images\u002Fskipper-icon.png\"\u003E\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";} catch (err) {pug.rethrow(err, pug_debug_filename, pug_debug_line, pug_debug_sources[pug_debug_filename]);};return pug_html;};
+module.exports = template;
+});
+
+;require.register("includes/head.pug", function(exports, require, module) {
+function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;var pug_debug_filename, pug_debug_line;try {var pug_debug_sources = {"app\u002Fincludes\u002Fhead.pug":"head\n\u003Cmeta charset=\"utf-8\"\u003E\n  \u003Cmeta name=\"viewport\" content=\"width=device-width\"\u003E\n  title Skipper\n  \u003Clink rel=\"stylesheet\" href=\"\u002Fapp.css\"\u003E\n  \u003Clink href=\"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Source+Sans+Pro|Source+Serif+Pro\" rel=\"stylesheet\"\u003E\n\n  script(src=\"\u002Fvendor.js\")\n  script(src=\"\u002Fapp.js\")\n\n  script(require('initialize'))"};
 ;pug_debug_line = 1;pug_debug_filename = "app\u002Fincludes\u002Fhead.pug";
 pug_html = pug_html + "\u003Chead\u003E\u003C\u002Fhead\u003E";
 ;pug_debug_line = 2;pug_debug_filename = "app\u002Fincludes\u002Fhead.pug";
@@ -170,32 +229,38 @@ module.exports = template;
 });
 
 ;require.register("includes/nav.pug", function(exports, require, module) {
-function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;var pug_debug_filename, pug_debug_line;try {var pug_debug_sources = {"app\u002Fincludes\u002Fnav.pug":".navbar\n    .nav-items\n        .nav-logo\n            img.medium(src='images\u002Fskipper-logo.png')\n        .nav-menu\n            a.nav-link(href='google.com') Features\n            a.nav-link(href='google.com') Research\n            a.nav-link(href='google.com') About Us\n            a.nav-link.beta-link(href='google.com') Join Beta"};
-;pug_debug_line = 1;pug_debug_filename = "app\u002Fincludes\u002Fnav.pug";
+function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;var pug_debug_filename, pug_debug_line;try {var pug_debug_sources = {"app\u002Fincludes\u002Fnav.pug":"\u002F\u002F- - function openNav()\n\u002F\u002F-     document.getElementById('open').style.display = 'none'\n\u002F\u002F-     document.getElementById('nav').style.width = '100%'\n\n\u002F\u002F- .nav#nav\n\u002F\u002F-     a(href=\"javascript:void(0)\" class=\"close\" onclick=\"closeNav()\") &times;\n\u002F\u002F-     a(href=\"#\") Home\n\u002F\u002F-     a(href=\"#\") Research\n\u002F\u002F-     a(href=\"#\") About Us\n\u002F\u002F-     a(href=\"#\") Join Beta\n.navbar\n    .nav-items\n        .nav-burger\n            span.open(id=\"open\" onclick=\"openNav()\") &#9776\n        a.nav-logo(href='index.html')\n            img.medium(src='images\u002Fskipper-logo.png')\n        .nav-menu\n            \u002F\u002F- a.nav-link(href=\"index.html\") Home\n            a.nav-link(href='features.html') Features\n            a.nav-link(href='research.html') Research\n            a.nav-link(href='about.html') About Us\n            a.nav-link.beta-link(href='beta.html') Join Beta"};
+;pug_debug_line = 11;pug_debug_filename = "app\u002Fincludes\u002Fnav.pug";
 pug_html = pug_html + "\u003Cdiv class=\"navbar\"\u003E";
-;pug_debug_line = 2;pug_debug_filename = "app\u002Fincludes\u002Fnav.pug";
+;pug_debug_line = 12;pug_debug_filename = "app\u002Fincludes\u002Fnav.pug";
 pug_html = pug_html + "\u003Cdiv class=\"nav-items\"\u003E";
-;pug_debug_line = 3;pug_debug_filename = "app\u002Fincludes\u002Fnav.pug";
-pug_html = pug_html + "\u003Cdiv class=\"nav-logo\"\u003E";
-;pug_debug_line = 4;pug_debug_filename = "app\u002Fincludes\u002Fnav.pug";
-pug_html = pug_html + "\u003Cimg class=\"medium\" src=\"images\u002Fskipper-logo.png\"\u003E\u003C\u002Fdiv\u003E";
-;pug_debug_line = 5;pug_debug_filename = "app\u002Fincludes\u002Fnav.pug";
+;pug_debug_line = 13;pug_debug_filename = "app\u002Fincludes\u002Fnav.pug";
+pug_html = pug_html + "\u003Cdiv class=\"nav-burger\"\u003E";
+;pug_debug_line = 14;pug_debug_filename = "app\u002Fincludes\u002Fnav.pug";
+pug_html = pug_html + "\u003Cspan class=\"open\" id=\"open\" onclick=\"openNav()\"\u003E";
+;pug_debug_line = 14;pug_debug_filename = "app\u002Fincludes\u002Fnav.pug";
+pug_html = pug_html + "&#9776\u003C\u002Fspan\u003E\u003C\u002Fdiv\u003E";
+;pug_debug_line = 15;pug_debug_filename = "app\u002Fincludes\u002Fnav.pug";
+pug_html = pug_html + "\u003Ca class=\"nav-logo\" href=\"index.html\"\u003E";
+;pug_debug_line = 16;pug_debug_filename = "app\u002Fincludes\u002Fnav.pug";
+pug_html = pug_html + "\u003Cimg class=\"medium\" src=\"images\u002Fskipper-logo.png\"\u003E\u003C\u002Fa\u003E";
+;pug_debug_line = 17;pug_debug_filename = "app\u002Fincludes\u002Fnav.pug";
 pug_html = pug_html + "\u003Cdiv class=\"nav-menu\"\u003E";
-;pug_debug_line = 6;pug_debug_filename = "app\u002Fincludes\u002Fnav.pug";
-pug_html = pug_html + "\u003Ca class=\"nav-link\" href=\"google.com\"\u003E";
-;pug_debug_line = 6;pug_debug_filename = "app\u002Fincludes\u002Fnav.pug";
+;pug_debug_line = 19;pug_debug_filename = "app\u002Fincludes\u002Fnav.pug";
+pug_html = pug_html + "\u003Ca class=\"nav-link\" href=\"features.html\"\u003E";
+;pug_debug_line = 19;pug_debug_filename = "app\u002Fincludes\u002Fnav.pug";
 pug_html = pug_html + "Features\u003C\u002Fa\u003E";
-;pug_debug_line = 7;pug_debug_filename = "app\u002Fincludes\u002Fnav.pug";
-pug_html = pug_html + "\u003Ca class=\"nav-link\" href=\"google.com\"\u003E";
-;pug_debug_line = 7;pug_debug_filename = "app\u002Fincludes\u002Fnav.pug";
+;pug_debug_line = 20;pug_debug_filename = "app\u002Fincludes\u002Fnav.pug";
+pug_html = pug_html + "\u003Ca class=\"nav-link\" href=\"research.html\"\u003E";
+;pug_debug_line = 20;pug_debug_filename = "app\u002Fincludes\u002Fnav.pug";
 pug_html = pug_html + "Research\u003C\u002Fa\u003E";
-;pug_debug_line = 8;pug_debug_filename = "app\u002Fincludes\u002Fnav.pug";
-pug_html = pug_html + "\u003Ca class=\"nav-link\" href=\"google.com\"\u003E";
-;pug_debug_line = 8;pug_debug_filename = "app\u002Fincludes\u002Fnav.pug";
+;pug_debug_line = 21;pug_debug_filename = "app\u002Fincludes\u002Fnav.pug";
+pug_html = pug_html + "\u003Ca class=\"nav-link\" href=\"about.html\"\u003E";
+;pug_debug_line = 21;pug_debug_filename = "app\u002Fincludes\u002Fnav.pug";
 pug_html = pug_html + "About Us\u003C\u002Fa\u003E";
-;pug_debug_line = 9;pug_debug_filename = "app\u002Fincludes\u002Fnav.pug";
-pug_html = pug_html + "\u003Ca class=\"nav-link beta-link\" href=\"google.com\"\u003E";
-;pug_debug_line = 9;pug_debug_filename = "app\u002Fincludes\u002Fnav.pug";
+;pug_debug_line = 22;pug_debug_filename = "app\u002Fincludes\u002Fnav.pug";
+pug_html = pug_html + "\u003Ca class=\"nav-link beta-link\" href=\"beta.html\"\u003E";
+;pug_debug_line = 22;pug_debug_filename = "app\u002Fincludes\u002Fnav.pug";
 pug_html = pug_html + "Join Beta\u003C\u002Fa\u003E\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";} catch (err) {pug.rethrow(err, pug_debug_filename, pug_debug_line, pug_debug_sources[pug_debug_filename]);};return pug_html;};
 module.exports = template;
 });
@@ -218,7 +283,7 @@ require.register("logger.js", function(exports, require, module) {
 console.log('Hello, world');
 });
 
-;require.alias("process/browser.js", "process");process = require('process');require.register("___globals___", function(exports, require, module) {
+require.alias("process/browser.js", "process");process = require('process');require.register("___globals___", function(exports, require, module) {
   
 });})();require('___globals___');
 

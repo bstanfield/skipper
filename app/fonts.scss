@@ -12,7 +12,7 @@
 // FONT TYPES
 
 $sans-serif: 'Source Sans Pro', Helvetica, sans-serif;
-$serif: 'Source Serif Pro', 'Times New Roman', serif;
+$serif: Helvetica, 'Times New Roman', serif;
 $mono: 'Source Code Pro', Courier, mono;
 
 // FONT WEIGHTS
@@ -22,16 +22,16 @@ $semibold: 500;
 $bold: 700;
 
 //FONT SIZES
-$small: 16px;
-$medium: 18px;
+$small: 18px;
+$medium: 20px;
 $large: 25px;
 $header: 35px;
 
 // LINE-HEIGHTS
-$body-line: 30px;
+$body-line: 32px;
 
 // COLORS
-$txt-primary: #333333;
+$txt-primary: #0e3266;
 $skipper-blue: #507cf0;
 
 
@@ -49,9 +49,9 @@ p {
 }
 
 h1 {
-    font-family: 'Source Serif Pro';
+    font-family: $serif;
     font-size: $large;
-    font-weight: $normal;
+    font-weight: $medium;
     max-width: 800px;
     margin: auto;
     padding-bottom: 10px;
@@ -69,7 +69,8 @@ h4 {
 
 a {
     color: $txt-primary !important;
-    text-decoration: none;
+    text-decoration: none !important;
+    font-size: $small;
 }
 
 
