@@ -1,0 +1,247 @@
+@import 'fonts.scss';
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(240, 240, 240);
+}
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  border-bottom: 1px solid #a8a8a8;
+}
+
+.nav-items {
+  width: 80%;
+  max-width: 1000px;
+  margin: auto;
+  height: 100%;
+}
+
+  .beta-link {
+    font-weight: $semibold;
+    color: $skipper-blue !important;
+  }
+
+.nav-menu {
+  float: right;
+  padding-top: 18px;
+}
+
+.nav-link {
+  padding-left: 30px;
+  font-size: 16px;
+}
+
+.nav-logo {
+  width: 150px;
+  height: 100%;
+  padding-top: 12px;
+  display: inline-block;
+}
+
+.primary-container {
+  width: 80%;
+  margin: auto;
+  max-width: 1000px;
+}
+
+// RECYCLED
+.hero-card {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  border-radius: 5px;
+  background-color: #507cf0;
+  background-image: url('../assets/cb-hero.png');
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+
+.hero-text {
+  position: absolute;
+  left: 100px;
+  top: 80px;
+  width: 500px;
+}
+
+h1.hero {
+  font-size: 35px;
+}
+
+h4.hero {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.hero-image img {
+  position: absolute;
+  width: 550px;
+  height: auto;
+  right: 0px;
+  bottom: 0px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.button {
+  background-color: $skipper-blue;
+  color: white !important;
+  padding: 10px 15px 10px 15px;
+  border-radius: 3px;
+  font-weight: $semibold;
+  font-size: $medium;
+}
+
+.hero-button {
+  background-color: white;
+  font-size: $medium;
+  font-weight: $semibold;
+  color: $skipper-blue;
+  padding: 10px 15px 10px 15px;
+  border-radius: 3px;
+}
+
+// CARDS
+.card {
+  width: 100%;
+  padding: 30px;
+  background-color: white;
+  border-radius: 5px;
+  max-width: 750px;
+  margin: auto;
+}
+
+  .article {
+    padding: 40px 30px 10px 30px; 
+  }
+
+  .article h4 {
+    margin-bottom: 20px;
+  }
+
+  .card-spacer {
+    margin-top: 70px;
+  }
+
+.card-icon img {
+  max-width: 150px;
+  max-height: 150px;
+  margin-top: 20px;
+  margin-bottom: -80px;
+}
+
+.moat {
+  margin-bottom: 100px;
+}
+
+.tape {
+  position: absolute;
+  top: -15px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+  .tape img {
+    width: 180px;
+  }
+
+  .jank-tape {
+    position: relative;
+    top: -60px;
+    margin-bottom: -35px;
+    text-align: center;
+  }
+
+// IMAGES
+.flex {
+  width: 100%;
+  max-width: 550px;
+}
+
+.full {
+  width: 100%;
+}
+
+.large {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.medium {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+}
+
+// COLOR SELECTION
+.background-blue {
+  background-color: $skipper-blue;
+}
+
+.background-dark-blue {
+  background-color: #0e3266;
+  padding-bottom: 0px !important;
+  margin-bottom: -50px !important;
+}
+
+.background-sand {
+  background-color: #edda7f;
+}
+
+  .full-width-bg {
+    width: 100%;
+    height: 100%;
+    padding: 50px 0px 100px 0px;
+    margin: 50px 0px 80px 0px;
+  }
+
+  .child-width {
+    width: auto;
+    border-radius: 5px;
+  }
+
+.white {
+  color: white;
+}
+
+.seller {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+// FEATURE SECTION
+.feature-text {
+  width: 100%;
+  text-align: center;
+  padding-top: 60px;
+}
+
+
+
+// OVERWRITTEN BOOTSTRAP
+.container {
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 100%;
+}
+
+  .centered {
+    text-align: center;
+  }
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
