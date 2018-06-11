@@ -300,11 +300,14 @@ h4.hero {
   margin-right: 50px;
 }
 
-.people img {
+.people-img {
   margin-top: 30px;
   padding: 30px;
 }
 
+.people > p {
+  margin: 0px;
+}
 // COLOR SELECTION
 .background-blue {
   background-color: $skipper-blue;
@@ -382,6 +385,7 @@ h4.hero {
 .people p, 
 .people h4 {
   text-align: center;
+  margin: 0px;
 }
 
 // ARTICLE CARDS
@@ -422,6 +426,11 @@ h4.hero {
     line-height: 30px;
     display: block;
   }
+
+.social-links img {
+    height: 40px;
+    padding: 10px;
+}
 
 .closer {
   margin-top: 80px;

@@ -1398,9 +1398,12 @@ h4.hero {
   height: 100% !important;
   margin-right: 50px; }
 
-.people img {
+.people-img {
   margin-top: 30px;
   padding: 30px; }
+
+.people > p {
+  margin: 0px; }
 
 .background-blue {
   background-color: #507cf0; }
@@ -1461,7 +1464,8 @@ h4.white {
 
 .people p,
 .people h4 {
-  text-align: center; }
+  text-align: center;
+  margin: 0px; }
 
 .author {
   font-style: italic;
@@ -1491,6 +1495,10 @@ h4.white {
   opacity: .4;
   line-height: 30px;
   display: block; }
+
+.social-links img {
+  height: 40px;
+  padding: 10px; }
 
 .closer {
   margin-top: 80px; }
