@@ -208,7 +208,7 @@ module.exports = template;
 });
 
 ;require.register("includes/head.pug", function(exports, require, module) {
-function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;var pug_debug_filename, pug_debug_line;try {var pug_debug_sources = {"app\u002Fincludes\u002Fhead.pug":"head\n\u003Cmeta charset=\"utf-8\"\u003E\n  \u003Cmeta name=\"viewport\" content=\"width=device-width\"\u003E\n  title Skipper\n  \u003Clink rel=\"stylesheet\" href=\"\u002Fapp.css\"\u003E\n  \u003Clink href=\"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=IBM+Plex+Sans:400,500,500i,600,600i\" rel=\"stylesheet\"\u003E\n  \u003Clink href=\"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Merriweather:400,400i,700,700i\" rel=\"stylesheet\"\u003E\n\n\n  \u003Clink rel=\"shortcut icon\" type=\"image\u002Fx-icon\" href=\"..\u002Fimages\u002Ffavicon.ico\"\u002F\u003E\n\n  script(src=\"\u002Fvendor.js\")\n  script(src=\"\u002Fapp.js\")\n\n  script(require('initialize'))"};
+function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;var pug_debug_filename, pug_debug_line;try {var pug_debug_sources = {"app\u002Fincludes\u002Fhead.pug":"head\n\u003Cmeta charset=\"utf-8\"\u003E\n  \u003Cmeta name=\"viewport\" content=\"width=device-width\"\u003E\n  title Skipper\n  \u003Clink rel=\"stylesheet\" href=\"\u002Fapp.css\"\u003E\n  \u003Clink href=\"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=IBM+Plex+Sans:400,500,500i,600,600i\" rel=\"stylesheet\"\u003E\n  \u003Clink href=\"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Merriweather:400,400i,700,700i\" rel=\"stylesheet\"\u003E\n  \u003Clink href=\"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=IBM+Plex+Serif:400,400i,500,500i\" rel=\"stylesheet\"\u003E\n\n\n  \u003Clink rel=\"shortcut icon\" type=\"image\u002Fx-icon\" href=\"..\u002Fimages\u002Ffavicon.ico\"\u002F\u003E\n\n  script(src=\"\u002Fvendor.js\")\n  script(src=\"\u002Fapp.js\")\n\n  script(require('initialize'))"};
 ;pug_debug_line = 1;pug_debug_filename = "app\u002Fincludes\u002Fhead.pug";
 pug_html = pug_html + "\u003Chead\u003E\u003C\u002Fhead\u003E";
 ;pug_debug_line = 2;pug_debug_filename = "app\u002Fincludes\u002Fhead.pug";
@@ -218,12 +218,12 @@ pug_html = pug_html + "\u003Ctitle\u003E";
 ;pug_debug_line = 4;pug_debug_filename = "app\u002Fincludes\u002Fhead.pug";
 pug_html = pug_html + "Skipper\u003C\u002Ftitle\u003E";
 ;pug_debug_line = 5;pug_debug_filename = "app\u002Fincludes\u002Fhead.pug";
-pug_html = pug_html + "\u003Clink rel=\"stylesheet\" href=\"\u002Fapp.css\"\u003E\n\u003Clink href=\"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=IBM+Plex+Sans:400,500,500i,600,600i\" rel=\"stylesheet\"\u003E\n\u003Clink href=\"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Merriweather:400,400i,700,700i\" rel=\"stylesheet\"\u003E\n\u003Clink rel=\"shortcut icon\" type=\"image\u002Fx-icon\" href=\"..\u002Fimages\u002Ffavicon.ico\"\u002F\u003E";
-;pug_debug_line = 12;pug_debug_filename = "app\u002Fincludes\u002Fhead.pug";
-pug_html = pug_html + "\u003Cscript src=\"\u002Fvendor.js\"\u003E\u003C\u002Fscript\u003E";
+pug_html = pug_html + "\u003Clink rel=\"stylesheet\" href=\"\u002Fapp.css\"\u003E\n\u003Clink href=\"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=IBM+Plex+Sans:400,500,500i,600,600i\" rel=\"stylesheet\"\u003E\n\u003Clink href=\"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Merriweather:400,400i,700,700i\" rel=\"stylesheet\"\u003E\n\u003Clink href=\"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=IBM+Plex+Serif:400,400i,500,500i\" rel=\"stylesheet\"\u003E\n\u003Clink rel=\"shortcut icon\" type=\"image\u002Fx-icon\" href=\"..\u002Fimages\u002Ffavicon.ico\"\u002F\u003E";
 ;pug_debug_line = 13;pug_debug_filename = "app\u002Fincludes\u002Fhead.pug";
+pug_html = pug_html + "\u003Cscript src=\"\u002Fvendor.js\"\u003E\u003C\u002Fscript\u003E";
+;pug_debug_line = 14;pug_debug_filename = "app\u002Fincludes\u002Fhead.pug";
 pug_html = pug_html + "\u003Cscript src=\"\u002Fapp.js\"\u003E\u003C\u002Fscript\u003E";
-;pug_debug_line = 15;pug_debug_filename = "app\u002Fincludes\u002Fhead.pug";
+;pug_debug_line = 16;pug_debug_filename = "app\u002Fincludes\u002Fhead.pug";
 pug_html = pug_html + "\u003Cscript require('initialize')\u003E\u003C\u002Fscript\u003E";} catch (err) {pug.rethrow(err, pug_debug_filename, pug_debug_line, pug_debug_sources[pug_debug_filename]);};return pug_html;};
 module.exports = template;
 });
