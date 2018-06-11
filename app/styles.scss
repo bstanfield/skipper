@@ -18,7 +18,7 @@ body {
 
 .nav-items {
   width: 80%;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: auto;
   height: 100%;
 }
@@ -80,13 +80,13 @@ body {
 .primary-container {
   width: 80%;
   margin: auto;
-  max-width: 1000px;
+  max-width: 1100px;
 }
 
   .primary-container-hero {
     width: 80%;
     margin: auto;
-    max-width: 1000px;
+    max-width: 1100px;
     padding-top: 85px;
   }
 
@@ -170,6 +170,13 @@ h4.hero {
 
   .article h4 {
     margin-bottom: 20px;
+  }
+
+  .research-txt{
+    max-width: 600px;
+    float:left;
+    margin-top: 40px;
+    margin-bottom: -40px;
   }
 
   .card-spacer {
@@ -308,6 +315,7 @@ h4.hero {
 .people > p {
   margin: 0px;
 }
+
 // COLOR SELECTION
 .background-blue {
   background-color: $skipper-blue;
@@ -488,4 +496,3 @@ h4.hero {
   max-width: 700px;
   margin: auto;
 }
-

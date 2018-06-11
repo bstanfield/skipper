@@ -11,9 +11,9 @@ exports.files = {
       order: {
         before: [
           'app/bootstrap.css',
-          'app/fonts.scss',
           'app/styles.scss',
-          'app/mq.scss'
+          'app/mq.scss',
+          'app/fonts.scss',
         ]
       }
   },
