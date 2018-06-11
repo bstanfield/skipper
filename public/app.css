@@ -1026,7 +1026,7 @@ h1, h2, h3, h4, p, a {
 
 p {
   font-family: "Merriweather", "IBM Plex Serif", serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 30px; }
 
 h1 {
@@ -1051,7 +1051,7 @@ h4 {
 a {
   color: #0e3266 !important;
   text-decoration: none !important;
-  font-size: 14px; }
+  font-size: 16px; }
 
 .bold {
   font-weight: 700; }
@@ -1066,7 +1066,7 @@ h1, h2, h3, h4, p, a {
 
 p {
   font-family: "Merriweather", "IBM Plex Serif", serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 30px; }
 
 h1 {
@@ -1091,7 +1091,7 @@ h4 {
 a {
   color: #0e3266 !important;
   text-decoration: none !important;
-  font-size: 14px; }
+  font-size: 16px; }
 
 .bold {
   font-weight: 700; }
@@ -1233,6 +1233,9 @@ body {
   border-radius: 5px;
   background-color: #507cf0;
   margin-bottom: 80px; }
+
+.hc-med {
+  height: 350px; }
 
 .hc-short {
   height: 300px; }
@@ -1384,6 +1387,11 @@ h4.hero {
   width: 200px;
   margin-right: 80px;
   margin-bottom: 40px; }
+
+.hero-image .privacy-img {
+  width: 200px;
+  margin-right: 80px;
+  margin-bottom: 90px; }
 
 .about-img {
   display: block;
