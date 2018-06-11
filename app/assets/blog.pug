@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  +herocard-small('Curated Content', 'We know it can be difficult to navigate the intersection of D&I   , people analytics, and HR management. We’ve compiled a few of our the best articles out there for you, along with some important definitions.', 'blog-header.png')
+
+  .primary-container.centered
+
+    +blogcards('https://www.recode.net/2017/4/18/15327848/workplace-culture-measurement-metrics-healthy-uber','recode.jpg', 'RECODE', 'Workplace culture should be measured', '',
+
+    'http://projectinclude.org/measuring_progress#repeat-surveys-regularly-at-the-right-intervals', 'project-include.png', 'Project Include', 'Recommendations and resources to measure progress', 'by Susan Fowler', 
+
+    'https://hbr.org/2017/09/the-case-for-investing-more-in-people', 'hbr-people.jpg', 'Harvard Business Review', 'The Case for Investing More in People', '')
+
+    +blogcards('https://www.kaporcenter.org/wp-content/uploads/2017/08/TechLeavers2017.pdf','kapor.png', 'Kapor Center for Social Impact', 'Tech Leavers Study: Why people voluntarily left jobs in tech', '',
+
+    'https://medium.com/smells-like-team-spirit/the-diversity-fatigue-is-real-atlassians-state-of-diversity-report-2018-2655d7eb5e2c', 'medium-atlassian.png', 'Medium', "Diversity Fatigue is Real: Atlassian's State of Diversity Report 2018", 'by Aubrey Blanche', 
+
+    'https://hbr.org/2015/12/proof-that-positive-work-cultures-are-more-productive', 'hbr-productivity.jpg', 'Harvard Business Review', 'Proof that Positive Work Cultures are More Productive', '')
+
+    +blogcards('https://www.webmd.com/balance/news/20041124/happy-workers-make-better-workers#1','webmd.jpg', 'WebMD', 'Happy Workers Make Better Workers', '',
+
+    'http://firstround.com/review/atlassian-boosted-its-female-technical-hires-by-80-percent-heres-how/', 'first-round-atlassian.png', 'First Round', "Atlassian Boosted Its Female Technical Hires By 80% — Here’s How", 'by Aubrey Blanche', 
+
+    'https://www.nytimes.com/2018/04/12/opinion/metoo-susan-fowler-forced-arbitration.html', 'nyt-uber.png', 'The New York Times', 'I Wrote the Uber Memo. This Is How to End Sexual Harassment.', 'by Susan Fowler')
