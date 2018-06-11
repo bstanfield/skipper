@@ -8,14 +8,14 @@ block content
         h4.hero.white Skipper is the easiest way to quantitatively measure unconscious bias and engagement in teams.
         a.hero-button(href='beta.html') Try Skipper
       .hero-image
-        img.flex(src='images/home-hero.png')
+        img.flex(src=imgpath + 'home-hero.png')
 
     .container.moat
       .row
         .col-md-4
           .card.centered
             .tape
-              img(src="images/home-yellowtape.png")
+              img(src=imgpath + 'home-yellowtape.png')
             h2 Features
             h4 Insights and recommendations are delivered with analytics.
             .card-icon
@@ -89,40 +89,26 @@ block content
             h1 Make sense of the numbers.
             h4 Get quick explanations about how we calculate the numbers and why they matter. 
 
-  .background-dark-blue.full-width-bg.centered
-    .primary-container 
-      h1.white Results that are anchored in research.
-      h4.white.narrow We’ve included some of the foundational papers informing our findings here. If you’re interested in a specific area of our tech, feel free to contact us for the research that we’ve developed it from.
+  .background-dark-blue.full-width-bg
+    .primary-container(style="max-width: 750px;")
+      h1(style='max-width: 600px; float:left; margin-top: 40px;').white Results, anchored in research.
+      h4(style='max-width: 600px; float:left; margin-bottom: -40px;').white.narrow We’ve included some of the foundational papers informing our findings here. If you’re interested in a specific area of our tech, feel free to contact us for the research that we’ve developed it from.
     img.full(src='images/home-research-header.png' style='margin-bottom: -10px;')
-  .background-sand.full-width-bg
+  .background-sand.full-width-bg  
     .primary-container
-      .card.article.card-spacer
-        .jank-tape
-          img(src="images/home-bluetape.png")
-        .card-content
-          h4.publisher Journal of Language and Social Psychology 
-          h4.bold.title The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods   
-          h4.author(style="opacity: .4") #[em by Yla R. Tausczik and James W. Pennebaker, December 2009]  
+      +article(
+      'Journal of Language and Social Psychology', 
+      'The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods', 
+      'Yla R. Tausczik and James W. Pennebaker', 
+      'This paper explains Linguistic Inquiry and Word Count, a text analysis program that counts words in psychologically meaningful categories. LIWC can detect attentional focus, emotionality, social relationships, thinking styles, and individual differences.'
+      )
 
-        h4.info This paper explains Linguistic Inquiry and Word Count, a text analysis program that counts words in psychologically meaningful categories. LIWC can detect attentional focus, emotionality, social relationships, thinking styles, and individual differences.
-
-      .card.article.card-spacer
-        .jank-tape
-          img(src="images/home-bluetape.png")
-        h4.publisher Journal of Language and Social Psychology 
-        h4.bold.title The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods   
-        h4.author(style="opacity: .4") #[em by Yla R. Tausczik and James W. Pennebaker, December 2009]  
-
-        h4.info This paper explains Linguistic Inquiry and Word Count, a text analysis program that counts words in psychologically meaningful categories. LIWC can detect attentional focus, emotionality, social relationships, thinking styles, and individual differences. 
-
-      .card.article.card-spacer
-        .jank-tape
-          img(src="images/home-bluetape.png")
-        h4.publisher Journal of Language and Social Psychology 
-        h4.bold.title The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods   
-        h4.author(style="opacity: .4") #[em by Yla R. Tausczik and James W. Pennebaker, December 2009]  
-
-        h4.info This paper explains Linguistic Inquiry and Word Count, a text analysis program that counts words in psychologically meaningful categories. LIWC can detect attentional focus, emotionality, social relationships, thinking styles, and individual differences.
+      +article(
+      'Journal of Language and Social Psychology', 
+      'The Psychological Meaning of Words: LIWC and Computerized Text Analysis Methods', 
+      'Yla R. Tausczik and James W. Pennebaker', 
+      'This paper explains Linguistic Inquiry and Word Count, a text analysis program that counts words in psychologically meaningful categories. LIWC can detect attentional focus, emotionality, social relationships, thinking styles, and individual differences.'
+      )   
 
   .primary-container
     .seller.centered
