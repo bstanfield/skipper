@@ -1,14 +1,15 @@
 //- INCLUDES > MIXINS
 
-mixin article(p, t, a, i)
+mixin article(url, p, t, a, i)
     .card.article.card-spacer
         .jank-tape
             img(src='images/home-bluetape.png')
-        .card-content
-            h4.publisher #{p}
-            h1.title #{t}
-            h4.author by #{a} 
-            h4.info #{i} 
+        a(href=url target="_blank")
+            .card-content
+                h4.publisher #{p}
+                h1.title #{t}
+                h4.author by #{a} 
+                h4.info #{i} 
 
 mixin herocard-small(main, blurb, img)
     .primary-container-hero

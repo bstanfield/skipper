@@ -1041,7 +1041,7 @@ h1 {
 h4 {
   margin-top: -10px;
   line-height: 30px;
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Merriweather", "IBM Plex Serif", serif;
   font-style: normal;
   font-weight: 400;
@@ -1081,7 +1081,7 @@ h1 {
 h4 {
   margin-top: -10px;
   line-height: 30px;
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Merriweather", "IBM Plex Serif", serif;
   font-style: normal;
   font-weight: 400;
@@ -1267,11 +1267,11 @@ h4.hero {
   padding: 10px 15px 10px 15px;
   border-radius: 3px;
   font-weight: 500;
-  font-size: 16px; }
+  font-size: 18px; }
 
 .hero-button {
   background-color: white;
-  font-size: 16px;
+  font-size: 18px;
   color: #507cf0;
   padding: 10px 15px 10px 15px;
   border-radius: 3px; }
@@ -1300,7 +1300,7 @@ h4.hero {
 .blogcard > p {
   text-transform: uppercase;
   font-family: "IBM Plex Sans", Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   text-align: left;
   padding-left: 30px;
   padding-right: 30px;
@@ -1370,6 +1370,11 @@ h4.hero {
 .medium {
   width: 100%;
   max-width: 400px;
+  margin: auto; }
+
+.small {
+  width: 100%;
+  max-width: 300px;
   margin: auto; }
 
 .tiny {
