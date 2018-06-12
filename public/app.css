@@ -1077,7 +1077,7 @@ a {
     width: 100%; }
   .hero-card {
     border-radius: 0px;
-    margin-top: 15px; }
+    margin-top: -25px; }
   .hero-image img {
     width: 500px; }
   .card {
@@ -1164,6 +1164,8 @@ a {
   .nav-menu {
     margin-top: -55px;
     float: none; }
+  .hero-card {
+    margin-top: 15px; }
   .nav-logo {
     display: inline-block; } }
 
@@ -1564,7 +1566,7 @@ h4.white {
     width: 100%; }
   .hero-card {
     border-radius: 0px;
-    margin-top: 15px; }
+    margin-top: -25px; }
   .hero-image img {
     width: 500px; }
   .card {
@@ -1651,6 +1653,8 @@ h4.white {
   .nav-menu {
     margin-top: -55px;
     float: none; }
+  .hero-card {
+    margin-top: 15px; }
   .nav-logo {
     display: inline-block; } }
 

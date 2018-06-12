@@ -7,7 +7,7 @@ $break-large: 1200px;
     }
         .hero-card {
             border-radius: 0px;
-            margin-top: 15px;
+            margin-top: -25px;
         }
 
         .hero-image img {
@@ -147,6 +147,10 @@ $break-large: 1200px;
         float: none;
         // display: none;
         // margin-left: 60px;
+    }
+
+    .hero-card {
+        margin-top: 15px;
     }
     
     // .nav-burger {
