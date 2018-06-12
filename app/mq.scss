@@ -7,7 +7,7 @@ $break-large: 1200px;
     }
         .hero-card {
             border-radius: 0px;
-            margin-top: -25px;
+            margin-top: 15px;
         }
 
         .hero-image img {
@@ -20,6 +20,19 @@ $break-large: 1200px;
 
     .float-left {
         float: none;
+    }
+
+    .col-md-4 {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    
+    .row {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .card {
+        width: 90%;
     }
 }
 
@@ -100,6 +113,9 @@ $break-large: 1200px;
         display: block;
         margin: auto;
     }
+
+
+    
 }
 
 @media screen and (max-width: 650px) {
@@ -112,45 +128,43 @@ $break-large: 1200px;
         padding-bottom: 150px;
     }
 
+    .navbar{
+        height: 100px;
+    }
+
     .nav-items {
         text-align: center;
     }
+
+    .nav-link{
+        padding: 0px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
     
     .nav-menu {
+        margin-top: -55px;
         float: none;
-        display: none;
-        margin-left: -30px;
+        // display: none;
+        // margin-left: 60px;
     }
-
-    .nav-burger {
-        padding-top: 18px;
-        width: 30px;
-        float: left;
-        display: block;
-    }
+    
+    // .nav-burger {
+    //     padding-top: 18px;
+    //     width: 30px;
+    //     float: left;
+    //     display: block;
+    // }
 
     .nav-logo {
         display: inline-block;
     }
 
-    .card {
-        width: 90%;
-    }
 }
 
 //MOBILE QUERIES
 @media screen and (max-width: 415px) {
 
-    .col-md-4 {
-        padding-right: 0px;
-        padding-left: 0px;
-    }
-    
-    .row {
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-    
     .small {
         width: 100%;
         max-width: 220px;
