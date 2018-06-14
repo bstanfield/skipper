@@ -32,7 +32,7 @@
   <h4 class="hero">If you have any questions about the beta, get in touch with us at support@skipper.ai</h4>
   <!--register form-->
   <div class="form-wrapper">
-    <form method="POST" action="/register">
+    <form id="myForm" action="" type="">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
@@ -60,12 +60,27 @@
           <div class="row">
             <div class="col-md-12">
               <div class="form-group">
-                <input class="input-box" type="text" placeholder="Why are you interested in Skipper's beta?" name="info">
+                <input class="input-box" id="beta_why" type="text" placeholder="Why are you interested in Skipper's beta?" name="info">
               </div>
             </div>
           </div>
         </div>
-      </div><br><br><a class="button" href="signup.html">Join Beta</a>
+      </div><br><br>
+      <input class="button" id="email_submit" type="submit" value="Join Beta">
+      <script>
+        var $ = require('jquery');
+        $('#myForm').submit(function(e){
+          e.preventDefault();
+          $.ajax({
+              url:'https://hooks.zapier.com/hooks/catch/1707140/msf6zi/',
+              type:'post',
+              data:$('#myForm').serialize(),
+              success:function(){
+                window.location = "http://google.com";
+              }
+          });
+        });
+      </script>
     </form>
   </div>
 </div>

@@ -15,7 +15,7 @@ block content
 
     //register form
     .form-wrapper
-      form(method='POST' action='/register')
+      form#myForm(action="" type="")
         .container
           .row
             .col-md-6
@@ -36,7 +36,21 @@ block content
             .row
               .col-md-12
                 .form-group
-                  input.input-box(type='text' placeholder="Why are you interested in Skipper's beta?" name='info')
+                  input#beta_why.input-box(type='text' placeholder="Why are you interested in Skipper's beta?" name='info')
         br
         br
-        a.button(href='signup.html') Join Beta
+        input#email_submit.button(type="submit" value="Join Beta")
+
+        script.
+          var $ = require('jquery');
+          $('#myForm').submit(function(e){
+            e.preventDefault();
+            $.ajax({
+                url:'https://hooks.zapier.com/hooks/catch/1707140/msf6zi/',
+                type:'post',
+                data:$('#myForm').serialize(),
+                success:function(){
+                  window.location = "http://google.com";
+                }
+            });
+          });
