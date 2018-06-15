@@ -185,10 +185,28 @@
         </div>
         <div class="col-md-6">
           <h4>Subscribe for updates</h4>
-          <div class="form-group">
-            <input class="input-box" type="text" placeholder="Email address" name="email">
-          </div>
+          <form id="emailForm" action="" type="">
+            <div class="form-group">
+              <input class="input-box" type="text" placeholder="Email address" name="email">
+            </div>
+            <input class="button" id="email_submit" type="submit" value="Sign up">
+          </form>
         </div>
+        <script>
+          var $ = require('jquery');
+          $('#emailForm').submit(function(e){
+            e.preventDefault();
+            $.ajax({
+                url:'https://hooks.zapier.com/hooks/catch/2137285/wo0as1/',
+                type:'post',
+                data:$('#emailForm').serialize(),
+                success:function(){
+                  window.location = "http://google.com";
+                }
+            });
+          });
+          
+        </script>
       </div>
     </div>
     <div class="container"><img class="tiny closer" src="images/skipper-icon.png"></div>

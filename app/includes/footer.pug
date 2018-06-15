@@ -14,8 +14,25 @@
           br
         .col-md-6
           h4 Subscribe for updates
-          .form-group
-                  input.input-box(type='text', placeholder='Email address' name='email')
+          form#emailForm(action="" type="")
+            .form-group
+                    input.input-box(type='text', placeholder='Email address' name='email')
+            
+            input#email_submit.button(type="submit" value="Sign up")
+
+        script.
+          var $ = require('jquery');
+          $('#emailForm').submit(function(e){
+            e.preventDefault();
+            $.ajax({
+                url:'https://hooks.zapier.com/hooks/catch/2137285/wo0as1/',
+                type:'post',
+                data:$('#emailForm').serialize(),
+                success:function(){
+                  window.location = "http://google.com";
+                }
+            });
+          });
 
     .container
       img.tiny.closer(src=imgpath + "skipper-icon.png")
