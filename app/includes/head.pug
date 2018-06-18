@@ -1,7 +1,18 @@
 head
   meta(charset="utf-8")
   meta(name="viewport" content="width=device-width")
+
+  //- Google Analytics
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121010767-1"></script>
   
+  script.
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-121010767-1');
+
   //- OpenGraph Properties
   meta(property="og:type" content="website")
   meta(property="og:url" content="http://www.skipper.ai")
