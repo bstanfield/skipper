@@ -129,6 +129,15 @@ h4.hero {
   margin-bottom: 40px;
 }
 
+h1.bigger {
+  font-size: 45px;
+}
+
+.bigger {
+  font-size: 1.5em;
+  line-height: 2em;
+}
+
 .hero-image img {
   position: absolute;
   width: 500px;
@@ -331,29 +340,37 @@ h4.hero {
   background-color: #edda7f;
 }
 
-  .full-width-bg {
-    width: 100%;
-    height: 100%;
-    padding: 50px 0px 100px 0px;
-    margin: 50px 0px 80px 0px;
-  }
+.full-width-bg {
+  width: 100%;
+  height: 100%;
+  padding: 50px 0px 100px 0px;
+  margin: 50px 0px 80px 0px;
+}
 
-  .child-width {
-    width: auto;
-    border-radius: 5px;
-  }
+.child-width {
+  width: auto;
+  border-radius: 5px;
+}
 
 .white {
   color: white;
 }
 
-  h4.white {
-    opacity: .9 !important;
-  }
+h4.white {
+  opacity: .9 !important;
+}
 
 .seller {
   margin-top: 100px;
   margin-bottom: 50px;
+}
+
+.no-bottom-margin {
+  margin-bottom: 0;
+}
+
+.no-top-margin {
+  margin-top: 0;
 }
 
 // FEATURE SECTION
@@ -421,7 +438,7 @@ h4.hero {
 
 
 .footer {
-  margin-top: 150px;
+  margin-top: 0;
   width: 100%;
   background-color: white;
   padding-top: 100px;
@@ -496,3 +513,4 @@ h4.hero {
   max-width: 700px;
   margin: auto;
 }
+

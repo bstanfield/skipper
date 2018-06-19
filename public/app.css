@@ -1270,6 +1270,13 @@ h1.hero {
 h4.hero {
   margin-bottom: 40px; }
 
+h1.bigger {
+  font-size: 45px; }
+
+.bigger {
+  font-size: 1.5em;
+  line-height: 2em; }
+
 .hero-image img {
   position: absolute;
   width: 500px;
@@ -1455,6 +1462,12 @@ h4.white {
   margin-top: 100px;
   margin-bottom: 50px; }
 
+.no-bottom-margin {
+  margin-bottom: 0; }
+
+.no-top-margin {
+  margin-top: 0; }
+
 .feature-text {
   width: 100%;
   text-align: center;
@@ -1503,7 +1516,7 @@ h4.white {
   margin-top: -12px; }
 
 .footer {
-  margin-top: 150px;
+  margin-top: 0;
   width: 100%;
   background-color: white;
   padding-top: 100px;
