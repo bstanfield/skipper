@@ -6,15 +6,17 @@ block content
     $(document).scroll(function() {
     var y = $(this).scrollTop();
     if (y > 100) {
+      $('#prim').fadeIn();
       $('#one').fadeIn();
       $('#two').fadeIn();
       $('#three').fadeIn();
       $('#four').fadeIn();
     } else {
+      $('#prim').fadeOut();
       $('#one').fadeOut();
-      $('#two').fadeOut().delay(50);
-      $('#three').fadeOut().delay(100);
-      $('#four').fadeOut().delay(150);
+      $('#two').fadeOut().delay(100);
+      $('#three').fadeOut().delay(200);
+      $('#four').fadeOut().delay(300);
     }
     });
   .primary-container-hero
@@ -26,8 +28,7 @@ block content
       .hero-image
         img.flex(src=imgpath + 'home-hero.png')
         
-  .full-width-bg.centered
-    .primary-container
+    .primary-container.centered
       h1.hero Make data driven decisions about culture.
       h4 People managers use Skipper's initiative dashboard in instances like: estimating the impact of office lunches on well being and productivity or deciding which benefits package has the best return on investment.
 
@@ -39,7 +40,7 @@ block content
       .container
         .row.show
           .col-md-9
-            img.large.shadow(src=imgpath + "home-demo.png")
+            img.large.shadow#prim(src=imgpath + "home-demo.png")
           .col-md-3
             .card.child.shadow#one
               h1 Customized goals
@@ -80,13 +81,19 @@ block content
 
   .primary-container
     .seller.centered
-      .row.moat
+      .row
+
+        .col-md-6.hide
+          img.medium(src=imgpath + "home-features-3.png")
+        br
+        br
+
         .col-md-6
           br
           h1.hero How it works
           h4 Skipper pulls data from platforms like Slack, Asana, Salesforce, GitHub, and more to track engagement. To get even more detailed insights, Skipper lets you easily send out pulse surveys to specific groups of employees who you want to hear from.
           
-        .col-md-6
+        .col-md-6.moat.show
           img.medium(src=imgpath + "home-features-3.png")
       br
 
