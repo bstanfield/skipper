@@ -46,11 +46,11 @@ block content
           $('#myForm').submit(function(e){
             e.preventDefault();
             $.ajax({
-                url:'https://hooks.zapier.com/hooks/catch/1707140/msf6zi/',
+                url:'https://hooks.zapier.com/hooks/catch/2137285/aj4k86/',
                 type:'post',
                 data:$('#myForm').serialize(),
                 success:function(){
-                  window.location = "http://google.com";
+                  window.location = "/success.html";
                 }
             });
           });

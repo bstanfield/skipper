@@ -11,7 +11,9 @@
   },
   "dependencies": {
     "jquery": "^3.3.1",
-    "pug": "^2.0.3"
+    "pug": "^2.0.3",
+    "ngrok": "^3.0.1",
+    "scrollmagic": "^2.0.5"
   },
   "devDependencies": {
     "auto-reload-brunch": "^2",

@@ -1,14 +1,51 @@
 <!DOCTYPE html>
-<head></head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
-<title>Skipper</title><link rel="stylesheet" href="/app.css">
-<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,500i,600,600i" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,400i,500,500i" rel="stylesheet">
-<link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico"/>
-<script src="/vendor.js"></script>
-<script src="/app.js"></script>
-<script require('initialize')></script>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width"><script async src="https://www.googletagmanager.com/gtag/js?id=UA-121010767-1"></script>
+  <script>
+    window.__lc = window.__lc || {};
+    window.__lc.license = 9867750;
+    (function() {
+      var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+      lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+    })();
+    
+  </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-121010767-1');
+    
+  </script>
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://www.skipper.ai">
+  <meta property="og:site_name" content="Skipper.ai">
+  <meta property="og:title" content="Skipper | Navigate and improve inclusion in your workplace">
+  <meta property="og:description" content="Skipper shows you how employee-development initiatives and benefits impact your team's productivity and well-being.">
+  <meta property="og:image" content="https://imgur.com/a/xVHYYqF"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:domain" value="skipper.ai" />
+<meta name="twitter:title" value="Skipper" />
+<meta name="twitter:description" value="Skipper shows you which benefits, L&amp;D initiatives, and company culture decisions have the biggest impact on engagement and productivity so you can build the most effective culture possible." />
+<meta name="twitter:image" content="https://imgur.com/a/xVHYYqF" />
+<meta name="twitter:url" value="http://www.skipper.ai/" />
+<meta name="twitter:label1" value="Sign up for beta" />
+<meta name="twitter:data1" value="at skipper.ai/beta.html" />
+<meta name="twitter:label2" value="Find culture resources" />
+<meta name="twitter:data2" value="at skipper.ai/blog.html" />
+  <title>Skipper</title>
+  <link rel="stylesheet" href="/app.css">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,500i,600,600i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,400i,500,500i" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+  <script src="/vendor.js"></script>
+  <script src="/app.js"></script>
+  <script require('initialize')></script>
+</head>
 <body></body>
 <!-- loads navigation bar for each page-->
 <div class="navbar">
@@ -27,6 +64,7 @@
     <div class="hero-image"><img class="flex" src="images/home-hero.png"></div>
   </div>
 </div>
+<<<<<<< HEAD
 <div class="background-dark-blue full-width-bg">
   <div class="primary-container" id="features">
     <div class="container">
@@ -36,6 +74,22 @@
           <div class="feature-text">
             <h1 class="white">See how management decisions, policy changes, and benefits affect employee engagement.</h1>
           </div>
+=======
+<div class="background-blue full-width-bg centered">
+  <div class="primary-container">
+    <h1 class="hero white">Make data driven decisions about culture.</h1>
+    <h4 class="white">People managers use Skipper's initiative dashboard in instances like: estimating the impact of office lunches on well being and productivity or deciding which benefits package has the best return on investment.</h4><img class="large" id="sticky" src="images/home-demo.png">
+  </div>
+</div>
+<div class="primary-container" id="features">
+  <div class="container">
+    <div class="row moat">
+      <div class="centered child-width display-hide"><img class="medium" src="images/home-features-1.png"></div>
+      <div class="col-md-6">
+        <div class="feature-text">
+          <h1>Measure what matters.</h1>
+          <h4>Skipper lets you see how less tangible people decisions (i.e. office lunch programs) affect the bottom line.</h4>
+>>>>>>> 0fff8412ccc425a63867211c669f07b6278c2758
         </div>
         <div class="col-md-6">
           <div class="centered child-width float-right"><img class="medium" src="images/home-features-1.png"></div>
@@ -144,10 +198,28 @@
         </div>
         <div class="col-md-6">
           <h4>Subscribe for updates</h4>
-          <div class="form-group">
-            <input class="input-box" type="text" placeholder="Email address" name="email">
-          </div>
+          <form id="emailForm" action="" type="">
+            <div class="form-group">
+              <input class="input-box" type="text" placeholder="Email address" name="email">
+            </div>
+            <input class="button" id="email_submit" type="submit" value="Sign up">
+          </form>
         </div>
+        <script>
+          var $ = require('jquery');
+          $('#emailForm').submit(function(e){
+            e.preventDefault();
+            $.ajax({
+                url:'https://hooks.zapier.com/hooks/catch/2137285/wo0as1/',
+                type:'post',
+                data:$('#emailForm').serialize(),
+                success:function(){
+                  window.location = "/success.html";
+                }
+            });
+          });
+          
+        </script>
       </div>
     </div>
     <div class="container"><img class="tiny closer" src="images/skipper-icon.png"></div>

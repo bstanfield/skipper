@@ -1,15 +1,59 @@
 head
-<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  title Skipper
-  <link rel="stylesheet" href="/app.css">
-  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,500i,600,600i" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,400i,500,500i" rel="stylesheet">
-  
-  <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico"/>
+  meta(charset="utf-8")
+  meta(name="viewport" content="width=device-width")
 
+  //- Google Analytics
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121010767-1"></script>
+
+  //- LiveChat (Free Trial)
+  script.
+    window.__lc = window.__lc || {};
+    window.__lc.license = 9867750;
+    (function() {
+      var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+      lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+    })();
+  
+  script.
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-121010767-1');
+
+  //- OpenGraph Properties
+  meta(property="og:type" content="website")
+  meta(property="og:url" content="http://www.skipper.ai")
+  meta(property="og:site_name" content="Skipper.ai")
+  meta(property="og:title" content="Skipper | Navigate and improve inclusion in your workplace")
+  meta(property="og:description" content="Skipper shows you how employee-development initiatives and benefits impact your team's productivity and well-being.")
+  meta(property="og:image" content="https://imgur.com/a/xVHYYqF")
+  
+  //- Twitter Card
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:domain" value="skipper.ai" />
+  <meta name="twitter:title" value="Skipper" />
+  <meta name="twitter:description" value="Skipper shows you which benefits, L&amp;D initiatives, and company culture decisions have the biggest impact on engagement and productivity so you can build the most effective culture possible." />
+  <meta name="twitter:image" content="https://imgur.com/a/xVHYYqF" />
+  <meta name="twitter:url" value="http://www.skipper.ai/" />
+  <meta name="twitter:label1" value="Sign up for beta" />
+  <meta name="twitter:data1" value="at skipper.ai/beta.html" />
+  <meta name="twitter:label2" value="Find culture resources" />
+  <meta name="twitter:data2" value="at skipper.ai/blog.html" />
+  title Skipper
+  
+  //- CSS Compile & Google Fonts
+  link(rel="stylesheet" href="/app.css")
+  link(href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,500i,600,600i" rel="stylesheet")
+  link(href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i" rel="stylesheet")
+  link(href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,400i,500,500i" rel="stylesheet")
+  
+  //- Favicon
+  link(rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico")
+
+  //- Compiled Scripts
   script(src="/vendor.js")
   script(src="/app.js")
-
   script(require('initialize'))
