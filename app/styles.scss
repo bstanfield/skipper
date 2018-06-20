@@ -129,15 +129,6 @@ h4.hero {
   margin-bottom: 40px;
 }
 
-h1.bigger {
-  font-size: 45px;
-}
-
-.bigger {
-  font-size: 1.5em;
-  line-height: 2em;
-}
-
 .hero-image img {
   position: absolute;
   width: 500px;
@@ -172,6 +163,27 @@ h1.bigger {
   max-width: 750px;
   margin: auto;
 }
+
+.hide {
+  display: hidden;
+}
+
+  .child {
+    padding: 15px 15px 20px 20px;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+    .child > h1 {
+      font-size: 18px;
+      margin-bottom: 0px;
+      line-height: 25px;
+    }
+
+    .child > h4 {
+      font-size: 13px;
+      line-height: 25px;
+    }
 
   .article {
     padding: 40px 30px 10px 30px; 
@@ -237,6 +249,10 @@ h1.bigger {
   margin-bottom: -80px;
 }
 
+.fullmoat {
+  padding-top: 80px;
+}
+
 .moat {
   margin-bottom: 100px;
 }
@@ -277,10 +293,14 @@ h1.bigger {
 
 .large {
   width: 100%;
-  max-width: 800px;
   margin: auto;
-  margin-top: 30px;
 }
+
+  .shadow {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 20px, rgb(245, 245, 245) 0px -1px 0px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; 
+  }
 
 .medium {
   width: 100%;
@@ -361,8 +381,8 @@ h4.white {
 }
 
 .seller {
-  margin-top: 100px;
-  margin-bottom: 50px;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 
 .no-bottom-margin {

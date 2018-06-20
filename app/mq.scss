@@ -31,8 +31,27 @@ $break-large: 1200px;
         margin-left: 0px;
         margin-right: 0px;
     }
+
     .card {
         width: 90%;
+    }
+
+    .show {
+        display: none !important;
+    }
+
+    .hide {
+        display: block !important;
+    }
+
+    .large {
+        margin-bottom: 40px;
+    }
+
+    .child.card {
+        width: 100%;
+        margin-bottom: 35px;
+        min-height: 150px;
     }
 }
 

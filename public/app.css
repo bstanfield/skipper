@@ -1040,18 +1040,19 @@ h1 {
 
 h2 {
   font-family: "IBM Plex Sans", Helvetica, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700; }
 
 h4 {
   margin-top: -10px;
   line-height: 30px;
-  font-size: 18px;
+  font-size: 16px;
   font-family: "Merriweather", "IBM Plex Serif", serif;
   font-style: normal;
   font-weight: 400;
   max-width: 800px;
-  margin: auto; }
+  margin: auto;
+  color: #333333; }
 
 a {
   color: #0e3266 !important;
@@ -1092,7 +1093,17 @@ a {
     margin-left: 0px;
     margin-right: 0px; }
   .card {
-    width: 90%; } }
+    width: 90%; }
+  .show {
+    display: none !important; }
+  .hide {
+    display: block !important; }
+  .large {
+    margin-bottom: 40px; }
+  .child.card {
+    width: 100%;
+    margin-bottom: 35px;
+    min-height: 150px; } }
 
 @media screen and (max-width: 1000px) {
   .display-hide {
@@ -1270,13 +1281,6 @@ h1.hero {
 h4.hero {
   margin-bottom: 40px; }
 
-h1.bigger {
-  font-size: 45px; }
-
-.bigger {
-  font-size: 1.5em;
-  line-height: 2em; }
-
 .hero-image img {
   position: absolute;
   width: 500px;
@@ -1290,11 +1294,11 @@ h1.bigger {
   padding: 10px 15px 10px 15px;
   border-radius: 3px;
   font-weight: 500;
-  font-size: 18px; }
+  font-size: 16px; }
 
 .hero-button {
   background-color: white;
-  font-size: 18px;
+  font-size: 16px;
   color: #507cf0;
   padding: 10px 15px 10px 15px;
   border-radius: 3px; }
@@ -1306,6 +1310,23 @@ h1.bigger {
   border-radius: 5px;
   max-width: 750px;
   margin: auto; }
+
+.hide {
+  display: hidden; }
+
+.child {
+  padding: 15px 15px 20px 20px;
+  text-align: left;
+  margin-bottom: 20px; }
+
+.child > h1 {
+  font-size: 18px;
+  margin-bottom: 0px;
+  line-height: 25px; }
+
+.child > h4 {
+  font-size: 13px;
+  line-height: 25px; }
 
 .article {
   padding: 40px 30px 10px 30px; }
@@ -1329,7 +1350,7 @@ h1.bigger {
 .blogcard > p {
   text-transform: uppercase;
   font-family: "IBM Plex Sans", Helvetica, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   text-align: left;
   padding-left: 30px;
   padding-right: 30px;
@@ -1359,6 +1380,9 @@ h1.bigger {
   max-height: 150px;
   margin-top: 20px;
   margin-bottom: -80px; }
+
+.fullmoat {
+  padding-top: 80px; }
 
 .moat {
   margin-bottom: 100px; }
@@ -1392,9 +1416,12 @@ h1.bigger {
 
 .large {
   width: 100%;
-  max-width: 800px;
-  margin: auto;
-  margin-top: 30px; }
+  margin: auto; }
+
+.shadow {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 20px, whitesmoke 0px -1px 0px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px; }
 
 .medium {
   width: 100%;
@@ -1459,8 +1486,8 @@ h4.white {
   opacity: .9 !important; }
 
 .seller {
-  margin-top: 100px;
-  margin-bottom: 50px; }
+  margin-top: 50px;
+  margin-bottom: 20px; }
 
 .no-bottom-margin {
   margin-bottom: 0; }
@@ -1594,7 +1621,17 @@ h4.white {
     margin-left: 0px;
     margin-right: 0px; }
   .card {
-    width: 90%; } }
+    width: 90%; }
+  .show {
+    display: none !important; }
+  .hide {
+    display: block !important; }
+  .large {
+    margin-bottom: 40px; }
+  .child.card {
+    width: 100%;
+    margin-bottom: 35px;
+    min-height: 150px; } }
 
 @media screen and (max-width: 1000px) {
   .display-hide {
@@ -1708,18 +1745,19 @@ h1 {
 
 h2 {
   font-family: "IBM Plex Sans", Helvetica, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700; }
 
 h4 {
   margin-top: -10px;
   line-height: 30px;
-  font-size: 18px;
+  font-size: 16px;
   font-family: "Merriweather", "IBM Plex Serif", serif;
   font-style: normal;
   font-weight: 400;
   max-width: 800px;
-  margin: auto; }
+  margin: auto;
+  color: #333333; }
 
 a {
   color: #0e3266 !important;
