@@ -1,6 +1,22 @@
 extends layout
 
 block content
+  script.
+    var $ = require('jquery');
+    $(document).scroll(function() {
+    var y = $(this).scrollTop();
+    if (y > 100) {
+      $('#one').fadeIn();
+      $('#two').fadeIn();
+      $('#three').fadeIn();
+      $('#four').fadeIn();
+    } else {
+      $('#one').fadeOut();
+      $('#two').fadeOut().delay(50);
+      $('#three').fadeOut().delay(100);
+      $('#four').fadeOut().delay(150);
+    }
+    });
   .primary-container-hero
     .hero-card
       .hero-text
@@ -25,19 +41,19 @@ block content
           .col-md-9
             img.large.shadow(src=imgpath + "home-demo.png")
           .col-md-3
-            .card.child.shadow
+            .card.child.shadow#one
               h1 Customized goals
               h4 Set goals for new HR and people operations initiatives so you can measure how effective they are in your own terms.
 
-            .card.child.shadow
+            .card.child.shadow#two
               h1 Straight to PowerPoint
               h4 Generate reports automatically so the executive team can get a pulse on how employees are doing as often as they like.
 
-            .card.child.shadow
+            .card.child.shadow#three
               h1 Measure Success
               h4 See how management decisions, policy changes, and benefits affect employee engagement.
 
-            .card.child.shadow
+            .card.child.shadow#four
               h1 Actionable Advice
               h4 Learn which groups within your company are disengaging, and see advice on how to re-engage them.
 

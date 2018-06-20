@@ -1073,14 +1073,17 @@ a {
   h2 {
     font-size: 20px; } }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1230px) {
   .primary-container-hero {
-    width: 100%; }
+    width: 100%;
+    max-width: 1300px; }
   .hero-card {
     border-radius: 0px;
     margin-top: -25px; }
   .hero-image img {
-    width: 500px; }
+    width: 430px; } }
+
+@media screen and (max-width: 1100px) {
   .card {
     margin-bottom: 100px;
     max-width: 450px; }
@@ -1601,14 +1604,17 @@ h4.white {
   max-width: 700px;
   margin: auto; }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1230px) {
   .primary-container-hero {
-    width: 100%; }
+    width: 100%;
+    max-width: 1300px; }
   .hero-card {
     border-radius: 0px;
     margin-top: -25px; }
   .hero-image img {
-    width: 500px; }
+    width: 430px; } }
+
+@media screen and (max-width: 1100px) {
   .card {
     margin-bottom: 100px;
     max-width: 450px; }

@@ -371,7 +371,7 @@ module.exports = template;
 });
 
 ;require.register("includes/nav.pug", function(exports, require, module) {
-function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;var pug_debug_filename, pug_debug_line;try {var pug_debug_sources = {"app\u002Fincludes\u002Fnav.pug":"\u002F\u002F- - function openNav()\n\u002F\u002F-     document.getElementById('open').style.display = 'none'\n\u002F\u002F-     document.getElementById('nav').style.width = '100%'\n\n\u002F\u002F- .nav#nav\n\u002F\u002F-     a(href=\"javascript:void(0)\" class=\"close\" onclick=\"closeNav()\") &times;\n\u002F\u002F-     a(href=\"#\") Home\n\u002F\u002F-     a(href=\"#\") Research\n\u002F\u002F-     a(href=\"#\") About Us\n\u002F\u002F-     a(href=\"#\") Join Beta\n.navbar\n    .nav-items\n        .nav-burger\n            span.open(id=\"open\" onclick=\"openNav()\") &#9776\n        a.nav-logo(href='\u002F')\n            img.medium(src='images\u002Fskipper-logo.png')\n        .nav-menu\n            \u002F\u002F- a.nav-link(href=\"index.html\") Home\n            a.nav-link(href='about.html') About Us\n            a.nav-link(href='blog.html') Blog\n            a.nav-link.beta-link(href='beta.html') Join Beta"};
+function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;var pug_debug_filename, pug_debug_line;try {var pug_debug_sources = {"app\u002Fincludes\u002Fnav.pug":"\u002F\u002F- - function openNav()\n\u002F\u002F-     document.getElementById('open').style.display = 'none'\n\u002F\u002F-     document.getElementById('nav').style.width = '100%'\n\n\u002F\u002F- .nav#nav\n\u002F\u002F-     a(href=\"javascript:void(0)\" class=\"close\" onclick=\"closeNav()\") &times;\n\u002F\u002F-     a(href=\"#\") Home\n\u002F\u002F-     a(href=\"#\") Research\n\u002F\u002F-     a(href=\"#\") About Us\n\u002F\u002F-     a(href=\"#\") Join Beta\n.navbar\n    .nav-items\n        .nav-burger\n            span.open(id=\"open\" onclick=\"openNav()\") &#9776\n        a.nav-logo(href='\u002F')\n            img.medium(src='images\u002Fskipper-logo.png')\n        .nav-menu\n            \u002F\u002F- a.nav-link(href=\"index.html\") Home\n            a.nav-link(href='about.html') About Us\n            a.nav-link(href='blog.html') Blog\n            a.nav-link.beta-link(href='demo.html') Request A Demo"};
 ;pug_debug_line = 11;pug_debug_filename = "app\u002Fincludes\u002Fnav.pug";
 pug_html = pug_html + "\u003Cdiv class=\"navbar\"\u003E";
 ;pug_debug_line = 12;pug_debug_filename = "app\u002Fincludes\u002Fnav.pug";
@@ -397,9 +397,9 @@ pug_html = pug_html + "\u003Ca class=\"nav-link\" href=\"blog.html\"\u003E";
 ;pug_debug_line = 20;pug_debug_filename = "app\u002Fincludes\u002Fnav.pug";
 pug_html = pug_html + "Blog\u003C\u002Fa\u003E";
 ;pug_debug_line = 21;pug_debug_filename = "app\u002Fincludes\u002Fnav.pug";
-pug_html = pug_html + "\u003Ca class=\"nav-link beta-link\" href=\"beta.html\"\u003E";
+pug_html = pug_html + "\u003Ca class=\"nav-link beta-link\" href=\"demo.html\"\u003E";
 ;pug_debug_line = 21;pug_debug_filename = "app\u002Fincludes\u002Fnav.pug";
-pug_html = pug_html + "Join Beta\u003C\u002Fa\u003E\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";} catch (err) {pug.rethrow(err, pug_debug_filename, pug_debug_line, pug_debug_sources[pug_debug_filename]);};return pug_html;};
+pug_html = pug_html + "Request A Demo\u003C\u002Fa\u003E\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";} catch (err) {pug.rethrow(err, pug_debug_filename, pug_debug_line, pug_debug_sources[pug_debug_filename]);};return pug_html;};
 module.exports = template;
 });
 
