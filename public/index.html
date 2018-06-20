@@ -67,12 +67,12 @@
     $('#four').fadeIn();
   } else {
     $('#prim').fadeOut();
-    $('#one').fadeOut();
-    $('#two').fadeOut().delay(100);
-    $('#three').fadeOut().delay(200);
-    $('#four').fadeOut().delay(300);
+    $('#one').fadeOut().delay(200);
+    $('#two').fadeOut().delay(300);
+    $('#three').fadeOut().delay(400);
   }
   });
+  
 </script>
 <div class="primary-container-hero">
   <div class="hero-card">
@@ -85,7 +85,7 @@
   <div class="primary-container centered">
     <h1 class="hero">Make data driven decisions about culture.</h1>
     <h4>People managers use Skipper's initiative dashboard in instances like: estimating the impact of office lunches on well being and productivity or deciding which benefits package has the best return on investment.</h4><br><br><br><br>
-    <div class="container">
+    <div class="container moat">
       <div class="row show">
         <div class="col-md-9"><img class="large shadow" id="prim" src="images/home-demo.png"></div>
         <div class="col-md-3">
@@ -94,14 +94,10 @@
             <h4>Set goals for new HR and people operations initiatives so you can measure how effective they are in your own terms.</h4>
           </div>
           <div class="card child shadow" id="two">
-            <h1>Straight to PowerPoint</h1>
-            <h4>Generate reports automatically so the executive team can get a pulse on how employees are doing as often as they like.</h4>
-          </div>
-          <div class="card child shadow" id="three">
             <h1>Measure Success</h1>
             <h4>See how management decisions, policy changes, and benefits affect employee engagement.</h4>
           </div>
-          <div class="card child shadow" id="four">
+          <div class="card child shadow" id="three">
             <h1>Actionable Advice</h1>
             <h4>Learn which groups within your company are disengaging, and see advice on how to re-engage them.</h4>
           </div>
@@ -138,17 +134,15 @@
     </div>
   </div>
 </div>
-<div class="primary-container">
-  <div class="seller centered">
-    <div class="row">
-      <div class="col-md-6 hide"><img class="medium" src="images/home-features-3.png"></div><br><br>
-      <div class="col-md-6"><br>
-        <h1 class="hero">How it works</h1>
-        <h4>Skipper pulls data from platforms like Slack, Asana, Salesforce, GitHub, and more to track engagement. To get even more detailed insights, Skipper lets you easily send out pulse surveys to specific groups of employees who you want to hear from.</h4>
-      </div>
-      <div class="col-md-6 moat show"><img class="medium" src="images/home-features-3.png"></div>
-    </div><br>
-  </div>
+<div class="primary-container centered">
+  <div class="row">
+    <div class="col-md-6 hide"><img class="medium" src="images/home-features-3.png"></div><br><br>
+    <div class="col-md-6"><br>
+      <h1 class="hero">How it works</h1>
+      <h4>Skipper pulls data from platforms like Slack, Asana, Salesforce, GitHub, and more to track engagement. To get even more detailed insights, Skipper lets you easily send out pulse surveys to specific groups of employees who you want to hear from.</h4>
+    </div>
+    <div class="col-md-6 moat show"><img class="medium" id="hiw" src="images/home-features-3.png"></div>
+  </div><br>
 </div>
 <div class="background-blue full-width-bg no-bottom-margin" id="getstarted">
   <div class="primary-container">
@@ -158,14 +152,14 @@
     </div>
   </div>
 </div>
-<div class="background-dark-blue full-width-bg no-top-margin" id="research">
+<div class="background-dark-blue full-width-bg no-top-margin">
   <div class="primary-container" style="max-width: 750px;">
     <h1 class="research-txt white">Results, anchored in research.</h1>
     <h4 class="research-txt white narrow">Our product builds on years of research done at world class institutions like Stanford, USC, Google, and more. We’ve included some of the foundational papers informing our findings below.</h4>
   </div><img class="full" src="images/home-research-header.png" style="margin-bottom: -10px;">
 </div>
-<div class="background-sand full-width-bg no-bottom-margin">
-  <div class="primary-container">
+<div class="background-sand full-width-bg no-bottom-margin" id="blanket">
+  <div class="primary-container" id="fader">
     <div class="card article card-spacer">
       <div class="jank-tape"><img src="images/home-bluetape.png"></div><a href="https://www.cs.cmu.edu/~ylataus/files/TausczikPennebaker2010.pdf" target="_blank">
         <div class="card-content">

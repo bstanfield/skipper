@@ -1470,7 +1470,8 @@ h4.hero {
   margin-bottom: -50px !important; }
 
 .background-sand {
-  background-color: #edda7f; }
+  background-color: #edda7f;
+  min-height: 300px; }
 
 .full-width-bg {
   width: 100%;

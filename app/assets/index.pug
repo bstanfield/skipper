@@ -13,12 +13,12 @@ block content
       $('#four').fadeIn();
     } else {
       $('#prim').fadeOut();
-      $('#one').fadeOut();
-      $('#two').fadeOut().delay(100);
-      $('#three').fadeOut().delay(200);
-      $('#four').fadeOut().delay(300);
+      $('#one').fadeOut().delay(200);
+      $('#two').fadeOut().delay(300);
+      $('#three').fadeOut().delay(400);
     }
     });
+
   .primary-container-hero
     .hero-card
       .hero-text
@@ -37,7 +37,7 @@ block content
       br
       br
       
-      .container
+      .container.moat
         .row.show
           .col-md-9
             img.large.shadow#prim(src=imgpath + "home-demo.png")
@@ -47,14 +47,10 @@ block content
               h4 Set goals for new HR and people operations initiatives so you can measure how effective they are in your own terms.
 
             .card.child.shadow#two
-              h1 Straight to PowerPoint
-              h4 Generate reports automatically so the executive team can get a pulse on how employees are doing as often as they like.
-
-            .card.child.shadow#three
               h1 Measure Success
               h4 See how management decisions, policy changes, and benefits affect employee engagement.
 
-            .card.child.shadow#four
+            .card.child.shadow#three
               h1 Actionable Advice
               h4 Learn which groups within your company are disengaging, and see advice on how to re-engage them.
 
@@ -79,8 +75,7 @@ block content
               h1 Actionable Advice
               h4 Learn which groups within your company are disengaging, and see advice on how to re-engage them.
 
-  .primary-container
-    .seller.centered
+  .primary-container.centered
       .row
 
         .col-md-6.hide
@@ -94,7 +89,7 @@ block content
           h4 Skipper pulls data from platforms like Slack, Asana, Salesforce, GitHub, and more to track engagement. To get even more detailed insights, Skipper lets you easily send out pulse surveys to specific groups of employees who you want to hear from.
           
         .col-md-6.moat.show
-          img.medium(src=imgpath + "home-features-3.png")
+          img.medium#hiw(src=imgpath + "home-features-3.png")
       br
 
   .background-blue.full-width-bg.no-bottom-margin#getstarted
@@ -107,13 +102,13 @@ block content
         a.hero-button(href='beta.html') Request Demo
         br
       
-  .background-dark-blue.full-width-bg.no-top-margin#research
+  .background-dark-blue.full-width-bg.no-top-margin
     .primary-container(style="max-width: 750px;")
       h1.research-txt.white Results, anchored in research.
       h4.research-txt.white.narrow Our product builds on years of research done at world class institutions like Stanford, USC, Google, and more. We’ve included some of the foundational papers informing our findings below.
     img.full(src='images/home-research-header.png' style='margin-bottom: -10px;')
-  .background-sand.full-width-bg.no-bottom-margin
-    .primary-container
+  .background-sand.full-width-bg.no-bottom-margin#blanket
+    .primary-container#fader
       +article(
       'https://www.cs.cmu.edu/~ylataus/files/TausczikPennebaker2010.pdf',
       'Journal of Language and Social Psychology', 
