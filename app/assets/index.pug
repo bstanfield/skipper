@@ -6,16 +6,14 @@ block content
     $(document).scroll(function() {
     var y = $(this).scrollTop();
     if (y > 100) {
-      $('#prim').fadeIn();
       $('#one').fadeIn();
       $('#two').fadeIn();
       $('#three').fadeIn();
       $('#four').fadeIn();
     } else {
-      $('#prim').fadeOut();
-      $('#one').fadeOut().delay(200);
-      $('#two').fadeOut().delay(300);
-      $('#three').fadeOut().delay(400);
+      $('#one').fadeOut().delay(100);
+      $('#two').fadeOut().delay(200);
+      $('#three').fadeOut().delay(300);
     }
     });
 
@@ -24,7 +22,9 @@ block content
       .hero-text
         h1.hero.white Measure engagement instantly.
         h4.hero.white Skipper shows people operations teams how they can maximize engagement, productivity, and wellbeing for their company without having to send a single survey.
-        a.hero-button(href='beta.html') Request Demo
+        form#demoHeroForm(action="/request-demo.html" method="GET")
+          input.input-box.input-nav(type="text" placeholder="Enter email" name="email")
+          input#email_submit.button.button-nav(type="submit" value="Request Demo")
       .hero-image
         img.flex(src=imgpath + 'home-hero.png')
         
@@ -99,11 +99,11 @@ block content
         h4.white Let our team of people analytics experts show you how you can increase employee engagement in your company.
         br
         br
-        a.hero-button(href='beta.html') Request Demo
+        a.hero-button(href='request-demo.html?email=') Request a Product Demo
         br
         a.hero-button(src=imgpath + "skipper-imgur.png" style="display: none;") Hidden
       
-  .background-dark-blue.full-width-bg.no-top-margin
+  .background-dark-blue.full-width-bg.no-top-margin#research
     .primary-container(style="max-width: 750px;")
       h1.research-txt.white Results, anchored in research.
       h4.research-txt.white.narrow Our product builds on years of research done at world class institutions like Stanford, USC, Google, and more. We’ve included some of the foundational papers informing our findings below.

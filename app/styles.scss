@@ -1,36 +1,40 @@
 @import 'fonts.scss';
 @import 'mq.scss';
 
+$bg-color: #f9f9f9;
+
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(240, 240, 240) !important;
+  background-color: $bg-color;
 }
 
 .navbar {
   width: 100%;
-  height: 60px;
-  background-color: white;
-  border-bottom: 2px solid #a8a8a8;
+  height: auto;
+  background-color: $bg-color;
   position: fixed;
   z-index: 999;
 }
 
 .nav-items {
-  width: 80%;
+  width: 90%;
   max-width: 1100px;
   margin: auto;
   height: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #b3b3b3;
 }
 
-  .beta-link {
+  .demo-link {
     font-weight: $semibold;
     color: $skipper-blue !important;
+    display: none;
   }
 
 .nav-menu {
   float: right;
-  padding-top: 18px;
 }
 
 .nav-link {
@@ -45,7 +49,6 @@ body {
 .nav-logo {
   width: 150px;
   height: 100%;
-  padding-top: 12px;
   display: inline-block;
 }
 
@@ -137,14 +140,40 @@ h4.hero {
   bottom: 0px;
 }
 
+#demoHeroForm {
+  margin-top: -15px;
+
+  .button-nav {
+    background-color: white;
+    border: none;
+    color: #333333 !important;
+  }
+
+  .input-nav {
+    margin-left: 0px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+
+}
+
 .button {
   background-color: $skipper-blue;
   color: white !important;
-  padding: 10px 15px 10px 15px;
+  padding: 4px 10px;
   border-radius: 3px;
-  font-weight: $semibold;
-  font-size: $medium;
+  font-weight: normal;
+  border: 1px solid #103390;
 }
+
+  .button-nav {
+    padding: 6px 12px;
+    transition: all 0.3s ease;
+  }
+
+  .button-nav:hover {
+    background-color: #103390;
+  }
 
 .hero-button {
   background-color: white;
@@ -402,10 +431,19 @@ h4.white {
 }
 
 // BETA SIGN-UP PAGE
+  form {
+    display: inline-block;
+  }
+
+  #demoFooterForm {
+    margin-top: 10px;
+  }
+
   .form-wrapper {
     width: 100%;
-    max-width: 600px;
+    max-width: 400px;
     margin: auto;
+    margin-top: 50px;
     margin-bottom: 100px;
   }
 
@@ -416,16 +454,37 @@ h4.white {
 
   .input-box {
     width: 100%;
-    background-color: transparent;
-    border: none;
-    padding: 10px;
-    border-bottom: 2px solid #333333;
+    background-color: #ffffff;
+    border: 1px solid rgb(231, 230, 229);
+    padding: 6px 12px;
     outline: none;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.03) 0px 1px 1px inset;
+    transition: all 0.3s ease;
   }
 
-  .input-box:focus {
-    background-color: rgba(80, 124, 240, 0.1);
-  }
+    ::placeholder {
+      color: #969595 !important;
+    }
+
+    .input-nav {
+      width: 150px;
+      margin-left: 30px;
+      margin-right: 5px;
+    }
+
+    .input-box:hover {
+      border: 1px solid rgb(182, 182, 182);
+    }
+
+    .input-nav:focus {
+      width: 200px;
+      border: 1px solid rgb(182, 182, 182);
+    }
+
+    .input-primary {
+      margin-bottom: 25px;
+    }
 
 // ABOUT PAGE
 .people p, 
@@ -472,6 +531,10 @@ h4.white {
     line-height: 30px;
     display: block;
   }
+
+#footer-hr {
+  border-top: 2px solid rgb(233, 233, 233);
+}
 
 .social-links img {
     height: 40px;

@@ -20,7 +20,7 @@
     gtag('js', new Date());
     gtag('config', 'UA-121010767-1');
     
-  </script>
+  </script><script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4671514.js"></script>
   <meta property="og:type" content="website">
   <meta property="og:url" content="http://www.skipper.ai">
   <meta property="og:site_name" content="Skipper.ai">
@@ -51,7 +51,12 @@
 <div class="navbar">
   <div class="nav-items">
     <div class="nav-burger"><span class="open" id="open" onclick="openNav()">&#9776</span></div><a class="nav-logo" href="/"><img class="medium" src="images/skipper-logo.png"></a>
-    <div class="nav-menu"><a class="nav-link" href="about.html">About Us</a><a class="nav-link" href="blog.html">Blog</a><a class="nav-link beta-link" href="demo.html">Request A Demo</a></div>
+    <div class="nav-menu"><a class="nav-link" href="about.html">About</a><a class="nav-link" href="blog.html">Blog</a><a class="nav-link demo-link" href="request-demo.html">Request Demo</a>
+      <form id="demoForm" action="/request-demo.html" method="GET">
+        <input class="input-box input-nav" type="text" placeholder="Enter email" name="email">
+        <input class="button button-nav" id="email_submit" type="submit" value="Request Demo">
+      </form>
+    </div>
   </div>
 </div>
 <!-- this is where content will be loaded for subsequent pages-->
@@ -123,8 +128,8 @@
 <!-- footer-->
 <div class="footer">
   <div class="primary-container">
-    <div class="container">
-      <div class="row">
+    <div class="container" id="footer-hr">
+      <div class="row" style="padding-top: 50px;">
         <div class="col-md-3">
           <h4>Explore</h4><a href="about.html">About us</a><a href="blog.html">Blog</a><br>
         </div>
@@ -133,28 +138,11 @@
         </div>
         <div class="col-md-6">
           <h4>Subscribe for updates</h4>
-          <form id="emailForm" action="" type="">
-            <div class="form-group">
-              <input class="input-box" type="text" placeholder="Email address" name="email">
-            </div>
-            <input class="button" id="email_submit" type="submit" value="Sign up">
+          <form id="demoFooterForm" action="/request-demo.html" method="GET">
+            <input class="input-box input-nav" type="text" placeholder="Enter email" name="email" style="margin-left: 0px;">
+            <input class="button button-nav" id="email_submit" type="submit" value="Request Demo">
           </form>
         </div>
-        <script>
-          var $ = require('jquery');
-          $('#emailForm').submit(function(e){
-            e.preventDefault();
-            $.ajax({
-                url:'https://hooks.zapier.com/hooks/catch/2137285/wo0as1/',
-                type:'post',
-                data:$('#emailForm').serialize(),
-                success:function(){
-                  window.location = "/success.html";
-                }
-            });
-          });
-          
-        </script>
       </div>
     </div>
     <div class="container"><img class="tiny closer" src="images/skipper-icon.png"></div>

@@ -182,8 +182,39 @@
     //     display: block;
     // }
 
+    .demo-link {
+        display: inline-block;
+    }
+
     .nav-logo {
         display: inline-block;
+        margin-bottom: 30px;
+    }
+
+    .nav-items form {
+        display: none;
+    }
+
+    .nav-items {
+        border-bottom: none;
+    }
+
+    .navbar {
+        border-bottom: 2px solid #333333;
+    }
+
+    form input {
+        display: block;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .input-nav {
+        width: 100%;
+    }
+
+    .input-nav:focus {
+        width: 100%;
     }
 
 }

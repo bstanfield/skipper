@@ -60,10 +60,22 @@
   </div>
 </div>
 <!-- this is where content will be loaded for subsequent pages-->
-<div class="primary-container-hero centered">
-  <h1 class="hero error-text" style="margin-top: 100px;">Page not found.</h1><img src="images/404-sub.png" style="width: 100%; max-width: 450px; margin-bottom: 50px;">
-  <h1 class="hero">Looks like you got a bit lost... </h1>
-  <h4 class="hero">Not finding what you're looking for? Get in touch with us at support@skipper.ai</h4><br><a class="button" href="index.html">Return home</a>
+<div class="primary-container-hero centered"><img src="images/success.png" style="width: 100%; max-width: 150px; margin-bottom: 20px; margin-top: 100px;">
+  <h1 class="hero">We just need a bit more info... </h1>
+  <form class="form-wrapper" id="demoFormComplete" action="/success.html" method="POST">
+    <input class="input-box input-primary" id="write" type="email" name="email" placeholder="Your email"><br>
+    <input class="input-box input-primary" type="text" name="firstname" placeholder="First name"><br>
+    <input class="input-box input-primary" type="text" name="lastname" placeholder="Last name"><br>
+    <input class="input-box input-primary" type="text" name="phone" placeholder="Phone number"><br>
+    <input class="button button-nav" id="demo_submit" type="submit" value="Request Demo">
+  </form><br><br>
+  <script>
+    var myParam = location.search.split('?email=')[1]
+    var uri_dec = decodeURIComponent(myParam);
+    console.log(uri_dec);
+    
+    document.getElementById('write').value = uri_dec;
+  </script>
 </div>
 <!-- footer-->
 <div class="footer">

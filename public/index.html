@@ -20,7 +20,7 @@
     gtag('js', new Date());
     gtag('config', 'UA-121010767-1');
     
-  </script>
+  </script><script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4671514.js"></script>
   <meta property="og:type" content="website">
   <meta property="og:url" content="http://www.skipper.ai">
   <meta property="og:site_name" content="Skipper.ai">
@@ -51,7 +51,12 @@
 <div class="navbar">
   <div class="nav-items">
     <div class="nav-burger"><span class="open" id="open" onclick="openNav()">&#9776</span></div><a class="nav-logo" href="/"><img class="medium" src="images/skipper-logo.png"></a>
-    <div class="nav-menu"><a class="nav-link" href="about.html">About Us</a><a class="nav-link" href="blog.html">Blog</a><a class="nav-link beta-link" href="demo.html">Request A Demo</a></div>
+    <div class="nav-menu"><a class="nav-link" href="about.html">About</a><a class="nav-link" href="blog.html">Blog</a><a class="nav-link demo-link" href="request-demo.html">Request Demo</a>
+      <form id="demoForm" action="/request-demo.html" method="GET">
+        <input class="input-box input-nav" type="text" placeholder="Enter email" name="email">
+        <input class="button button-nav" id="email_submit" type="submit" value="Request Demo">
+      </form>
+    </div>
   </div>
 </div>
 <!-- this is where content will be loaded for subsequent pages-->
@@ -60,16 +65,14 @@
   $(document).scroll(function() {
   var y = $(this).scrollTop();
   if (y > 100) {
-    $('#prim').fadeIn();
     $('#one').fadeIn();
     $('#two').fadeIn();
     $('#three').fadeIn();
     $('#four').fadeIn();
   } else {
-    $('#prim').fadeOut();
-    $('#one').fadeOut().delay(200);
-    $('#two').fadeOut().delay(300);
-    $('#three').fadeOut().delay(400);
+    $('#one').fadeOut().delay(100);
+    $('#two').fadeOut().delay(200);
+    $('#three').fadeOut().delay(300);
   }
   });
   
@@ -78,7 +81,11 @@
   <div class="hero-card">
     <div class="hero-text">
       <h1 class="hero white">Measure engagement instantly.</h1>
-      <h4 class="hero white">Skipper shows people operations teams how they can maximize engagement, productivity, and wellbeing for their company without having to send a single survey.</h4><a class="hero-button" href="beta.html">Request Demo</a>
+      <h4 class="hero white">Skipper shows people operations teams how they can maximize engagement, productivity, and wellbeing for their company without having to send a single survey.</h4>
+      <form id="demoHeroForm" action="/request-demo.html" method="GET">
+        <input class="input-box input-nav" type="text" placeholder="Enter email" name="email">
+        <input class="button button-nav" id="email_submit" type="submit" value="Request Demo">
+      </form>
     </div>
     <div class="hero-image"><img class="flex" src="images/home-hero.png"></div>
   </div>
@@ -148,11 +155,11 @@
   <div class="primary-container">
     <div class="seller centered">
       <h1 class="hero white">Get Started</h1>
-      <h4 class="white">Let our team of people analytics experts show you how you can increase employee engagement in your company.</h4><br><br><a class="hero-button" href="beta.html">Request Demo</a><br><a class="hero-button" src="images/skipper-imgur.png" style="display: none;">Hidden</a>
+      <h4 class="white">Let our team of people analytics experts show you how you can increase employee engagement in your company.</h4><br><br><a class="hero-button" href="request-demo.html?email=">Request a Product Demo</a><br><a class="hero-button" src="images/skipper-imgur.png" style="display: none;">Hidden</a>
     </div>
   </div>
 </div>
-<div class="background-dark-blue full-width-bg no-top-margin">
+<div class="background-dark-blue full-width-bg no-top-margin" id="research">
   <div class="primary-container" style="max-width: 750px;">
     <h1 class="research-txt white">Results, anchored in research.</h1>
     <h4 class="research-txt white narrow">Our product builds on years of research done at world class institutions like Stanford, USC, Google, and more. We’ve included some of the foundational papers informing our findings below.</h4>
@@ -192,8 +199,8 @@
 <!-- footer-->
 <div class="footer">
   <div class="primary-container">
-    <div class="container">
-      <div class="row">
+    <div class="container" id="footer-hr">
+      <div class="row" style="padding-top: 50px;">
         <div class="col-md-3">
           <h4>Explore</h4><a href="about.html">About us</a><a href="blog.html">Blog</a><br>
         </div>
@@ -201,29 +208,12 @@
           <h4>Resources</h4><a href="index.html#research">Research</a><a href="privacy.html">Privacy</a><br>
         </div>
         <div class="col-md-6">
-          <h4>Subscribe for updates</h4>
-          <form id="emailForm" action="" type="">
-            <div class="form-group">
-              <input class="input-box" type="text" placeholder="Email address" name="email">
-            </div>
-            <input class="button" id="email_submit" type="submit" value="Sign up">
+          <h4>Request a demo</h4>
+          <form id="demoFooterForm" action="/request-demo.html" method="GET">
+            <input class="input-box input-nav" type="text" placeholder="Enter email" name="email" style="margin-left: 0px;">
+            <input class="button button-nav" id="email_submit" type="submit" value="Request Demo">
           </form>
         </div>
-        <script>
-          var $ = require('jquery');
-          $('#emailForm').submit(function(e){
-            e.preventDefault();
-            $.ajax({
-                url:'https://hooks.zapier.com/hooks/catch/2137285/wo0as1/',
-                type:'post',
-                data:$('#emailForm').serialize(),
-                success:function(){
-                  window.location = "/success.html";
-                }
-            });
-          });
-          
-        </script>
       </div>
     </div>
     <div class="container"><img class="tiny closer" src="images/skipper-icon.png"></div>
