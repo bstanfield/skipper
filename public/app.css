@@ -1554,7 +1554,9 @@ form {
   max-width: 400px;
   margin: auto;
   margin-top: 50px;
-  margin-bottom: 100px; }
+  margin-bottom: 100px;
+  padding-left: 20px;
+  padding-right: 20px; }
 
 .form-group {
   width: 100%;

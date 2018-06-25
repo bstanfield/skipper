@@ -2,13 +2,13 @@ extends layout
 
 block content
   .primary-container-hero.centered
-    img(src=imgpath + 'success.png' style="width: 100%; max-width: 150px; margin-bottom: 20px; margin-top: 100px;")
+    img(src=imgpath + 'beta-duck.png' style="width: 100%; max-width: 150px; margin-bottom: 20px; margin-top: 70px;")
   
     h1.hero We just need a bit more info... 
-    form.form-wrapper#demoFormComplete(action="/success.html" method="POST")
-        input.input-box.input-primary(id="write" type="email" name="email" placeholder="Your email")
+    form.form-wrapper#demoFormComplete(action="success.html" method="POST")
+        input.input-box.input-primary(id="write" type="email" name="email" placeholder="Your email" required)
         br
-        input.input-box.input-primary(type="text" name="firstname" placeholder="First name")
+        input.input-box.input-primary(type="text" name="firstname" placeholder="First name" required)
         br
         input.input-box.input-primary(type="text" name="lastname" placeholder="Last name")
         br

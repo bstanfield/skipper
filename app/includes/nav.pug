@@ -20,8 +20,8 @@
             a.nav-link(href='blog.html') Blog
             a.nav-link.demo-link(href='request-demo.html') Request Demo
             
-            form#demoForm(action="/request-demo.html" method="GET")
-                input.input-box.input-nav(type="text" placeholder="Enter email" name="email")
+            form#demoForm(action="/request-demo.html?email=" method="GET")
+                input.input-box.input-nav(type="email" placeholder="Enter email" name="email")
                 input#email_submit.button.button-nav(type="submit" value="Request Demo")
 
     //- script.
