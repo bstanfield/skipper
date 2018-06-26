@@ -26,21 +26,21 @@ mixin blogcards(url, img, source, title, author, url2, img2, source2, title2, au
             .row
                 .col-md-4
                     a(href=url target="_blank")
-                        .card.blogcard
+                        .card.blogcard.shadow
                             .blogthumb(style="background-image: url("+imgpath+"blog/"+img+");")
                             p #{source}
                             h4 #{title}
                             p.byline #{author}
                 .col-md-4
                     a(href=url2 target="_blank")
-                        .card.blogcard 
+                        .card.blogcard.shadow
                             .blogthumb(style="background-image: url("+imgpath+"blog/"+img2+");")
                             p #{source2}
                             h4 #{title2}
                             p.byline #{author2}
                 .col-md-4
                     a(href=url3 target="_blank")
-                        .card.blogcard 
+                        .card.blogcard.shadow
                             .blogthumb(style="background-image: url("+imgpath+"blog/"+img3+");")
                             p #{source3}
                             h4 #{title3}
