@@ -2,7 +2,7 @@
 
 $sans-serif: 'IBM Plex Sans', Helvetica, sans-serif;
 $serif: 'Merriweather', 'IBM Plex Serif', serif;
-$mono: 'Source Code Pro', Courier, mono;
+$mono: 'IBM Plex Mono', monospace;
 
 // FONT WEIGHTS
 $light: 100;
@@ -12,14 +12,14 @@ $bold: 700;
 
 //FONT SIZES
 $small: 16px;
-$medium: 16px;
+$medium: 18px;
 $mobile-medium: 20px;
 $large: 25px;
 $mobile-header: 30px;
 $header: 35px;
 
 // LINE-HEIGHTS
-$body-line: 30px;
+$body-line: 35px;
 
 // COLORS
 $txt-primary: #0e3266;
@@ -32,7 +32,7 @@ body {
     color: $txt-primary;
 }
 
-h1, h2, h3, h4, p, a, input {
+h1, h2, h3, h4, p, a, input, span {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
 }
@@ -83,6 +83,23 @@ input {
 
 .bold {
     font-weight: $bold;
+}
+
+span.code {
+    font-family: $mono;
+    font-weight: $bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: 1px solid #E1E1E8;
+    background-color: #F7F7F9;
+    color: $skipper-blue;
+    padding: 2px 5px 2px 5px;
+    border-radius: 2px;
+}
+
+span.code:hover {
+    color: blue;
+    border: 1px solid rgb(191, 191, 199);
 }
 
 @media screen and (max-width: 415px) {

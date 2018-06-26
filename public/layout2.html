@@ -63,9 +63,9 @@
 </script>
 <div class="navbar">
   <div class="nav-items">
-    <div class="nav-burger"><span class="open" id="open" onclick="openNav()">&#9776</span></div><a class="nav-logo" href="/"><img class="medium" src="images/skipper-logo.png"></a>
-    <div class="nav-menu"><a class="nav-link" href="about.html">About</a><a class="nav-link" href="blog.html">Blog</a><a class="nav-link demo-link" href="request-demo.html">Request Demo</a>
-      <form id="demoForm" action="/request-demo.html?email=" method="GET">
+    <div class="nav-burger"><span class="open" id="open" onclick="openNav()">&#9776</span></div><a class="nav-logo" href="/index-fb.html"><img class="medium" src="images/skipper-logo.png"></a>
+    <div class="nav-menu"><a class="nav-link" href="about.html">About</a><a class="nav-link" href="blog.html">Blog</a><a class="nav-link demo-link" href="request-demo2.html">Request Demo</a>
+      <form id="demoForm" action="/request-demo2.html?email=" method="GET">
         <input class="input-box input-nav" type="email" placeholder="Enter email" name="email">
         <input class="button button-nav" id="email_submit" type="submit" value="Request Demo">
       </form>
@@ -73,52 +73,6 @@
   </div>
 </div>
 <!-- this is where content will be loaded for subsequent pages-->
-<div class="primary-container-hero centered"><img src="images/beta-duck.png" style="width: 100%; max-width: 150px; margin-bottom: 20px; margin-top: 70px;">
-  <h1 class="hero">Let's show you Skipper!</h1>
-  <h4 class="hero">We just need a bit more information from you before we can proceed. </h4>
-  <form class="form-wrapper" id="demoFormComplete" action="success.html" method="GET">
-    <input class="input-box input-primary" id="write" type="email" name="email" placeholder="Your email" required><br>
-    <input class="input-box input-primary" type="text" name="firstname" placeholder="First name" required><br>
-    <input class="input-box input-primary" type="text" name="lastname" placeholder="Last name"><br>
-    <input class="input-box input-primary" type="text" name="phone" placeholder="Phone number"><br>
-    <input class="button button-nav" id="demo_submit" type="submit" value="Request Demo">
-  </form>
-  <div class="container moat">
-    <h1 class="hero">Not convinced? Don't just take our word for it.</h1><br><br><a href="https://www.recode.net/2017/4/18/15327848/workplace-culture-measurement-metrics-healthy-uber" target="_blank">
-      <div class="container smallmoat">
-        <div class="row">
-          <div class="col-md-4"><a href="https://www.recode.net/2017/4/18/15327848/workplace-culture-measurement-metrics-healthy-uber" target="_blank">
-              <div class="card blogcard shadow">
-                <div class="blogthumb" style="background-image: url(images/blog/recode.jpg);"></div>
-                <p>RECODE</p>
-                <h4>Workplace culture should be measured</h4>
-                <p class="byline">by Taro Fukuyama</p>
-              </div></a></div>
-          <div class="col-md-4"><a href="http://projectinclude.org/measuring_progress#repeat-surveys-regularly-at-the-right-intervals" target="_blank">
-              <div class="card blogcard shadow">
-                <div class="blogthumb" style="background-image: url(images/blog/project-include.png);"></div>
-                <p>Project Include</p>
-                <h4>Recommendations and resources to measure progress</h4>
-                <p class="byline">by Susan Fowler</p>
-              </div></a></div>
-          <div class="col-md-4"><a href="https://hbr.org/2017/09/the-case-for-investing-more-in-people" target="_blank">
-              <div class="card blogcard shadow">
-                <div class="blogthumb" style="background-image: url(images/blog/hbr-people.jpg);"></div>
-                <p>Harvard Business Review</p>
-                <h4>The Case for Investing More in People</h4>
-                <p class="byline">by Eric Garton</p>
-              </div></a></div>
-        </div>
-      </div></a>
-  </div>
-  <script>
-    var myParam = location.search.split('?email=')[1]
-    var uri_dec = decodeURIComponent(myParam);
-    console.log(uri_dec);
-    
-    document.getElementById('write').value = uri_dec;
-  </script>
-</div>
 <!-- footer-->
 <div class="footer">
   <div class="primary-container">

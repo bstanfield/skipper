@@ -12,7 +12,7 @@ body {
 .navbar {
   width: 100%;
   height: auto;
-  background-color: $bg-color;
+  background-color: transparent;
   position: fixed;
   z-index: 999;
 }
@@ -23,9 +23,14 @@ body {
   margin: auto;
   height: 100%;
   padding-top: 12px;
-  padding-bottom: 12px;
-  border-bottom: 2px solid #b3b3b3;
+  padding-bottom: 15px;
+  // border-bottom: 2px solid #b3b3b3;
 }
+
+  .top {
+    box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
+    background-color: white !important;
+  }
 
   .demo-link {
     font-weight: $semibold;
@@ -90,7 +95,7 @@ body {
     width: 80%;
     margin: auto;
     max-width: 1100px;
-    padding-top: 85px;
+    padding-top: 70px;
   }
 
 // RECYCLED
@@ -102,6 +107,11 @@ body {
   background-color: #507cf0;
   margin-bottom: 80px;
 }
+
+// .strike {
+//   text-decoration: line-through;
+//   text-decoration-color: #163faf;
+// }
 
   .hc-med {
     height: 350px;
@@ -138,6 +148,15 @@ h4.hero {
   height: auto;
   right: 0px;
   bottom: 0px;
+}
+
+.hero-image img.hero-img {
+  right: 100px;
+}
+
+.hover:hover {
+  transform: translateY(-3px);
+  transition: all 0.5s ease;
 }
 
 #demoHeroForm {
@@ -260,7 +279,7 @@ h4.hero {
     font-family: $sans-serif;
     font-weight: $bold;
     text-align: left;
-    font-size: 18px;
+    font-size: 22px;
 
   }
 
@@ -310,6 +329,11 @@ h4.hero {
   }
 
 // IMAGES
+.hero-img {
+  width: 100%;
+  max-width: 300px;
+}
+
 .flex {
   width: 100%;
   max-width: 550px;
@@ -447,7 +471,7 @@ h4.white {
     width: 100%;
     max-width: 400px;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 100px;
     padding-left: 20px;
     padding-right: 20px;
@@ -575,6 +599,14 @@ h4.white {
   padding-left: 0px;
   padding-right: 0px;
   width: 100%;
+}
+
+.container-max {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding-top: 80px;
+  height: 600px;
 }
 
   .centered {

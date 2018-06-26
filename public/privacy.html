@@ -41,6 +41,7 @@
   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,500i,600,600i" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,400i,500,500i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i,700,700i" rel="stylesheet">
   <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
   <script src="/vendor.js"></script>
   <script src="/app.js"></script>
@@ -48,6 +49,18 @@
 </head>
 <body></body>
 <!-- loads navigation bar for each page-->
+<script>
+  var $ = require('jquery');
+  $(window).on("scroll", function() {
+  var scrollPos = $(window).scrollTop();
+      if (scrollPos <= 15) {
+          $('.navbar').removeClass('top');
+      } else {
+          $('.navbar').addClass('top');
+      }
+  });
+  
+</script>
 <div class="navbar">
   <div class="nav-items">
     <div class="nav-burger"><span class="open" id="open" onclick="openNav()">&#9776</span></div><a class="nav-logo" href="/"><img class="medium" src="images/skipper-logo.png"></a>
