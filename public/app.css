@@ -1134,6 +1134,8 @@ span.code:hover {
     display: none; } }
 
 @media screen and (max-width: 990px) {
+  #imgbehind {
+    display: none; }
   .people-img {
     width: 100%;
     max-width: 300px;
@@ -1332,7 +1334,8 @@ h4.hero {
   bottom: 0px; }
 
 .hero-image img.hero-img {
-  right: 100px; }
+  right: 100px;
+  z-index: 900; }
 
 .hover:hover {
   transform: translateY(-3px);
@@ -1508,6 +1511,16 @@ h4.hero {
   width: 100%;
   max-width: 300px;
   margin: auto; }
+
+#imgbehind {
+  width: 180px;
+  position: absolute;
+  left: 450px;
+  top: -30px;
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 20px, whitesmoke 0px -1px 0px;
+  border-radius: 3px;
+  transition: all 0.3s ease; }
 
 .tiny {
   width: 50px; }
@@ -1757,6 +1770,8 @@ form {
     display: none; } }
 
 @media screen and (max-width: 990px) {
+  #imgbehind {
+    display: none; }
   .people-img {
     width: 100%;
     max-width: 300px;
