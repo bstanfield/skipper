@@ -1399,6 +1399,9 @@ h4.hero {
   font-size: 13px;
   line-height: 25px; }
 
+.child-min {
+  min-height: 180px; }
+
 .article {
   padding: 40px 30px 10px 30px; }
 

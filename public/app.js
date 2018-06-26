@@ -400,7 +400,7 @@ module.exports = template;
 });
 
 require.register("includes/nav2.pug", function(exports, require, module) {
-function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;var pug_debug_filename, pug_debug_line;try {var pug_debug_sources = {"app\u002Fincludes\u002Fnav2.pug":"script.\n    var $ = require('jquery');\n    $(window).on(\"scroll\", function() {\n    var scrollPos = $(window).scrollTop();\n        if (scrollPos \u003C= 15) {\n            $('.navbar').removeClass('top');\n        } else {\n            $('.navbar').addClass('top');\n        }\n    });\n    \n.navbar\n    .nav-items\n        .nav-burger\n            span.open(id=\"open\" onclick=\"openNav()\") &#9776\n        a.nav-logo(href='\u002Findex-fb.html')\n            img.medium(src='images\u002Fskipper-logo.png')\n        .nav-menu\n            \u002F\u002F- a.nav-link(href=\"index.html\") Home\n            a.nav-link(href='about.html') About\n            a.nav-link(href='blog.html') Blog\n            a.nav-link.demo-link(href='request-demo2.html') Request Demo\n            \n            form#demoForm(action=\"\u002Frequest-demo2.html?email=\" method=\"GET\")\n                input.input-box.input-nav(type=\"email\" placeholder=\"Enter email\" name=\"email\")\n                input#email_submit.button.button-nav(type=\"submit\" value=\"Request Demo\")"};
+function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;var pug_debug_filename, pug_debug_line;try {var pug_debug_sources = {"app\u002Fincludes\u002Fnav2.pug":"script.\n    var $ = require('jquery');\n    $(window).on(\"scroll\", function() {\n    var scrollPos = $(window).scrollTop();\n        if (scrollPos \u003C= 15) {\n            $('.navbar').removeClass('top');\n        } else {\n            $('.navbar').addClass('top');\n        }\n    });\n    \n.navbar\n    .nav-items\n        .nav-burger\n            span.open(id=\"open\" onclick=\"openNav()\") &#9776\n        a.nav-logo(href='\u002Findex2.html')\n            img.medium(src='images\u002Fskipper-logo.png')\n        .nav-menu\n            \u002F\u002F- a.nav-link(href=\"index.html\") Home\n            a.nav-link(href='about.html') About\n            a.nav-link(href='blog.html') Blog\n            a.nav-link.demo-link(href='request-demo2.html') Request Demo\n            \n            form#demoForm(action=\"\u002Frequest-demo2.html?email=\" method=\"GET\")\n                input.input-box.input-nav(type=\"email\" placeholder=\"Enter email\" name=\"email\")\n                input#email_submit.button.button-nav(type=\"submit\" value=\"Request Demo\")"};
 ;pug_debug_line = 1;pug_debug_filename = "app\u002Fincludes\u002Fnav2.pug";
 pug_html = pug_html + "\u003Cscript\u003E";
 ;pug_debug_line = 2;pug_debug_filename = "app\u002Fincludes\u002Fnav2.pug";
@@ -452,7 +452,7 @@ pug_html = pug_html + "\u003Cspan class=\"open\" id=\"open\" onclick=\"openNav()
 ;pug_debug_line = 15;pug_debug_filename = "app\u002Fincludes\u002Fnav2.pug";
 pug_html = pug_html + "&#9776\u003C\u002Fspan\u003E\u003C\u002Fdiv\u003E";
 ;pug_debug_line = 16;pug_debug_filename = "app\u002Fincludes\u002Fnav2.pug";
-pug_html = pug_html + "\u003Ca class=\"nav-logo\" href=\"\u002Findex-fb.html\"\u003E";
+pug_html = pug_html + "\u003Ca class=\"nav-logo\" href=\"\u002Findex2.html\"\u003E";
 ;pug_debug_line = 17;pug_debug_filename = "app\u002Fincludes\u002Fnav2.pug";
 pug_html = pug_html + "\u003Cimg class=\"medium\" src=\"images\u002Fskipper-logo.png\"\u003E\u003C\u002Fa\u003E";
 ;pug_debug_line = 18;pug_debug_filename = "app\u002Fincludes\u002Fnav2.pug";
