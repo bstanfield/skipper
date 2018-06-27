@@ -16,7 +16,6 @@
     "scrollmagic": "^2.0.5"
   },
   "devDependencies": {
-    "auto-reload-brunch": "^2",
     "babel-brunch": "~6.0",
     "babel-preset-latest": "^6",
     "brunch": "^2.10.12",
