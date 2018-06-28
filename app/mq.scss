@@ -155,7 +155,11 @@
     
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 650px) {  
+    .button-nav {
+        margin-bottom: 20px;
+    }
+    
     .hero-image {
         display: none;
     }
@@ -233,7 +237,7 @@
 
     form input {
         display: block;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
         width: 100%;
     }
 

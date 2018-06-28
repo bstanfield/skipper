@@ -1192,6 +1192,8 @@ hr {
     margin: auto; } }
 
 @media screen and (max-width: 650px) {
+  .button-nav {
+    margin-bottom: 20px; }
   .hero-image {
     display: none; }
   .hero-card {
@@ -1230,7 +1232,7 @@ hr {
     border-bottom: 2px solid #bbbbbb; }
   form input {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     width: 100%; }
   .input-primary {
     margin-bottom: 5px; }
@@ -1875,6 +1877,8 @@ form {
     margin: auto; } }
 
 @media screen and (max-width: 650px) {
+  .button-nav {
+    margin-bottom: 20px; }
   .hero-image {
     display: none; }
   .hero-card {
@@ -1913,7 +1917,7 @@ form {
     border-bottom: 2px solid #bbbbbb; }
   form input {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     width: 100%; }
   .input-primary {
     margin-bottom: 5px; }
