@@ -1,37 +1,38 @@
 extends layout
 
 block content
-  .primary-container-hero.centered
-    img(src=imgpath + 'beta-duck.png' style="width: 100%; max-width: 150px; margin-bottom: 20px; margin-top: 70px;")
-  
+    .primary-container-hero.centered
+        img(src=imgpath + 'beta-duck.png' style="width: 100%; max-width: 150px; margin-bottom: 20px; margin-top: 70px;")
     
-    h1.hero Let's show you Skipper!
-    h4.hero We just need a bit more information from you before we can proceed. 
-    form.form-wrapper#demoFormComplete(action="success.html" method="GET")
-        input.input-box.input-primary(id="write" type="email" name="email" placeholder="Your email" required)
-        br
-        input.input-box.input-primary(type="text" name="firstname" placeholder="First name" required)
-        br
-        input.input-box.input-primary(type="text" name="lastname" placeholder="Last name")
-        br
-        input.input-box.input-primary(type="text" name="phone" placeholder="Phone number")
-        br
-        input#demo_submit.button.button-nav(type="submit" value="Request Demo")
+    .primary-container.centered
 
-    .container.moat
-        h1.hero Not convinced? Don't just take our word for it.
-        br
-        br
-        +blogcards('https://www.recode.net/2017/4/18/15327848/workplace-culture-measurement-metrics-healthy-uber','recode.jpg', 'RECODE', 'Workplace culture should be measured', 'by Taro Fukuyama',
+        h1.hero Let's show you Skipper!
+        h4.hero We just need a bit more information from you before we can proceed. 
+        form.form-wrapper#demoFormComplete(action="success.html" method="GET")
+            input.input-box.input-primary(id="write" type="email" name="email" placeholder="Your email" required)
+            br
+            input.input-box.input-primary(type="text" name="firstname" placeholder="First name" required)
+            br
+            input.input-box.input-primary(type="text" name="lastname" placeholder="Last name")
+            br
+            input.input-box.input-primary(type="text" name="phone" placeholder="Phone number")
+            br
+            input#demo_submit.button.button-nav(type="submit" value="Request Demo")
 
-        'http://projectinclude.org/measuring_progress#repeat-surveys-regularly-at-the-right-intervals', 'project-include.png', 'Project Include', 'Recommendations and resources to measure progress', 'by Susan Fowler', 
+        .container.moat
+            h1.hero Related articles:
+            br
+            br
+            +blogcards('https://www.recode.net/2017/4/18/15327848/workplace-culture-measurement-metrics-healthy-uber','recode.jpg', 'RECODE', 'Workplace culture should be measured', 'by Taro Fukuyama',
 
-        'https://hbr.org/2017/09/the-case-for-investing-more-in-people', 'hbr-people.jpg', 'Harvard Business Review', 'The Case for Investing More in People', 'by Eric Garton')
-                    
+            'http://projectinclude.org/measuring_progress#repeat-surveys-regularly-at-the-right-intervals', 'project-include.png', 'Project Include', 'Recommendations and resources to measure progress', 'by Susan Fowler', 
 
-    script.
-        var myParam = location.search.split('?email=')[1]
-        var uri_dec = decodeURIComponent(myParam);
-        console.log(uri_dec);
+            'https://hbr.org/2017/09/the-case-for-investing-more-in-people', 'hbr-people.jpg', 'Harvard Business Review', 'The Case for Investing More in People', 'by Eric Garton')
+                        
 
-        document.getElementById('write').value = uri_dec;
+        script.
+            var myParam = location.search.split('?email=')[1]
+            var uri_dec = decodeURIComponent(myParam);
+            console.log(uri_dec);
+
+            document.getElementById('write').value = uri_dec;

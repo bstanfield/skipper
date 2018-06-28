@@ -90,6 +90,11 @@
 }
 
 @media screen and (max-width: 850px) {
+    .card {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    
     .hero-card {
         height: 100%;
         padding-bottom: 100px;
@@ -184,6 +189,18 @@
     .hero-card {
         margin-top: 15px;
     }
+
+    .primary-container-hero {
+        padding-top: 70px;
+    }
+
+    .hero-card {
+        padding-bottom: 40px;
+    }
+
+    .about-txt {
+        top: 40px;
+    }
     
     // .nav-burger {
     //     padding-top: 18px;
@@ -210,13 +227,18 @@
     }
 
     .navbar {
-        border-bottom: 2px solid #333333;
+        background-color: white;
+        border-bottom: 2px solid #bbbbbb;
     }
 
     form input {
         display: block;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
         width: 100%;
+    }
+
+    .input-primary {
+        margin-bottom: 5px;
     }
 
     .input-nav {
