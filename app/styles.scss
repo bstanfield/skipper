@@ -418,6 +418,42 @@ h4.hero {
   margin: 0px;
 }
 
+// POST SECTION (ON ABOUT)
+.post {
+  margin: auto;
+  width: 100%;
+  max-width: 800px;
+}
+
+.post > h4 {
+  margin-bottom: 30px;
+}
+
+.post > .flex {
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+.post > h4 > a {
+  text-decoration: underline !important;
+  font-size: 17px;
+  color: $skipper-blue !important; 
+}
+
+.post > .quote {
+  font-style: italic;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.quote > span {
+  background-color: rgba(51, 79, 235, 0.1);
+  padding: 15px;
+  border-radius: 3px;
+}
+
 // COLOR SELECTION
 .background-blue {
   background-color: $skipper-blue;

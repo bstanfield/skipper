@@ -1080,6 +1080,9 @@ span.code:hover {
   color: blue;
   border: 1px solid #bfbfc7; }
 
+hr {
+  border-top: 1px solid #a4a4a4; }
+
 @media screen and (max-width: 415px) {
   h1 {
     line-height: 35px; }
@@ -1140,7 +1143,10 @@ span.code:hover {
     width: 100%;
     max-width: 300px;
     display: block;
-    margin: auto; } }
+    margin: auto; }
+  .quote span {
+    background-color: transparent;
+    padding: 0px; } }
 
 @media screen and (max-width: 850px) {
   .hero-card {
@@ -1550,6 +1556,35 @@ h4.hero {
 .people > p {
   margin: 0px; }
 
+.post {
+  margin: auto;
+  width: 100%;
+  max-width: 800px; }
+
+.post > h4 {
+  margin-bottom: 30px; }
+
+.post > .flex {
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 50px;
+  margin-top: 30px; }
+
+.post > h4 > a {
+  text-decoration: underline !important;
+  font-size: 17px;
+  color: #507cf0 !important; }
+
+.post > .quote {
+  font-style: italic;
+  font-weight: 800;
+  font-size: 18px; }
+
+.quote > span {
+  background-color: rgba(51, 79, 235, 0.1);
+  padding: 15px;
+  border-radius: 3px; }
+
 .background-blue {
   background-color: #507cf0; }
 
@@ -1779,7 +1814,10 @@ form {
     width: 100%;
     max-width: 300px;
     display: block;
-    margin: auto; } }
+    margin: auto; }
+  .quote span {
+    background-color: transparent;
+    padding: 0px; } }
 
 @media screen and (max-width: 850px) {
   .hero-card {
@@ -1936,6 +1974,9 @@ span.code {
 span.code:hover {
   color: blue;
   border: 1px solid #bfbfc7; }
+
+hr {
+  border-top: 1px solid #a4a4a4; }
 
 @media screen and (max-width: 415px) {
   h1 {
