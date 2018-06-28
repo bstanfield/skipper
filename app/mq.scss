@@ -90,6 +90,10 @@
 }
 
 @media screen and (max-width: 850px) {
+    span.required {
+        display: none !important;
+    }
+    
     .card {
         margin-bottom: 30px;
         width: 100%;
