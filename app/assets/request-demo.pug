@@ -5,16 +5,15 @@ block content
         img(src=imgpath + 'beta-duck.png' style="width: 100%; max-width: 150px; margin-bottom: 20px; margin-top: 70px;")
     
     .primary-container.centered
-
         h1.hero Let's show you Skipper!
         h4.hero We just need a bit more information from you before we can proceed. 
         form.form-wrapper#demoFormComplete(action="success.html" method="GET")
             .input-req
                 input.input-box.input-primary(id="write" type="email" name="email" placeholder="Your email" required)
                 <span class="required">* Required</span>     
-                     
+
             .input-req
-                input.input-box.input-primary(type="text" name="fullname" placeholder="Full name" required)
+                input.input-box.input-primary(type="text" name="fullname" placeholder="Full name" required autofocus)
                 <span class="required">* Required</span>
             
             input.input-box.input-primary(type="text" name="phone" placeholder="Phone number")
