@@ -618,6 +618,24 @@ h4.white {
   margin-top: -12px;
 }
 
+// SURVEY
+.tf-wrap {
+  padding-top: 100px;
+  width: 100%;
+  height: 90vh;
+  min-height: 500px;
+  margin-bottom: 100px;
+}
+
+.tf-wrap > .shadow:hover {
+    transform: translateY(0px);
+}
+
+.typeform-share {
+  color: $skipper-blue !important;
+  font-style: italic;
+}
+
 // FOOTER
 
 

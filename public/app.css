@@ -1057,7 +1057,7 @@ h4 {
 a {
   color: #0e3266 !important;
   text-decoration: none !important;
-  font-size: 16px; }
+  font-size: 18px; }
 
 input {
   font-size: 16px; }
@@ -1730,6 +1730,20 @@ input:required:valid {
   line-height: 40px;
   margin-top: -12px; }
 
+.tf-wrap {
+  padding-top: 100px;
+  width: 100%;
+  height: 90vh;
+  min-height: 500px;
+  margin-bottom: 100px; }
+
+.tf-wrap > .shadow:hover {
+  transform: translateY(0px); }
+
+.typeform-share {
+  color: #507cf0 !important;
+  font-style: italic; }
+
 .footer {
   margin-top: 0;
   width: 100%;
@@ -2002,7 +2016,7 @@ h4 {
 a {
   color: #0e3266 !important;
   text-decoration: none !important;
-  font-size: 16px; }
+  font-size: 18px; }
 
 input {
   font-size: 16px; }
