@@ -20,6 +20,7 @@
     .card {
         margin-bottom: 100px;
         max-width: 450px;
+        width: 90%;
     }
 
     .float-left {
@@ -36,10 +37,6 @@
         margin-right: 0px;
     }
 
-    .card {
-        width: 90%;
-    }
-
     .show {
         display: none !important;
     }
@@ -53,7 +50,6 @@
     }
 
     .child.card {
-        width: 100%;
         margin-bottom: 35px;
         min-height: 150px;
     }
@@ -87,6 +83,11 @@
         background-color: transparent;
         padding: 0px;
     }
+
+    .hero-image img.hero-img {
+        right: 10px;
+      }
+
 }
 
 @media screen and (max-width: 850px) {
