@@ -34,17 +34,7 @@
     src="https://www.facebook.com/tr?id=1876966272387087&ev=PageView&noscript=1"
     />
     
-  </noscript>
-  <script>
-    window.__lc = window.__lc || {};
-    window.__lc.license = 9867750;
-    (function() {
-      var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
-      lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
-    })();
-    
-  </script>
+  </noscript><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){
@@ -52,6 +42,16 @@
     }
     gtag('js', new Date());
     gtag('config', 'UA-121010767-1');
+    
+  </script>
+  <script>
+    window.intercomSettings = {
+      app_id: 'd2qx1f2z'
+    };
+    
+  </script>
+  <script>
+    (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/d2qx1f2z';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()
     
   </script><script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4671514.js"></script>
   <meta property="og:type" content="website">
@@ -78,25 +78,13 @@
 </head>
 <body></body>
 <!-- loads navigation bar for each page-->
-<script>
-  var $ = require('jquery');
-  $(window).on("scroll", function() {
-  var scrollPos = $(window).scrollTop();
-      if (scrollPos <= 15) {
-          $('.navbar').removeClass('top');
-      } else {
-          $('.navbar').addClass('top');
-      }
-  });
-  
-</script>
-<div class="navbar">
+<div class="navbar top">
   <div class="nav-items">
     <div class="nav-burger"><span class="open" id="open" onclick="openNav()">&#9776</span></div><a class="nav-logo" href="/"><img class="medium" src="images/skipper-logo.png"></a>
-    <div class="nav-menu"><a class="nav-link" href="about.html">About</a><a class="nav-link" href="blog.html">Blog</a><a class="nav-link demo-link" href="request-demo.html?email=">Request Demo</a>
-      <form id="demoForm" action="/request-demo.html?email=" method="GET">
+    <div class="nav-menu"><a class="nav-link" href="about.html">About</a><a class="nav-link" href="blog.html">Blog</a><a class="nav-link demo-link" href="request-demo.html?email=">Join beta</a>
+      <form id="simpleForm" action="success.html" method="GET">
         <input class="input-box input-nav" type="email" placeholder="Enter email" name="email">
-        <input class="button button-nav" id="email_submit" type="submit" value="Request Demo">
+        <input class="button button-nav" id="email_submit" type="submit" value="Join beta">
       </form>
     </div>
   </div>
@@ -117,32 +105,30 @@
     <input class="button button-nav" id="demo_submit" type="submit" value="Request Demo">
   </form>
   <div class="container moat">
-    <h1 class="hero">Related articles:</h1><br><br><a href="https://www.recode.net/2017/4/18/15327848/workplace-culture-measurement-metrics-healthy-uber" target="_blank">
-      <div class="container smallmoat">
-        <div class="row">
-          <div class="col-md-4"><a href="https://www.recode.net/2017/4/18/15327848/workplace-culture-measurement-metrics-healthy-uber" target="_blank">
-              <div class="card blogcard shadow">
-                <div class="blogthumb" style="background-image: url(images/blog/recode.jpg);"></div>
-                <p>RECODE</p>
-                <h4>Workplace culture should be measured</h4>
-                <p class="byline">by Taro Fukuyama</p>
-              </div></a></div>
-          <div class="col-md-4"><a href="http://projectinclude.org/measuring_progress#repeat-surveys-regularly-at-the-right-intervals" target="_blank">
-              <div class="card blogcard shadow">
-                <div class="blogthumb" style="background-image: url(images/blog/project-include.png);"></div>
-                <p>Project Include</p>
-                <h4>Recommendations and resources to measure progress</h4>
-                <p class="byline">by Susan Fowler</p>
-              </div></a></div>
-          <div class="col-md-4"><a href="https://hbr.org/2017/09/the-case-for-investing-more-in-people" target="_blank">
-              <div class="card blogcard shadow">
-                <div class="blogthumb" style="background-image: url(images/blog/hbr-people.jpg);"></div>
-                <p>Harvard Business Review</p>
-                <h4>The Case for Investing More in People</h4>
-                <p class="byline">by Eric Garton</p>
-              </div></a></div>
-        </div>
-      </div></a>
+    <h1 class="hero">Related articles:</h1><br><br>
+    <div class="flex">
+      <div class="column"><a href="https://www.recode.net/2017/4/18/15327848/workplace-culture-measurement-metrics-healthy-uber" target="_blank">
+          <div class="card blogcard shadow">
+            <div class="blogthumb" style="background-image: url(images/blog/recode.jpg);"></div>
+            <p class="source">RECODE</p>
+            <h4>Workplace culture should be measured</h4>
+            <p class="byline">by Taro Fukuyama</p>
+          </div></a></div>
+      <div class="column"><a href="http://projectinclude.org/measuring_progress#repeat-surveys-regularly-at-the-right-intervals" target="_blank">
+          <div class="card blogcard shadow">
+            <div class="blogthumb" style="background-image: url(images/blog/project-include.png);"></div>
+            <p class="source">Project Include</p>
+            <h4>Recommendations and resources to measure progress</h4>
+            <p class="byline">by Susan Fowler</p>
+          </div></a></div>
+      <div class="column"><a href="https://hbr.org/2017/09/the-case-for-investing-more-in-people" target="_blank">
+          <div class="card blogcard shadow">
+            <div class="blogthumb" style="background-image: url(images/blog/hbr-people.jpg);"></div>
+            <p class="source">Harvard Business Review</p>
+            <h4>The Case for Investing More in People</h4>
+            <p class="byline">by Eric Garton</p>
+          </div></a></div>
+    </div>
   </div>
   <script>
     var myParam = location.search.split('?email=')[1]
@@ -170,10 +156,10 @@
           <h4>Resources</h4><a href="index.html#research">Research</a><a href="privacy.html">Privacy</a><br>
         </div>
         <div class="col-md-6">
-          <h4>Request a demo</h4>
-          <form id="demoFooterForm" action="/request-demo.html" method="GET">
+          <h4>Request a demo</h4><br>
+          <form id="simpleForm" action="success.html" method="GET">
             <input class="input-box input-nav" type="email" placeholder="Enter email" name="email" style="margin-left: 0px;">
-            <input class="button button-nav" id="email_submit" type="submit" value="Request Demo">
+            <input class="button button-nav" id="email_submit" type="submit" value="Join beta">
           </form>
         </div>
       </div>

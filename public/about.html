@@ -34,17 +34,7 @@
     src="https://www.facebook.com/tr?id=1876966272387087&ev=PageView&noscript=1"
     />
     
-  </noscript>
-  <script>
-    window.__lc = window.__lc || {};
-    window.__lc.license = 9867750;
-    (function() {
-      var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
-      lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
-    })();
-    
-  </script>
+  </noscript><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){
@@ -52,6 +42,16 @@
     }
     gtag('js', new Date());
     gtag('config', 'UA-121010767-1');
+    
+  </script>
+  <script>
+    window.intercomSettings = {
+      app_id: 'd2qx1f2z'
+    };
+    
+  </script>
+  <script>
+    (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/d2qx1f2z';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()
     
   </script><script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4671514.js"></script>
   <meta property="og:type" content="website">
@@ -78,43 +78,23 @@
 </head>
 <body></body>
 <!-- loads navigation bar for each page-->
-<script>
-  var $ = require('jquery');
-  $(window).on("scroll", function() {
-  var scrollPos = $(window).scrollTop();
-      if (scrollPos <= 15) {
-          $('.navbar').removeClass('top');
-      } else {
-          $('.navbar').addClass('top');
-      }
-  });
-  
-</script>
-<div class="navbar">
+<div class="navbar top">
   <div class="nav-items">
     <div class="nav-burger"><span class="open" id="open" onclick="openNav()">&#9776</span></div><a class="nav-logo" href="/"><img class="medium" src="images/skipper-logo.png"></a>
-    <div class="nav-menu"><a class="nav-link" href="about.html">About</a><a class="nav-link" href="blog.html">Blog</a><a class="nav-link demo-link" href="request-demo.html?email=">Request Demo</a>
-      <form id="demoForm" action="/request-demo.html?email=" method="GET">
+    <div class="nav-menu"><a class="nav-link" href="about.html">About</a><a class="nav-link" href="blog.html">Blog</a><a class="nav-link demo-link" href="request-demo.html?email=">Join beta</a>
+      <form id="simpleForm" action="success.html" method="GET">
         <input class="input-box input-nav" type="email" placeholder="Enter email" name="email">
-        <input class="button button-nav" id="email_submit" type="submit" value="Request Demo">
+        <input class="button button-nav" id="email_submit" type="submit" value="Join beta">
       </form>
     </div>
   </div>
 </div>
 <!-- this is where content will be loaded for subsequent pages-->
-<div class="primary-container-hero">
-  <div class="hero-card hc-short">
-    <div class="hero-text about-txt">
-      <h1 class="hero white">About us</h1>
-      <h4 class="hero white">Our team of data scientists, designers, and engineers is on a mission to make work wonderful.</h4>
-    </div>
-    <div class="hero-image"><img class="about-img" src="images/aboutus-header.png"></div>
-  </div>
-</div>
+<div class="background-blue fs-about"></div>
 <div class="primary-container">
   <div class="container">
-    <div class="post"> 
-      <h1 class="hero">Why we’re building Skipper</h1><img class="flex" src="images/skipper-sketch.jpg">
+    <div class="post">
+      <h1>Why we're building Skipper </h1>
       <h4 class="quote"><span>"How we spend our days is, of course, how we spend our lives.” — Annie Dillard</span></h4>
       <h4>A <a href="https://news.gallup.com/opinion/chairman/212045/world-broken-workplace.aspx">2017 Gallup poll</a> found that 85% of the world’s one billion full-time workers are unengaged at their jobs. Yet most of us will spend 80,000 hours of our lives working. That’s a lot of time to spend at jobs we’re not excited to get up for every morning. </h4>
       <h4>Companies don't want their employees to dislike their job. Even our peers at promising startups and big tech companies told us stories about inefficient teams, frustrating managers, or stressful projects. So our small team set out to <a href="/request-demo.html?email=">make work amazing.</a></h4>
@@ -127,26 +107,11 @@
         We want to hear from you about what to build next! We're on a quest to hear from as many people ops & human resources professionals as possible. Schedule a call and tell us about your experience, check out our demo, and help us make work wonderful!
         </em>
         
-        
       </h4>
-      <h4>
-        <strong>Our team at Skipper includes:</strong><br><br>
-        
-        <span class="code">1</span> A self-taught cook and coffee roaster who whips up a mean team dinner<br>
-        <span class="code">2</span> An avid Giants and Warriors fan who can typically be found shooting hoops <br>
-        <span class="code">3</span> A bookworm and museum enthusiast always working on a puzzle
-      </h4>
-      <h4>
-        We're based in Berkeley, California. The office cat is cute.
-        
-        
-      </h4>
-      <div class="row">
-        <div class="col-md-6"> </div><br style="clear:both;"><br>
-        <div class="centered"><a class="button button-nav" href="request-demo.html?email=">Learn more over the phone</a></div>
-      </div><br><br><br><br>
+      <h4>With love from Los Angeles, California. <i class="fas fa-heart skipper-icon"></i></h4><br>
     </div>
   </div>
+  <div class="centered"><a class="button button-nav" href="request-demo.html?email=">Learn more over the phone</a></div>
 </div>
 <!-- footer-->
 <div class="footer">
@@ -160,10 +125,10 @@
           <h4>Resources</h4><a href="index.html#research">Research</a><a href="privacy.html">Privacy</a><br>
         </div>
         <div class="col-md-6">
-          <h4>Request a demo</h4>
-          <form id="demoFooterForm" action="/request-demo.html" method="GET">
+          <h4>Request a demo</h4><br>
+          <form id="simpleForm" action="success.html" method="GET">
             <input class="input-box input-nav" type="email" placeholder="Enter email" name="email" style="margin-left: 0px;">
-            <input class="button button-nav" id="email_submit" type="submit" value="Request Demo">
+            <input class="button button-nav" id="email_submit" type="submit" value="Join beta">
           </form>
         </div>
       </div>

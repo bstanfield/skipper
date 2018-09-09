@@ -1,12 +1,18 @@
 @import 'fonts.scss';
 @import 'mq.scss';
 
-$bg-color: #f9f9f9;
+$bg-color: white;
 
 body {
   margin: 0;
   padding: 0;
   background-color: $bg-color;
+}
+
+.banner {
+  background-color: $skipper-blue;
+  height: 50px;
+  width: 100%;
 }
 
 .navbar {
@@ -19,12 +25,11 @@ body {
 
 .nav-items {
   width: 90%;
-  max-width: 1100px;
+  max-width: 1300px;
   margin: auto;
   height: 100%;
-  padding-top: 12px;
-  padding-bottom: 15px;
-  // border-bottom: 2px solid #b3b3b3;
+  padding-top: 17px;
+  padding-bottom: 14px;
 }
 
   .top {
@@ -43,7 +48,7 @@ body {
 }
 
 .nav-link {
-  padding-left: 30px;
+  padding-right: 30px;
   font-size: 16px;
 }
 
@@ -65,36 +70,16 @@ body {
   cursor: pointer;
 }
 
-// .nav {
-//   position: fixed;
-//   overflow-x: hidden;
-//   width: 0;
-//   height: 100vh;
-//   z-index: 1;
-//   background-color: rgba(0, 0, 0, 0.4);
-//   transition: 0.5s;
-//   display: block;
-// }
-
-// .nav a {
-//   color: white !important;
-//   text-decoration: none !important;
-//   display: block;
-//   padding: 1em 0;
-//   text-align: center;
-
-// }
-
 .primary-container {
-  width: 80%;
+  width: 90%;
   margin: auto;
-  max-width: 1100px;
+  max-width: 1300px;
 }
 
-  .primary-container-hero {
-    width: 80%;
+  .hero-container {
+    width: 90%;
     margin: auto;
-    max-width: 1100px;
+    max-width: 1300px;
     padding-top: 70px;
   }
 
@@ -102,16 +87,9 @@ body {
 .hero-card {
   position: relative;
   width: 100%;
-  height: 500px;
-  border-radius: 5px;
-  background-color: #507cf0;
-  margin-bottom: 80px;
+  margin: auto;
+  height: 600px;
 }
-
-// .strike {
-//   text-decoration: line-through;
-//   text-decoration-color: #163faf;
-// }
 
   .hc-med {
     height: 350px;
@@ -124,9 +102,10 @@ body {
 .hero-text {
   width: 100%;
   position: relative;
-  left: 100px;
-  top: 20%;
-  max-width: 500px;
+  left: 0px;
+  top: 160px;
+  max-width: 450px;
+  z-index: 2;
 }
 
   .about-txt {
@@ -134,25 +113,23 @@ body {
     max-width: 250px;
   }
 
-h1.hero {
-  font-size: 35px;
-}
+  hr {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 45px;
+  }
 
 h4.hero {
   margin-bottom: 40px;
 }
 
-.hero-image img {
+img.hero-img {
   position: absolute;
-  width: 500px;
-  height: auto;
-  right: 0px;
-  bottom: 0px;
-}
-
-.hero-image img.hero-img {
-  right: 100px;
-  z-index: 900;
+  height: 450px;
+  z-index: 1;
+  top: 80px;
+  right: 0;
+  margin-right: -200px;
 }
 
 .hover:hover {
@@ -160,20 +137,9 @@ h4.hero {
   transition: all 0.5s ease;
 }
 
-#demoHeroForm {
-  margin-top: -15px;
-
-  .button-nav {
-    background-color: white;
-    border: none;
-    color: #333333 !important;
-  }
-
-  .input-nav {
-    margin-left: 0px;
-    border: none;
-    background-color: rgba(255, 255, 255, 0.7);
-  }
+#simpleForm {
+  margin-top: 0px;
+  margin-left: 0px;
 }
 
 .button {
@@ -183,6 +149,8 @@ h4.hero {
   border-radius: 3px;
   font-weight: normal;
   border: 1px solid #103390;
+  transition: all 0.3s ease;
+  cursor: pointer !important;
 }
 
   .button-nav {
@@ -194,13 +162,112 @@ h4.hero {
     background-color: #103390;
   }
 
-.hero-button {
-  background-color: white;
-  font-size: $medium;
-  color: $skipper-blue;
-  padding: 10px 15px 10px 15px;
-  border-radius: 3px;
+  .hero-btn {
+    background-color: #E7C11C;
+    padding: 12px 18px;
+    color: #333333 !important;
+  }
+
+  .hero-btn:hover {
+    background-color: rgb(248, 216, 73);
+    color: black;
+  }
+
+.features {
+  width: 100%;
+  margin: auto;
+  display: inline-block;
+  margin-bottom: 70px;
 }
+
+.feature-box {
+  margin-top: 20px;
+  width: 300px;
+  text-align: left;
+  padding-right: 30px;
+  float: left;
+}
+
+  .features p {
+    line-height: 30px;
+    opacity: .7;
+    margin-top: 5px;
+  }
+
+  .features h2 {
+    margin-bottom: 0;
+    margin-top: 5px;
+    color: $skipper-blue;
+  }
+
+.ftr1, .ftr2, .ftr3 {
+  padding: 5px 8px 8px 15px;
+  border-radius: 2px;
+  transition: .5s ease;
+}
+
+  .ftr1:hover, .ftr2:hover, .ftr3:hover {
+    background-color: rgba(238, 238, 238, 0.548);
+  }
+
+  .ftr1:focus {
+    background-color: rgba(238, 238, 238, 0.548);
+    border: 1px solid $skipper-blue;
+  }
+
+.demo-box {
+  width: 850px;
+  float: right;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 20px, rgb(245, 245, 245) 0px -1px 0px;
+}
+
+  .demo-box img {
+    width: 100%;
+    border-radius: 3px;
+  }
+
+// FLEX
+.flex {
+  max-width: 1000px;
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  margin: auto;
+  justify-content: space-between;
+}
+
+  .flex > div {
+    flex-basis: 30%;
+  }
+
+  .flex .column {
+    flex-basis: 30%;
+  }
+
+.flex-container-sml {
+  display: none;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+  .flex p {
+    line-height: 30px;
+  }
+
+.usecase-box {
+  text-align: left;
+  padding: 0px 10px 0px 18px;
+  border: 1px solid $skipper-blue;
+  border-bottom: 8px solid $skipper-blue;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+  
+  .usecase-box p {
+    opacity: .7;
+    margin-top: -10px;
+  }
 
 // CARDS
 .card {
@@ -208,13 +275,16 @@ h4.hero {
   padding: 30px;
   background-color: white;
   border-radius: 5px;
-  max-width: 750px;
   margin: auto;
 }
 
 .hide {
-  display: hidden;
+  display: none;
 }
+
+  .hide-sml {
+    display: none;
+  }
 
   .child {
     padding: 15px 15px 20px 20px;
@@ -264,11 +334,12 @@ h4.hero {
   .blogcard > p {
     text-transform: uppercase;
     font-family: $sans-serif;
-    font-size: $medium;
+    font-size: $small;
     text-align: left;
     padding-left: 30px;
     padding-right: 30px;
     margin-bottom: 8px;
+    line-height: 20px;
   }
 
   .blogcard > .byline {
@@ -276,12 +347,21 @@ h4.hero {
     margin-top: -18px;
     padding-bottom: 30px;
     font-style: italic;
-    opacity: 0.8;
+    opacity: 0.3;
+    transition: 0.3s ease;
+  }
+
+  .blogcard:hover {
+    .byline {
+      opacity: 1;
+    }
   }
 
   .blogcard > h4 {
     padding: 0px 30px 30px 30px;
     font-family: $sans-serif;
+    font-size: $medium;
+    line-height: 28px;
     font-weight: $bold;
     text-align: left;
     font-size: 22px;
@@ -313,36 +393,18 @@ h4.hero {
   margin-bottom: 50px;
 }
 
-.tape {
-  position: absolute;
-  top: -15px;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-}
-
-  .tape img {
-    width: 180px;
-  }
-
-  .jank-tape {
-    position: relative;
-    top: -60px;
-    margin-bottom: -35px;
-    text-align: center;
-  }
-
 // IMAGES
-.hero-img {
+.bar {
   width: 100%;
-  max-width: 300px;
+  height: auto;
+  max-width: 1200px;
+  min-width: 500px;
+  margin: auto;
 }
 
-.flex {
-  width: 100%;
-  max-width: 550px;
-}
+  .bar img {
+    width: 100%;
+  }
 
 .full {
   width: 100%;
@@ -372,8 +434,8 @@ h4.hero {
 
 .small {
   width: 100%;
-  max-width: 300px;
   margin: auto;
+  margin-top: -50px;
 }
 
 #imgbehind {
@@ -391,13 +453,13 @@ h4.hero {
   width: 50px;
 }
 
-.hero-image .beta-img {
+.beta-img {
   width: 200px;
   margin-right: 80px;
   margin-bottom: 40px;
 }
 
-.hero-image .privacy-img {
+.privacy-img {
   width: 200px;
   margin-right: 80px;
   margin-bottom: 90px;
@@ -423,40 +485,39 @@ h4.hero {
   margin: auto;
   width: 100%;
   max-width: 800px;
+  margin-top: 50px;
 }
 
-.post > h4 {
-  margin-bottom: 30px;
-}
+  .post > h1 {
+    margin-bottom: 20px;
+  }
 
-.post > .flex {
-  width: 100%;
-  max-width: 800px;
-  margin-bottom: 50px;
-  margin-top: 30px;
-}
+  .post > h4 {
+    margin-bottom: 30px;
+  }
 
-.post > h4 > a {
-  text-decoration: underline !important;
-  font-size: 17px;
-  color: $skipper-blue !important; 
-}
+  .post a {
+    text-decoration: underline !important;
+    font-size: 20px;
+    color: $skipper-blue !important; 
+  }
 
-.post > .quote {
-  font-style: italic;
-  font-weight: 800;
-  font-size: 18px;
-}
+  .post > .quote {
+    font-style: italic;
+    font-weight: 800;
+    font-size: 18px;
+  }
 
-.quote > span {
-  background-color: rgba(51, 79, 235, 0.1);
-  padding: 15px;
-  border-radius: 3px;
-}
+    .quote > span {
+      background-color: rgba(51, 79, 235, 0.1);
+      padding: 15px;
+      border-radius: 3px;
+    }
 
 // COLOR SELECTION
 .background-blue {
   background-color: $skipper-blue;
+  overflow: hidden;
 }
 
 .background-dark-blue {
@@ -493,6 +554,8 @@ h4.white {
 .seller {
   margin-top: 50px;
   margin-bottom: 20px;
+  max-width: 600px;
+  margin: auto;
 }
 
 .no-bottom-margin {
@@ -544,14 +607,22 @@ h4.white {
     box-shadow: rgba(0, 0, 0, 0.03) 0px 1px 1px inset;
     transition: all 0.3s ease;
   }
+    .fatty {
+      padding: 12px 18px;
+    }
 
     ::placeholder {
-      color: #969595 !important;
+      color: $txt-primary;
+      opacity: .5;
+      transition: all 0.3s ease;
+    }
+
+    .input-box:hover::placeholder {
+      opacity: 1;
     }
 
     .input-nav {
       width: 150px;
-      margin-left: 30px;
       margin-right: 5px;
     }
 
@@ -726,5 +797,21 @@ h4.white {
   width: 100%;
   max-width: 700px;
   margin: auto;
+}
+
+// ICONS
+.skipper-icon {
+  color: $skipper-blue;
+  font-size: 25px;
+  padding-top: 15px;
+}
+
+// HERO IMAGE
+.fs-about {
+  height: 400px;
+  width: 100%;
+  background-image: url('images/skipper-sketch.jpg');
+  background-size: cover;
+  margin-bottom: 100px;
 }
 

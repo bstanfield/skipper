@@ -34,17 +34,7 @@
     src="https://www.facebook.com/tr?id=1876966272387087&ev=PageView&noscript=1"
     />
     
-  </noscript>
-  <script>
-    window.__lc = window.__lc || {};
-    window.__lc.license = 9867750;
-    (function() {
-      var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
-      lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
-    })();
-    
-  </script>
+  </noscript><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){
@@ -52,6 +42,16 @@
     }
     gtag('js', new Date());
     gtag('config', 'UA-121010767-1');
+    
+  </script>
+  <script>
+    window.intercomSettings = {
+      app_id: 'd2qx1f2z'
+    };
+    
+  </script>
+  <script>
+    (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/d2qx1f2z';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()
     
   </script><script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4671514.js"></script>
   <meta property="og:type" content="website">
@@ -78,76 +78,124 @@
 </head>
 <body></body>
 <!-- loads navigation bar for each page-->
-<script>
-  var $ = require('jquery');
-  $(window).on("scroll", function() {
-  var scrollPos = $(window).scrollTop();
-      if (scrollPos <= 15) {
-          $('.navbar').removeClass('top');
-      } else {
-          $('.navbar').addClass('top');
-      }
-  });
-  
-</script>
-<div class="navbar">
+<div class="navbar top">
   <div class="nav-items">
-    <div class="nav-burger"><span class="open" id="open" onclick="openNav()">&#9776</span></div><a class="nav-logo" href="/index2.html"><img class="medium" src="images/skipper-logo.png"></a>
-    <div class="nav-menu"><a class="nav-link" href="about.html">About</a><a class="nav-link" href="blog.html">Blog</a><a class="nav-link demo-link" href="request-demo2.html">Request Demo</a>
-      <form id="demoForm" action="/request-demo2.html?email=" method="GET">
+    <div class="nav-burger"><span class="open" id="open" onclick="openNav()">&#9776</span></div><a class="nav-logo" href="/"><img class="medium" src="images/skipper-logo.png"></a>
+    <div class="nav-menu"><a class="nav-link" href="about.html">About</a><a class="nav-link" href="blog.html">Blog</a><a class="nav-link demo-link" href="request-demo.html?email=">Join beta</a>
+      <form id="simpleForm" action="success.html" method="GET">
         <input class="input-box input-nav" type="email" placeholder="Enter email" name="email">
-        <input class="button button-nav" id="email_submit" type="submit" value="Request Demo">
+        <input class="button button-nav" id="email_submit" type="submit" value="Join beta">
       </form>
     </div>
   </div>
 </div>
 <!-- this is where content will be loaded for subsequent pages-->
-<div class="primary-container-hero">
-  <div class="hero-card">
-    <div class="hero-text">
-      <h1 class="hero white">Sync all your employee data seamlessly.</h1>
-      <h4 class="hero white">Skipper connects data from your ATS, HRIS, performance review software, and spreadsheets so all the data you need is easily accessible.</i></h4>
-      <form id="demoHeroForm" action="/request-demo2.html" method="GET">
-        <input class="input-box input-nav" type="email" placeholder="Enter email" name="email">
-        <input class="button button-nav" id="email_submit" type="submit" value="Request Demo">
-      </form>
+<script>
+  var $ = require('jquery');
+  $(function() {
+    $('.ftr1').click(function(){
+      $(".demoimg").attr('src',"images/dashboard1.png");
+    });
+    $('.ftr2').click(function(){
+      $('.demoimg').attr('src',"images/dashboard2.png");
+    });
+    $('.ftr3').click(function(){
+      $('.demoimg').attr('src',"images/dashboard3.png");
+    });
+  }); 
+  
+</script>
+<script>
+  var $ = require('jquery');
+  $(document).ready(function() {
+        $('.output').hide();
+        $('#simpleForm').submit(function(){
+                $('.output').show();   
+        });
+    });
+  
+  
+</script>
+<div class="background-blue">
+  <div class="hero-container">
+    <div class="hero-card">
+      <div class="hero-text">
+        <h1 class="hero">Create reports faster with Skipper.</h1>
+        <h4 class="hero">Leverage data from your software to generate better workforce reports.</h4>
+        <form id="simpleForm" action="/success.html" method="GET">
+          <input class="input-box input-nav fatty" type="email" placeholder="Enter email" name="email">
+          <input class="button hero-btn" id="email_submit" type="submit" value="Join beta">
+        </form>
+      </div><img class="hero-img" src="images/graph-grid.png">
     </div>
-    <div class="hero-image"><img class="hero-img" src="images/skipper-integrate.png"></div>
   </div>
-  <div class="primary-container centered">
-    <h1 class="hero">Designed for HR Generalists & People Analysts. </h1>
-    <h4>Skipper works with any platforms you already use, and lets you use the data however you like. With all your data organized in one place, it's easy to do simple stats in Excel, or build out predictive analytics in Tableau or R.</h4><br><br><br>
-    <div class="container moat">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card child shadow child-min">
-            <h1>Complete platform support</h1>
-            <h4>We find a way to work with your software so that no matter what platforms you use or how much information you want to upload, you won't need to change the way you work. </h4>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card child shadow child-min">
-            <h1>Updates automatically</h1>
-            <h4>Skipper is up and running within minutes. We also handle the infrastructure so you don't need a whole team to manage the IT.</h4>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card child shadow child-min">
-            <h1>Less time wrangling data</h1>
-            <h4>No more asking coworkers for spreadsheets or double checking data for errors. With Skipper, focus on understanding your people and streamlining your workflows.</h4>
-          </div>
-        </div>
+</div><br><br><br>
+<div class="primary-container centered">
+  <div class="features">
+    <div class="feature-box">
+      <h1>Key Features</h1>
+      <div class="ftr1">
+        <h2>Complete control</h2>
+        <p>Easily customize graph data and include company colors, graph descriptions, and more.</p>
       </div>
+      <div class="ftr2">
+        <h2>Share with ease</h2>
+        <p>Clear permissioning means you can manage sensitive data and share, worry-free.</p>
+      </div>
+      <div class="ftr3">
+        <h2>Update automatically</h2>
+        <p>New data that enters your other software updates automatically.</p>
+      </div>
+    </div>
+    <h1 class="hide-sml">Key Features</h1><br>
+    <div class="flex-container-sml features">
+      <div class="ftr1">
+        <h2>Complete control</h2>
+        <p>Easily customize graph data and include company colors, graph descriptions, and more.</p>
+      </div>
+      <div class="ftr2">
+        <h2>Share with ease</h2>
+        <p>Clear permissioning means you can manage sensitive data and share, worry-free.</p>
+      </div>
+      <div class="ftr3">
+        <h2>Complete control</h2>
+        <p>Easily customize graph data and include company colors, graph descriptions, and more.</p>
+      </div>
+    </div>
+    <div class="demo-box"><img class="demoimg" src="images/dashboard1.png"></div>
+  </div>
+  <h1>Designed for HR & People Analytics. </h1>
+  <h4>Skipper works with any platforms you already use, and lets you use the data however you like. With all your data organized in one place, it's easy to do simple stats in Excel, or build out predictive analytics in Tableau or R.</h4><br>
+  <div class="flex">
+    <div class="usecase-box"><i class="fas fa-stethoscope skipper-icon"></i>
+      <h2>Diagnose retention</h2>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
+    </div>
+    <div class="usecase-box"><i class="fas fa-user-circle skipper-icon"></i>
+      <h2>Optimize recruitment</h2>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
+    </div>
+    <div class="usecase-box"><i class="fas fa-map-signs skipper-icon"></i>
+      <h2>Track diversity goals</h2>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
     </div>
   </div>
 </div>
 <div class="background-blue full-width-bg no-bottom-margin" id="getstarted">
   <div class="primary-container">
-    <div class="seller centered">
-      <h1 class="hero white">Get Started</h1>
-      <h4 class="white">Let our team of people analytics experts show you how you can start understanding how your people work.</h4><br><br><a class="hero-button" href="request-demo2.html?email=">Request a demo </a><br>
+    <div class="seller centered"><img class="medium" src="images/research.png">
+      <h1 class="white">HR professionals spend 11 hours a week creating reports.</h1>
+      <h4 class="white">Check out what we’re reading about in the Workforce Analytics and Diversity and Inclusion space.</h4><br><br><a class="button hero-btn" href="/blog.html">Check out our blog</a>
     </div>
   </div>
+</div><br><br><br>
+<div class="centered">
+  <h1>Get Started</h1>
+  <h4>Let our team of people analytics experts show you how you can start understanding how your people work.</h4><br><br>
+  <form id="simpleForm" action="success.html" method="GET">
+    <input class="input-box input-nav fatty" type="email" placeholder="Enter email" name="email">
+    <input class="button button-nav fatty" id="email_submit" type="submit" value="Join beta">
+  </form>
 </div>
 <!-- footer-->
 <div class="footer">
@@ -161,10 +209,10 @@
           <h4>Resources</h4><a href="index.html#research">Research</a><a href="privacy.html">Privacy</a><br>
         </div>
         <div class="col-md-6">
-          <h4>Request a demo</h4>
-          <form id="demoFooterForm" action="/request-demo.html" method="GET">
+          <h4>Request a demo</h4><br>
+          <form id="simpleForm" action="success.html" method="GET">
             <input class="input-box input-nav" type="email" placeholder="Enter email" name="email" style="margin-left: 0px;">
-            <input class="button button-nav" id="email_submit" type="submit" value="Request Demo">
+            <input class="button button-nav" id="email_submit" type="submit" value="Join beta">
           </form>
         </div>
       </div>

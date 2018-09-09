@@ -21,30 +21,28 @@ mixin herocard-small(main, blurb, img)
                 img.beta-img(src=imgpath + img)
 
 mixin blogcards(url, img, source, title, author, url2, img2, source2, title2, author2, url3, img3, source3, title3, author3)
-    a(href=url target='_blank')
-        .container.smallmoat
-            .row
-                .col-md-4
-                    a(href=url target="_blank")
-                        .card.blogcard.shadow
-                            .blogthumb(style="background-image: url("+imgpath+"blog/"+img+");")
-                            p #{source}
-                            h4 #{title}
-                            p.byline #{author}
-                .col-md-4
-                    a(href=url2 target="_blank")
-                        .card.blogcard.shadow
-                            .blogthumb(style="background-image: url("+imgpath+"blog/"+img2+");")
-                            p #{source2}
-                            h4 #{title2}
-                            p.byline #{author2}
-                .col-md-4
-                    a(href=url3 target="_blank")
-                        .card.blogcard.shadow
-                            .blogthumb(style="background-image: url("+imgpath+"blog/"+img3+");")
-                            p #{source3}
-                            h4 #{title3}
-                            p.byline #{author3}
+    .flex
+        .column
+            a(href=url target="_blank")
+                .card.blogcard.shadow
+                    .blogthumb(style="background-image: url("+imgpath+"blog/"+img+");")
+                    p.source #{source}
+                    h4 #{title}
+                    p.byline #{author}
+        .column
+            a(href=url2 target="_blank")
+                .card.blogcard.shadow
+                    .blogthumb(style="background-image: url("+imgpath+"blog/"+img2+");")
+                    p.source #{source2}
+                    h4 #{title2}
+                    p.byline #{author2}
+        .column
+            a(href=url3 target="_blank")
+                .card.blogcard.shadow
+                    .blogthumb(style="background-image: url("+imgpath+"blog/"+img3+");")
+                    p.source #{source3}
+                    h4 #{title3}
+                    p.byline #{author3}
             
 mixin code(url, content)
     a(target="_blank" href=url)

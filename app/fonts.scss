@@ -12,9 +12,9 @@ $bold: 700;
 
 //FONT SIZES
 $small: 16px;
-$medium: 18px;
+$medium: 20px;
 $mobile-medium: 20px;
-$large: 25px;
+$large: 35px;
 $mobile-header: 30px;
 $header: 35px;
 
@@ -22,7 +22,7 @@ $header: 35px;
 $body-line: 35px;
 
 // COLORS
-$txt-primary: #0e3266;
+$txt-primary: #333333;
 $skipper-blue: #507cf0;
 
 
@@ -46,7 +46,7 @@ p {
 h1 {
     font-family: $sans-serif;
     font-size: $large;
-    line-height: 50px;
+    line-height: 45px;
     font-weight: $bold;
     max-width: 800px;
     margin: auto;
@@ -57,6 +57,7 @@ h2 {
     font-family: $sans-serif;
     font-size: $medium;
     font-weight: $bold;
+    color: #333333;
 }
 
 h4 {
@@ -70,6 +71,20 @@ h4 {
     margin: auto;
     color: #333333;
 }
+
+    h1.hero {
+        color: white;
+        font-size: 45px;
+        line-height: 55px;
+    }
+
+    h4.hero {
+        font-family: 'IBM Plex Serif';
+        font-style: italic;
+        line-height: 35px;
+        color: rgba(255, 255, 255, 0.74);
+        font-size: 25px;
+    }
 
 a {
     color: $txt-primary !important;

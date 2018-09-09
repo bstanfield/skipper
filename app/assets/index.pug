@@ -1,64 +1,124 @@
 extends layout2
 
 block content
-  //- script.
-  //-   var $ = require('jquery');
-  //-   $(document).scroll(function() {
-  //-   var y = $(this).scrollTop();
-  //-   if (y > 100) {
-  //-     $('#one').fadeIn();
-  //-     $('#two').fadeIn();
-  //-     $('#three').fadeIn();
-  //-     $('#four').fadeIn();
-  //-   } else {
-  //-     $('#one').fadeOut().delay(100);
-  //-     $('#two').fadeOut().delay(200);
-  //-     $('#three').fadeOut().delay(300);
-  //-   }
-  //-   });    
+  script.
+    var $ = require('jquery');
+    $(function() {
+      $('.ftr1').click(function(){
+        $(".demoimg").attr('src',"images/dashboard1.png");
+      });
+      $('.ftr2').click(function(){
+        $('.demoimg').attr('src',"images/dashboard2.png");
+      });
+      $('.ftr3').click(function(){
+        $('.demoimg').attr('src',"images/dashboard3.png");
+      });
+    }); 
 
-  .primary-container-hero
-    .hero-card
-      .hero-text
-        h1.hero.white Sync all your employee data seamlessly.
-        h4.hero.white Skipper connects data from your ATS, HRIS, performance review software, and spreadsheets so all the data you need is easily accessible.</i>
-        form#demoHeroForm(action="/request-demo2.html" method="GET")
-          input.input-box.input-nav(type="email" placeholder="Enter email" name="email")
-          input#email_submit.button.button-nav(type="submit" value="Request Demo")
-      .hero-image
-        img.hero-img(src=imgpath + 'skipper-integrate.png')
+  script.
+    var $ = require('jquery');
+    $(document).ready(function() {
+          $('.output').hide();
+          $('#simpleForm').submit(function(){
+                  $('.output').show();   
+          });
+      });
+
+
+  .background-blue
+    .hero-container
+      .hero-card
+        .hero-text
+          h1.hero Create reports faster with Skipper.
+          h4.hero Leverage data from your software to generate better workforce reports.
+          form#simpleForm(action="/success.html" method="GET")
+            input.input-box.input-nav.fatty(type="email" placeholder="Enter email" name="email")
+            input#email_submit.button.hero-btn(type="submit" value="Join beta")
+        img.hero-img(src='images/graph-grid.png')
+  //- .bar
+  //-   img(src='images/integrations-bar.png')
+  //- hr
+  br
+  br
+  br
         
-    .primary-container.centered
-      h1.hero Designed for HR Generalists & People Analysts. 
-      h4 Skipper works with any platforms you already use, and lets you use the data however you like. With all your data organized in one place, it's easy to do simple stats in Excel, or build out predictive analytics in Tableau or R.
+  .primary-container.centered
+    .features
+      .feature-box
+        h1 Key Features
+        .ftr1
+          h2 Complete control
+          p Easily customize graph data and include company colors, graph descriptions, and more.
+        .ftr2
+          h2 Share with ease
+          p Clear permissioning means you can manage sensitive data and share, worry-free.
+        .ftr3
+          h2 Update automatically
+          p New data that enters your other software updates automatically.
+
+      h1.hide-sml Key Features
       br
-      br
-      br
-      
-      .container.moat
-        .row
-            .col-md-4
-                .card.child.shadow.child-min
-                    h1 Complete platform support
-                    h4 We find a way to work with your software so that no matter what platforms you use or how much information you want to upload, you won't need to change the way you work. 
-            .col-md-4
-                .card.child.shadow.child-min
-                    h1 Updates automatically
-                    h4 Skipper is up and running within minutes. We also handle the infrastructure so you don't need a whole team to manage the IT.
-            .col-md-4
-                .card.child.shadow.child-min
-                    h1 Less time wrangling data
-                    h4 No more asking coworkers for spreadsheets or double checking data for errors. With Skipper, focus on understanding your people and streamlining your workflows.
+
+      .flex-container-sml.features
+        div.ftr1
+          h2 Complete control
+          p Easily customize graph data and include company colors, graph descriptions, and more.
+
+        div.ftr2
+          h2 Share with ease
+          p Clear permissioning means you can manage sensitive data and share, worry-free.
+
+        div.ftr3
+          h2 Complete control
+          p Easily customize graph data and include company colors, graph descriptions, and more.
+
+      .demo-box
+        img.demoimg(src='images/dashboard1.png')
+    
+    h1 Designed for HR & People Analytics. 
+    h4 Skipper works with any platforms you already use, and lets you use the data however you like. With all your data organized in one place, it's easy to do simple stats in Excel, or build out predictive analytics in Tableau or R.
+    br
+    
+    .flex
+      .usecase-box
+        <i class="fas fa-stethoscope skipper-icon"></i>
+        h2 Diagnose retention
+        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.
+
+      .usecase-box
+        <i class="fas fa-user-circle skipper-icon"></i>
+        h2 Optimize recruitment
+        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.
+
+      .usecase-box
+        <i class="fas fa-map-signs skipper-icon"></i>
+        h2 Track diversity goals
+        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.
 
   .background-blue.full-width-bg.no-bottom-margin#getstarted
     .primary-container
       .seller.centered
-        h1.hero.white Get Started
-        h4.white Let our team of people analytics experts show you how you can start understanding how your people work.
+        img.medium(src='images/research.png')
+        h1.white HR professionals spend 11 hours a week creating reports.
+        h4.white Check out what we’re reading about in the Workforce Analytics and Diversity and Inclusion space.
         br
         br
-        a.hero-button(href='request-demo2.html?email=') Request a demo 
-        br
+        a.button.hero-btn(href='/blog.html') Check out our blog
+  
+  br
+  br
+  br
+  .centered
+    h1 Get Started
+    h4 Let our team of people analytics experts show you how you can start understanding how your people work.
+
+    br
+    br
+    form#simpleForm(action="success.html" method="GET")
+      input.input-box.input-nav.fatty(type="email" placeholder="Enter email" name="email")
+      input#email_submit.button.button-nav.fatty(type="submit" value="Join beta")
+
+
 
 
 
