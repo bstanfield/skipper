@@ -1,10 +1,6 @@
-# Brunch + Babel/ES6
-
-This is a modern JS skeleton for [Brunch](http://brunch.io).
-
 ## Installation
 
-Clone this repo manually or use `brunch new dir -s es6`
+Clone this repo manually or use `brunch new dir -s`
 
 ## Getting started
 
