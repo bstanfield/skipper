@@ -1284,9 +1284,44 @@ body {
   background-color: white; }
 
 .banner {
-  background-color: #507cf0;
-  height: 50px;
-  width: 100%; }
+  position: relative;
+  background-color: lightgrey;
+  height: fit-content;
+  width: 100%;
+  background: linear-gradient(0deg, rgba(9, 44, 109, 0.945), rgba(14, 60, 145, 0.664)), url("images/vegas.jpg");
+  background-image: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position-y: 5%;
+  background-attachment: fixed;
+  margin: 80px 0px;
+  margin-top: 0px; }
+
+.banner .primary-container {
+  padding-top: 30px;
+  width: 90%;
+  max-width: 1300px;
+  margin: auto; }
+
+.shit-container {
+  max-width: 800px; }
+
+.banner h4 {
+  color: rgba(255, 255, 255, 0.897) !important;
+  max-width: none;
+  font-size: 20px !important;
+  line-height: 30px !important; }
+
+.banner h1 {
+  max-width: none;
+  font-size: 35px !important;
+  line-height: 40px !important; }
+
+.banner img {
+  width: 80px;
+  right: 15%;
+  top: 35%;
+  position: absolute; }
 
 .navbar {
   width: 100%;
@@ -1376,6 +1411,13 @@ hr {
 h4.hero {
   margin-bottom: 40px; }
 
+h4.hero.caps {
+  text-transform: uppercase;
+  font-family: "IBM Plex Sans", Helvetica, sans-serif;
+  font-weight: 700;
+  margin-bottom: 0;
+  font-style: initial; }
+
 img.hero-img {
   position: absolute;
   height: 450px;
@@ -1399,8 +1441,12 @@ img.hero-img {
   border-radius: 3px;
   font-weight: normal;
   border: 1px solid #103390;
-  transition: all 0.3s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   cursor: pointer !important; }
+
+button:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
 
 .button-nav {
   padding: 6px 12px;
@@ -1921,12 +1967,24 @@ input:required:valid {
   font-size: 25px;
   padding-top: 15px; }
 
-.fs-about {
+.fs {
   height: 400px;
   width: 100%;
-  background-image: url("images/skipper-sketch.jpg");
   background-size: cover;
-  margin-bottom: 100px; }
+  margin-bottom: 80px; }
+
+.fs-about {
+  background: linear-gradient(0deg, rgba(23, 99, 185, 0.575), rgba(51, 121, 211, 0.096)), url("images/skipper-sketch.jpg"); }
+
+.fs-blog {
+  background: linear-gradient(0deg, rgba(75, 75, 75, 0.575), rgba(88, 88, 88, 0.096)), url("https://cdn-images-1.medium.com/max/2000/1*xsZByF7s6JRdUHRP68Cg6Q.jpeg"); }
+
+.fs h1 {
+  color: white;
+  margin-top: 210px;
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 5px; }
 
 @media screen and (min-width: 1275px) {
   img.hero-img {
