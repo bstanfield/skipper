@@ -152,6 +152,12 @@
         margin: auto;
     }
 
+    .shit-container img {
+        display: none;
+    }
+
+    
+
 
     
 }
@@ -250,6 +256,10 @@
 
     .flex {
         display: block; 
+    }
+
+    .flex-container-sml {
+        display: block;
     }
 
         .flex > .usecase-box {

@@ -1198,7 +1198,9 @@ hr {
     width: 100%;
     max-width: 300px;
     display: block;
-    margin: auto; } }
+    margin: auto; }
+  .shit-container img {
+    display: none; } }
 
 @media screen and (max-width: 650px) {
   .button-nav {
@@ -1252,6 +1254,8 @@ hr {
     width: 100%; }
   .flex {
     display: block; }
+  .flex-container-sml {
+    display: block; }
   .flex > .usecase-box {
     margin-bottom: 40px;
     border-bottom: 4px solid #507cf0; } }
@@ -1281,7 +1285,8 @@ hr {
 body {
   margin: 0;
   padding: 0;
-  background-color: white; }
+  background-color: white;
+  overflow-x: hidden; }
 
 a .banner {
   opacity: .95;
@@ -2083,7 +2088,9 @@ input:required:valid {
     width: 100%;
     max-width: 300px;
     display: block;
-    margin: auto; } }
+    margin: auto; }
+  .shit-container img {
+    display: none; } }
 
 @media screen and (max-width: 650px) {
   .button-nav {
@@ -2136,6 +2143,8 @@ input:required:valid {
   .input-nav:focus {
     width: 100%; }
   .flex {
+    display: block; }
+  .flex-container-sml {
     display: block; }
   .flex > .usecase-box {
     margin-bottom: 40px;
