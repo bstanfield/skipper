@@ -1031,7 +1031,7 @@ p {
 
 h1 {
   font-family: "IBM Plex Sans", Helvetica, sans-serif;
-  font-size: 35px;
+  font-size: 30px;
   line-height: 45px;
   font-weight: 700;
   max-width: 800px;
@@ -1040,14 +1040,14 @@ h1 {
 
 h2 {
   font-family: "IBM Plex Sans", Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 700;
   color: #333333; }
 
 h4 {
   margin-top: -10px;
   line-height: 35px;
-  font-size: 20px;
+  font-size: 22px;
   font-family: "Merriweather", "IBM Plex Serif", serif;
   font-style: normal;
   font-weight: 400;
@@ -1065,12 +1065,12 @@ h4.hero {
   font-style: italic;
   line-height: 35px;
   color: rgba(255, 255, 255, 0.74);
-  font-size: 25px; }
+  font-size: 22px; }
 
 a {
   color: #333333 !important;
   text-decoration: none !important;
-  font-size: 20px; }
+  font-size: 22px; }
 
 input {
   font-size: 16px; }
@@ -1095,17 +1095,6 @@ span.code:hover {
 
 hr {
   border-top: 1px solid #a4a4a4; }
-
-@media screen and (max-width: 415px) {
-  h1 {
-    line-height: 35px; }
-  h1.hero {
-    font-size: 30px;
-    line-height: 40px; }
-  h1.title {
-    font-size: 35px; }
-  h2 {
-    font-size: 20px; } }
 
 @media screen and (min-width: 1275px) {
   img.hero-img {
@@ -1181,11 +1170,6 @@ hr {
     margin: auto;
     top: 30px;
     padding: 25px; }
-  .hero-text h1.hero {
-    font-size: 40px;
-    line-height: 45px; }
-  .hero-text h4.hero {
-    font-size: 20px; }
   .nav-items {
     width: 90%; }
   .about-txt {
@@ -1627,7 +1611,7 @@ button:hover {
 .blogcard > h4 {
   padding: 0px 30px 30px 30px;
   font-family: "IBM Plex Sans", Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 28px;
   font-weight: 700;
   text-align: left;
@@ -2071,11 +2055,6 @@ input:required:valid {
     margin: auto;
     top: 30px;
     padding: 25px; }
-  .hero-text h1.hero {
-    font-size: 40px;
-    line-height: 45px; }
-  .hero-text h4.hero {
-    font-size: 20px; }
   .nav-items {
     width: 90%; }
   .about-txt {
@@ -2187,7 +2166,7 @@ p {
 
 h1 {
   font-family: "IBM Plex Sans", Helvetica, sans-serif;
-  font-size: 35px;
+  font-size: 30px;
   line-height: 45px;
   font-weight: 700;
   max-width: 800px;
@@ -2196,14 +2175,14 @@ h1 {
 
 h2 {
   font-family: "IBM Plex Sans", Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 700;
   color: #333333; }
 
 h4 {
   margin-top: -10px;
   line-height: 35px;
-  font-size: 20px;
+  font-size: 22px;
   font-family: "Merriweather", "IBM Plex Serif", serif;
   font-style: normal;
   font-weight: 400;
@@ -2221,12 +2200,12 @@ h4.hero {
   font-style: italic;
   line-height: 35px;
   color: rgba(255, 255, 255, 0.74);
-  font-size: 25px; }
+  font-size: 22px; }
 
 a {
   color: #333333 !important;
   text-decoration: none !important;
-  font-size: 20px; }
+  font-size: 22px; }
 
 input {
   font-size: 16px; }
@@ -2251,17 +2230,6 @@ span.code:hover {
 
 hr {
   border-top: 1px solid #a4a4a4; }
-
-@media screen and (max-width: 415px) {
-  h1 {
-    line-height: 35px; }
-  h1.hero {
-    font-size: 30px;
-    line-height: 40px; }
-  h1.title {
-    font-size: 35px; }
-  h2 {
-    font-size: 20px; } }
 
 
 

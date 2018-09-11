@@ -421,7 +421,7 @@ module.exports = template;
 });
 
 ;require.register("includes/nav.pug", function(exports, require, module) {
-function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;var pug_debug_filename, pug_debug_line;try {var pug_debug_sources = {"app\u002Fincludes\u002Fnav.pug":".navbar.top\n    .nav-items\n        .nav-burger\n            span.open(id=\"open\" onclick=\"openNav()\") &#9776\n        a.nav-logo(href='\u002F')\n            img.medium(src='images\u002Fskipper-logo.png')\n        .nav-menu\n            \u002F\u002F- a.nav-link(href=\"index.html\") Home\n            a.nav-link(href='about.html') About us\n            a.nav-link(href='blog.html') Blog\n            a.nav-link.demo-link(href='request-demo.html?email=') Join beta\n            \n            form#simpleForm(action=\"success.html\" method=\"GET\")\n                input.input-box.input-nav(type=\"email\" placeholder=\"Enter email\" name=\"email\")\n                input#email_submit.button.button-nav(type=\"submit\" value=\"Join beta\")"};
+function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;var pug_debug_filename, pug_debug_line;try {var pug_debug_sources = {"app\u002Fincludes\u002Fnav.pug":".navbar.top\n    .nav-items\n        .nav-burger\n            span.open(id=\"open\" onclick=\"openNav()\") &#9776\n        a.nav-logo(href='\u002F')\n            img.medium(src='images\u002Fskipper-logo.png')\n        .nav-menu\n            \u002F\u002F- a.nav-link(href=\"index.html\") Home\n            a.nav-link(href='about.html') About us\n            a.nav-link(href='blog.html') Blog\n            a.nav-link.demo-link(href='index.html#') Join beta\n            \n            form#simpleForm(action=\"success.html\" method=\"GET\")\n                input.input-box.input-nav(type=\"email\" placeholder=\"Enter email\" name=\"email\")\n                input#email_submit.button.button-nav(type=\"submit\" value=\"Join beta\")"};
 ;pug_debug_line = 1;pug_debug_filename = "app\u002Fincludes\u002Fnav.pug";
 pug_html = pug_html + "\u003Cdiv class=\"navbar top\"\u003E";
 ;pug_debug_line = 2;pug_debug_filename = "app\u002Fincludes\u002Fnav.pug";
@@ -447,7 +447,7 @@ pug_html = pug_html + "\u003Ca class=\"nav-link\" href=\"blog.html\"\u003E";
 ;pug_debug_line = 10;pug_debug_filename = "app\u002Fincludes\u002Fnav.pug";
 pug_html = pug_html + "Blog\u003C\u002Fa\u003E";
 ;pug_debug_line = 11;pug_debug_filename = "app\u002Fincludes\u002Fnav.pug";
-pug_html = pug_html + "\u003Ca class=\"nav-link demo-link\" href=\"request-demo.html?email=\"\u003E";
+pug_html = pug_html + "\u003Ca class=\"nav-link demo-link\" href=\"index.html#\"\u003E";
 ;pug_debug_line = 11;pug_debug_filename = "app\u002Fincludes\u002Fnav.pug";
 pug_html = pug_html + "Join beta\u003C\u002Fa\u003E";
 ;pug_debug_line = 13;pug_debug_filename = "app\u002Fincludes\u002Fnav.pug";

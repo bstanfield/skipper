@@ -12,11 +12,18 @@ $bold: 700;
 
 //FONT SIZES
 $small: 16px;
-$medium: 20px;
-$mobile-medium: 20px;
-$large: 35px;
+$medium: 22px;
+$large: 30px;
+$x-large: 45px;
 $mobile-header: 30px;
-$header: 35px;
+
+@media screen and (max-width: 450px) {
+    $small: 12px;
+    $medium: 14px;
+    $large: 25px;
+    $x-large: 30px;
+    $header: 25px;
+}
 
 // LINE-HEIGHTS
 $body-line: 35px;
@@ -74,7 +81,7 @@ h4 {
 
     h1.hero {
         color: white;
-        font-size: 45px;
+        font-size: $x-large;
         line-height: 55px;
     }
 
@@ -83,7 +90,7 @@ h4 {
         font-style: italic;
         line-height: 35px;
         color: rgba(255, 255, 255, 0.74);
-        font-size: 25px;
+        font-size: $medium;
     }
 
 a {
@@ -119,24 +126,4 @@ span.code:hover {
 
 hr {
     border-top: 1px solid #a4a4a4;
-}
-
-@media screen and (max-width: 415px) {
-    h1{
-        line-height: 35px;
-    }
-
-    
-    h1.hero {
-        font-size: $mobile-header;
-        line-height: 40px;
-    }
-
-    h1.title{
-        font-size: $large;
-    }
-
-    h2{
-        font-size: $mobile-medium;
-    }
 }
