@@ -149,7 +149,7 @@ var __makeRelativeRequire = function(require, mappings, pref) {
   }
 };
 require.register("includes/footer.pug", function(exports, require, module) {
-function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;var pug_debug_filename, pug_debug_line;try {var pug_debug_sources = {"app\u002Fincludes\u002Ffooter.pug":".footer\n  .primary-container\n    .container#footer-hr\n      .row(style=\"padding-top: 50px;\")\n        .col-md-3\n          h4 Explore\n          a(href='about.html') About us\n          a(href='blog.html') Blog\n          br\n        .col-md-3\n          h4 Resources\n          a(href='privacy.html') Privacy Policy\n          a(href='https:\u002F\u002Fmedium.com\u002Fskipper-ai\u002F5-memorable-quotes-from-culture-first-723790d6bc21') Medium Articles\n          \n          br\n        .col-md-6\n          h4 Request a demo\n          br\n          form#simpleForm(action=\"success.html\" method=\"GET\")\n              input.input-box.input-nav(type=\"email\" placeholder=\"Enter email\" name=\"email\" style=\"margin-left: 0px;\")\n              input#email_submit.button.button-nav(type=\"submit\" value=\"Join beta\")            \n\n    .container\n      img.tiny.closer(src=imgpath + \"skipper-icon.png\")"};
+function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;var pug_debug_filename, pug_debug_line;try {var pug_debug_sources = {"app\u002Fincludes\u002Ffooter.pug":".footer\n  .primary-container\n    .container#footer-hr\n      .row(style=\"padding-top: 50px;\")\n        .col-md-3\n          h4 Explore\n          a(href='about.html') About us\n          a(href='blog.html') Blog\n          br\n        .col-md-3\n          h4 Resources\n          a(href='privacy.html') Privacy Policy\n          a(href='https:\u002F\u002Fmedium.com\u002Fskipper-ai\u002F5-memorable-quotes-from-culture-first-723790d6bc21') Medium Articles\n          \n          br\n        .col-md-6\n          h4 Request a demo\n          br\n          form#simpleForm(action=\"success.html\" method=\"GET\")\n              input.input-box.input-nav(type=\"email\" placeholder=\"Enter email\" name=\"email\" style=\"margin-left: 0px;\" required)\n              input#email_submit.button.button-nav(type=\"submit\" value=\"Join beta\")            \n\n    .container\n      img.tiny.closer(src=imgpath + \"skipper-icon.png\")"};
 ;var locals_for_with = (locals || {});(function (imgpath) {;pug_debug_line = 1;pug_debug_filename = "app\u002Fincludes\u002Ffooter.pug";
 pug_html = pug_html + "\u003Cdiv class=\"footer\"\u003E";
 ;pug_debug_line = 2;pug_debug_filename = "app\u002Fincludes\u002Ffooter.pug";
@@ -201,7 +201,7 @@ pug_html = pug_html + "\u003Cbr\u003E";
 ;pug_debug_line = 19;pug_debug_filename = "app\u002Fincludes\u002Ffooter.pug";
 pug_html = pug_html + "\u003Cform id=\"simpleForm\" action=\"success.html\" method=\"GET\"\u003E";
 ;pug_debug_line = 20;pug_debug_filename = "app\u002Fincludes\u002Ffooter.pug";
-pug_html = pug_html + "\u003Cinput class=\"input-box input-nav\" type=\"email\" placeholder=\"Enter email\" name=\"email\" style=\"margin-left: 0px;\"\u003E";
+pug_html = pug_html + "\u003Cinput class=\"input-box input-nav\" type=\"email\" placeholder=\"Enter email\" name=\"email\" style=\"margin-left: 0px;\" required\u003E";
 ;pug_debug_line = 21;pug_debug_filename = "app\u002Fincludes\u002Ffooter.pug";
 pug_html = pug_html + "\u003Cinput class=\"button button-nav\" id=\"email_submit\" type=\"submit\" value=\"Join beta\"\u003E\u003C\u002Fform\u003E\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";
 ;pug_debug_line = 23;pug_debug_filename = "app\u002Fincludes\u002Ffooter.pug";
@@ -421,7 +421,7 @@ module.exports = template;
 });
 
 ;require.register("includes/nav.pug", function(exports, require, module) {
-function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;var pug_debug_filename, pug_debug_line;try {var pug_debug_sources = {"app\u002Fincludes\u002Fnav.pug":".navbar.top\n    .nav-items\n        .nav-burger\n            span.open(id=\"open\" onclick=\"openNav()\") &#9776\n        a.nav-logo(href='\u002F')\n            img.medium(src='images\u002Fskipper-logo.png')\n        .nav-menu\n            \u002F\u002F- a.nav-link(href=\"index.html\") Home\n            a.nav-link(href='about.html') About us\n            a.nav-link(href='blog.html') Blog\n            a.nav-link.demo-link(href='index.html#') Join beta\n            \n            form#simpleForm(action=\"success.html\" method=\"GET\")\n                input.input-box.input-nav(type=\"email\" placeholder=\"Enter email\" name=\"email\")\n                input#email_submit.button.button-nav(type=\"submit\" value=\"Join beta\")"};
+function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;var pug_debug_filename, pug_debug_line;try {var pug_debug_sources = {"app\u002Fincludes\u002Fnav.pug":".navbar.top\n    .nav-items\n        .nav-burger\n            span.open(id=\"open\" onclick=\"openNav()\") &#9776\n        a.nav-logo(href='\u002F')\n            img.medium(src='images\u002Fskipper-logo.png')\n        .nav-menu\n            \u002F\u002F- a.nav-link(href=\"index.html\") Home\n            a.nav-link(href='about.html') About us\n            a.nav-link(href='blog.html') Blog\n            a.nav-link.demo-link(href='index.html#') Join beta\n            \n            form#simpleForm(action=\"success.html\" method=\"GET\")\n                input.input-box.input-nav(type=\"email\" placeholder=\"Enter email\" name=\"email\" required)\n                input#email_submit.button.button-nav(type=\"submit\" value=\"Join beta\")"};
 ;pug_debug_line = 1;pug_debug_filename = "app\u002Fincludes\u002Fnav.pug";
 pug_html = pug_html + "\u003Cdiv class=\"navbar top\"\u003E";
 ;pug_debug_line = 2;pug_debug_filename = "app\u002Fincludes\u002Fnav.pug";
@@ -453,7 +453,7 @@ pug_html = pug_html + "Join beta\u003C\u002Fa\u003E";
 ;pug_debug_line = 13;pug_debug_filename = "app\u002Fincludes\u002Fnav.pug";
 pug_html = pug_html + "\u003Cform id=\"simpleForm\" action=\"success.html\" method=\"GET\"\u003E";
 ;pug_debug_line = 14;pug_debug_filename = "app\u002Fincludes\u002Fnav.pug";
-pug_html = pug_html + "\u003Cinput class=\"input-box input-nav\" type=\"email\" placeholder=\"Enter email\" name=\"email\"\u003E";
+pug_html = pug_html + "\u003Cinput class=\"input-box input-nav\" type=\"email\" placeholder=\"Enter email\" name=\"email\" required\u003E";
 ;pug_debug_line = 15;pug_debug_filename = "app\u002Fincludes\u002Fnav.pug";
 pug_html = pug_html + "\u003Cinput class=\"button button-nav\" id=\"email_submit\" type=\"submit\" value=\"Join beta\"\u003E\u003C\u002Fform\u003E\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";} catch (err) {pug.rethrow(err, pug_debug_filename, pug_debug_line, pug_debug_sources[pug_debug_filename]);};return pug_html;};
 module.exports = template;
