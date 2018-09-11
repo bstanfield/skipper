@@ -149,7 +149,7 @@ var __makeRelativeRequire = function(require, mappings, pref) {
   }
 };
 require.register("includes/footer.pug", function(exports, require, module) {
-function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;var pug_debug_filename, pug_debug_line;try {var pug_debug_sources = {"app\u002Fincludes\u002Ffooter.pug":".footer\n  .primary-container\n    .container#footer-hr\n      .row(style=\"padding-top: 50px;\")\n        .col-md-3\n          h4 Explore\n          a(href='about.html') About us\n          a(href='blog.html') Blog\n          br\n        .col-md-3\n          h4 Resources\n          a(href='privacy.html') Privacy Policy\n          a(href='https:\u002F\u002Fmedium.com\u002Fskipper-ai\u002F5-memorable-quotes-from-culture-first-723790d6bc21') Medium Articles\n          \n          br\n        .col-md-6\n          h4 Request a demo\n          br\n          form#simpleForm(action=\"success.html\" method=\"GET\")\n              input.input-box.input-nav(type=\"email\" placeholder=\"Enter email\" name=\"email\" style=\"margin-left: 0px;\" required)\n              input#email_submit.button.button-nav(type=\"submit\" value=\"Join beta\")            \n\n    .container\n      img.tiny.closer(src=imgpath + \"skipper-icon.png\")"};
+function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;var pug_debug_filename, pug_debug_line;try {var pug_debug_sources = {"app\u002Fincludes\u002Ffooter.pug":".footer\n  .primary-container\n    .container#footer-hr\n      .row(style=\"padding-top: 50px;\")\n        .col-md-3\n          h4 Explore\n          a(href='about.html') About us\n          a(href='blog.html') Blog\n          br\n        .col-md-3\n          h4 Resources\n          a(href='privacy.html') Privacy Policy\n          a(href='https:\u002F\u002Fmedium.com\u002Fskipper-ai\u002F5-memorable-quotes-from-culture-first-723790d6bc21') Medium Articles\n          \n          br\n        .col-md-6\n          h4 Join closed beta\n          br\n          form#simpleForm(action=\"success.html\" method=\"GET\")\n              input.input-box.input-nav(type=\"email\" placeholder=\"Enter email\" name=\"email\" style=\"margin-left: 0px;\" required)\n              input#email_submit.button.button-nav(type=\"submit\" value=\"Join beta\")            \n\n    .container\n      img.tiny.closer(src=imgpath + \"skipper-icon.png\")"};
 ;var locals_for_with = (locals || {});(function (imgpath) {;pug_debug_line = 1;pug_debug_filename = "app\u002Fincludes\u002Ffooter.pug";
 pug_html = pug_html + "\u003Cdiv class=\"footer\"\u003E";
 ;pug_debug_line = 2;pug_debug_filename = "app\u002Fincludes\u002Ffooter.pug";
@@ -195,7 +195,7 @@ pug_html = pug_html + "\u003Cdiv class=\"col-md-6\"\u003E";
 ;pug_debug_line = 17;pug_debug_filename = "app\u002Fincludes\u002Ffooter.pug";
 pug_html = pug_html + "\u003Ch4\u003E";
 ;pug_debug_line = 17;pug_debug_filename = "app\u002Fincludes\u002Ffooter.pug";
-pug_html = pug_html + "Request a demo\u003C\u002Fh4\u003E";
+pug_html = pug_html + "Join closed beta\u003C\u002Fh4\u003E";
 ;pug_debug_line = 18;pug_debug_filename = "app\u002Fincludes\u002Ffooter.pug";
 pug_html = pug_html + "\u003Cbr\u003E";
 ;pug_debug_line = 19;pug_debug_filename = "app\u002Fincludes\u002Ffooter.pug";

@@ -1100,9 +1100,13 @@ hr {
   img.hero-img {
     margin-right: 0px; } }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1380px) {
   .demo-box {
-    margin-right: -250px; } }
+    margin-right: -150px; } }
+
+@media screen and (max-width: 1258px) {
+  .demo-box {
+    margin-right: -300px; } }
 
 @media screen and (max-width: 1100px) {
   .card {
@@ -1466,10 +1470,10 @@ button:hover {
   margin-bottom: 70px; }
 
 .feature-box {
-  margin-top: 20px;
-  width: 300px;
+  margin-top: 30px;
+  width: 380px;
   text-align: left;
-  padding-right: 30px;
+  padding-right: 0px;
   float: left; }
 
 .features p {
@@ -1481,6 +1485,9 @@ button:hover {
   margin-bottom: 0;
   margin-top: 5px;
   color: #507cf0; }
+
+.feature-box > div {
+  margin-top: -5px; }
 
 .ftr1, .ftr2, .ftr3 {
   padding: 5px 8px 8px 15px;
@@ -1985,9 +1992,13 @@ input:required:valid {
   img.hero-img {
     margin-right: 0px; } }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1380px) {
   .demo-box {
-    margin-right: -250px; } }
+    margin-right: -150px; } }
+
+@media screen and (max-width: 1258px) {
+  .demo-box {
+    margin-right: -300px; } }
 
 @media screen and (max-width: 1100px) {
   .card {

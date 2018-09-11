@@ -243,10 +243,10 @@ img.hero-img {
 }
 
 .feature-box {
-  margin-top: 20px;
-  width: 300px;
+  margin-top: 30px;
+  width: 380px;
   text-align: left;
-  padding-right: 30px;
+  padding-right: 0px;
   float: left;
 }
 
@@ -260,6 +260,10 @@ img.hero-img {
     margin-bottom: 0;
     margin-top: 5px;
     color: $skipper-blue;
+  }
+
+  .feature-box > div {
+    margin-top: -5px;
   }
 
 .ftr1, .ftr2, .ftr3 {

@@ -6,9 +6,15 @@
     }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1380px) {
     .demo-box {
-        margin-right: -250px;
+        margin-right: -150px;
+    }
+}
+
+@media screen and (max-width: 1258px) {
+    .demo-box {
+        margin-right: -300px;
     }
 }
 
