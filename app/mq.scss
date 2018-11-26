@@ -159,7 +159,35 @@
     
 }
 
-@media screen and (max-width: 650px) {  
+@media screen and (max-width: 650px) {
+    .hero-text {
+        text-align: center !important;
+    }
+
+    .mobile-centered {
+        text-align: center;
+    }
+
+    h1.hero {
+        font-size: 35px !important;
+    }
+
+    h4.hero {
+        font-size: 22px !important;
+    }
+
+    #simpleForm {
+        width: 80%;
+    }
+    .hide-mobile {
+        display: none;
+    }
+    
+    .show-mobile {
+        display: block;
+    }
+
+    
     .button-nav {
         margin-bottom: 20px;
     }
@@ -255,6 +283,10 @@
         display: block; 
     }
 
+    .blog-container .flex {
+        margin-bottom: -20px;
+    }
+
     .flex-container-sml {
         display: block;
     }
@@ -296,9 +328,5 @@
         padding-left: 0px;
         padding-right: 0px;
         width: 100%;
-    }
-
-    .primary-container {
-        text-align: left;
     }
 }

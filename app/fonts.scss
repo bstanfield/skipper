@@ -12,7 +12,7 @@ $bold: 700;
 
 //FONT SIZES
 $small: 16px;
-$medium: 22px;
+$medium: 20px;
 $large: 30px;
 $x-large: 45px;
 $mobile-header: 30px;
@@ -26,7 +26,7 @@ $mobile-header: 30px;
 }
 
 // LINE-HEIGHTS
-$body-line: 35px;
+$body-line: 40px;
 
 // COLORS
 $txt-primary: #333333;
@@ -90,7 +90,7 @@ h4 {
         font-style: italic;
         line-height: 35px;
         color: rgba(255, 255, 255, 0.74);
-        font-size: $medium;
+        font-size: 22px;
     }
 
 a {

@@ -24,7 +24,7 @@ a .banner:hover {
   background-color: lightgrey;
   height: fit-content;
   width: 100%;
-  background: linear-gradient(0deg,rgba(9, 44, 109, 0.945),rgba(14, 60, 145, 0.664)), url('images/vegas.jpg');
+  background: linear-gradient(0deg,rgba(9, 44, 109, 0.945),rgba(14, 60, 145, 0.664)), url('images/skipper-engineering-integration-ideation.jpeg');
   background-image: no-repeat;
   background-position: center;
   background-size: cover;
@@ -57,10 +57,10 @@ a .banner:hover {
     line-height: 40px !important
   }
 
-  .banner img {
-    width: 80px;
+  .banner i {
+    font-size: 80px;
     right: 15%;
-    top: 35%;
+    top: 30%;
     position: absolute;
   }
 
@@ -172,12 +172,22 @@ h4.hero {
   margin-bottom: 40px;
 }
 
-  h4.hero.caps {
+  h4.caps {
     text-transform: uppercase;
-    font-family: $sans-serif;
+    font-family: $sans-serif !important;
     font-weight: $bold;
     margin-bottom: 0;
-    font-style: initial;
+    font-style: initial !important;
+  }
+
+  .banner h4 {
+    font-family: 'IBM Plex Serif';
+    font-style: italic;
+    margin-bottom: 0px;
+  }
+
+  .banner h4, .banner h1 {
+    color: white !important;
   }
 
 img.hero-img {
@@ -202,6 +212,7 @@ img.hero-img {
 .button {
   background-color: $skipper-blue;
   color: white !important;
+  display: inline-block;
   padding: 4px 10px;
   border-radius: 3px;
   font-weight: normal;
@@ -228,7 +239,24 @@ img.hero-img {
     background-color: #E7C11C;
     padding: 12px 18px;
     color: #333333 !important;
+    font-size: $small;
   }
+
+    .banner .hero-btn {
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+
+    .banner-btn {
+      background-color: white;
+      opacity: .8;
+    }
+
+    .banner-btn:hover {
+      opacity: 1;
+      background-color: white !important;
+    }
+
 
   .hero-btn:hover {
     background-color: rgb(248, 216, 73);
@@ -303,8 +331,23 @@ img.hero-img {
   justify-content: space-between;
 }
 
+  .center-flex {
+    max-width: 1150px;
+    align-items: center;
+    padding-bottom: 0px;
+  }
+
   .flex > div {
     flex-basis: 30%;
+  }
+
+  .flex > .half {
+    flex-basis: 55%;
+    margin-top: -40px;
+  }
+
+  .flex > .half-less {
+    flex-basis: 40%;
   }
 
   .flex .column {
@@ -395,6 +438,11 @@ img.hero-img {
   .blogcard {
     padding: 0px !important;
     min-height: 430px;
+  }
+
+  .blog-container .flex {
+    padding-bottom: 0;
+    margin-bottom: 10px;
   }
 
   .blogcard > p {
@@ -494,9 +542,14 @@ img.hero-img {
 
 .medium {
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
   margin: auto;
 }
+
+  .blog-push {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
 
 .small {
   width: 100%;
@@ -600,7 +653,7 @@ img.hero-img {
 .full-width-bg {
   width: 100%;
   height: 100%;
-  padding: 50px 0px 100px 0px;
+  padding: 50px 0px 30px 0px;
   margin: 50px 0px 80px 0px;
 }
 
@@ -871,6 +924,16 @@ h4.white {
   font-size: 25px;
   padding-top: 15px;
 }
+
+  .icon-dark-blue{
+    color: rgba(24, 24, 193, 0.838);
+    font-size: 40px;
+    padding-bottom: 20px;
+  }
+
+  .icon-white {
+    color: white;
+  }
 
 // HERO IMAGE
 .fs {

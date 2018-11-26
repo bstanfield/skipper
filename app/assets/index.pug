@@ -30,24 +30,25 @@ block content
       .hero-card
         .hero-text
           h1.hero Create reports faster with Skipper.
-          h4.hero Create real-time organizational health dashboards in minutes with Skipper.
+          h4.hero Connect your HR software systems and generate reports and visualizations in minutes.
           form#simpleForm(action="/success.html" method="GET")
             input.input-box.input-nav.fatty(type="email" placeholder="Enter email" name="email" required)
-            input#email_submit.button.hero-btn(type="submit" value="Join beta")
+            input#email_submit.button.hero-btn(type="submit" value="Join waitlist")
         img.hero-img(src='images/graph-grid.png')
-  a(target='_blank' href='http://www.hrtechnologyconference.com/')
+  a(target='_blank' href='https://goo.gl/forms/Up0kuFGpQ9uys22E3/')
     .banner
       .primary-container
         .shit-container
-          h4.hero.caps SEPTEMBER 11 - 14
-          h1.hero Find the Skipper team at HR Technology Conference 2018!
-          h4.hero Get $300 off your attendee ticket with our discount code by request.
-          img(src='images/skipper-icon-white.png')
+          h4.caps USER FEEDBACK
+          h1 What integration would you like next?
+          h4 Our engineering team wants to know what services you'd like us to integrate with next. Let us know here.
+          a.button.hero-btn.banner-btn(target='_blank' href='https://goo.gl/forms/Up0kuFGpQ9uys22E3') Give feedback
+          <i class="fas fa-poll-h skipper-icon icon-white"></i>
         
   .primary-container.centered
     .features
       .feature-box
-        h1 Key Features
+        h1 Key Features 
         .ftr1
           h2 Comprehensive dashboards
           p Create real-time dashboards with data from your HR systems so you can have a single source of truth for your key metrics.
@@ -100,18 +101,23 @@ block content
 
   .background-blue.full-width-bg.no-bottom-margin#getstarted
     .primary-container
-      .seller.centered
-        img.medium(src='images/research.png')
-        h1.white HR professionals spend 11 hours a week creating reports.
-        h4.white Check out what we’re reading about in the Workforce Analytics and Diversity and Inclusion space.
-        br
-        br
-        a.button.hero-btn(href='/blog.html') Check out our blog
+      .flex.center-flex.mobile-centered
+        .half-less
+          img.medium.blog-push.hide-mobile(src='images/skipper-blog-content.png')
+
+        .half
+          <i class="fas fa-newspaper skipper-icon icon-dark-blue"></i>
+          h1.white Read curated content from our founders.
+          h4.white Check out what the Skipper team is reading about in the HR Tech and People Analytics space on our blog!
+          br
+          a.button.hero-btn(href='/blog.html') Visit Blog
+          br
+          br
   
   br
   br
   br
-  .centered
+  .primary-container.centered.mobile-centered
     h1 Get Started
     h4 Let our team of people analytics experts show you how you can start understanding how your people work.
 
